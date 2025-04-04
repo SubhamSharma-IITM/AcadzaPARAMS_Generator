@@ -216,20 +216,33 @@ async def process_query_api(file: UploadFile = File(...)):
     tasks = detect_dost_tasks(query)
     results = []
 
+    fallback_concepts = []
+
     for task in tasks:
         dost = task.get("Dost")
         subdost = task.get("Subdost")
         params = task.get("params", {})
-        concepts = params.get("concepts", ALL_CONCEPTS if dost == "Formula Dost" else [])
+        concepts = params.get("concepts", [])
+
+        if not concepts and dost == "Formula Dost":
+            concepts = ALL_CONCEPTS
 
         if dost == "Formula Dost":
+            fallback_concepts = concepts
             results.append({"Dost": dost, "Subdost": subdost, "data": build_formula_dost()})
+
         elif dost == "Revision Dost":
+            if not concepts:
+                concepts = fallback_concepts or ALL_CONCEPTS
             results.append({"Dost": dost, "Subdost": subdost, "data": build_revision_dost(concepts)})
+
         elif dost == "Practice Dost" and subdost == "Test Dost":
+            if not concepts:
+                concepts = fallback_concepts or ALL_CONCEPTS
             minutes = int(str(params.get("duration", "60 minutes")).split()[0])
             level = params.get("difficulty", "EASY")
             results.append({"Dost": dost, "Subdost": subdost, "data": build_test_dost(concepts, level, minutes)})
+
         else:
             results.append({"error": f"Unhandled Dost: {dost} / {subdost}"})
 
