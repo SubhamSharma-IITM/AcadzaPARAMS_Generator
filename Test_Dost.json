@@ -1,0 +1,23 @@
+{
+  "userId": "",
+  "practiceType": "test",
+  "title": "NLMT1",
+  "paperPattern": "Mains",
+  "level": "MEDIUM",
+  "natureOfTest": "Random",
+  "noOfMinutes": 60,
+  "coachingView": "PACE",
+  "batchs": [],
+  "sectionOrder": [
+    "singleQuestions",
+    "multipleQuestions",
+    "integerQuestions",
+    "passageQuestions",
+    "matchQuestions"
+  ],
+  "passageQuestionLimit": 3,
+  "isNCERT": false,
+  "helpRequired": false,
+  "isMultiple": false,
+  "practicePortion": []
+}

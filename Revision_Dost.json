@@ -1,0 +1,405 @@
+{
+  "title": "NLM Revision Plan",
+  "allotedDay": 1,
+  "allotedTime": 1,
+  "strategy": 1,
+  "daywisePortion": {
+    "day1": {
+      "portion": [
+        {
+          "weakData": [
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Types of Friction",
+                "text": "Types of Friction",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Direction of static and kinetic friction",
+                "text": "Direction of static and kinetic friction",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Coefficient of friction",
+                "text": "Coefficient of friction",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Limiting value of friction",
+                "text": "Limiting value of friction",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Transition of friction from static to kinetic",
+                "text": "Transition of friction from static to kinetic",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Angle of repose",
+                "text": "Angle of repose",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Two block problem",
+                "text": "Two block problem",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Three or more block problem",
+                "text": "Three or more block problem",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Contact Force",
+                "text": "Contact Force",
+                "selected": true,
+                "disabled": false
+              }
+            }
+          ],
+          "subject": "Physics",
+          "chapter": "Newton's law of motion",
+          "concept": "Fbd",
+          "importance": null,
+          "ratio": null,
+          "area": "Red",
+          "time": 60,
+          "star": 1,
+          "task": [
+            {
+              "type": "assignment",
+              "completed": false
+            },
+            {
+              "type": "test",
+              "completed": false
+            }
+          ],
+          "impratio": 3
+        },
+        {
+          "weakData": [
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Types of Friction",
+                "text": "Types of Friction",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Direction of static and kinetic friction",
+                "text": "Direction of static and kinetic friction",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Coefficient of friction",
+                "text": "Coefficient of friction",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Limiting value of friction",
+                "text": "Limiting value of friction",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Transition of friction from static to kinetic",
+                "text": "Transition of friction from static to kinetic",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Angle of repose",
+                "text": "Angle of repose",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Two block problem",
+                "text": "Two block problem",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Three or more block problem",
+                "text": "Three or more block problem",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Contact Force",
+                "text": "Contact Force",
+                "selected": true,
+                "disabled": false
+              }
+            }
+          ],
+          "subject": "Physics",
+          "chapter": "Newton's law of motion",
+          "concept": "Friction",
+          "importance": null,
+          "ratio": null,
+          "area": "Red",
+          "time": 60,
+          "star": 1,
+          "task": [
+            {
+              "type": "assignment",
+              "completed": false
+            },
+            {
+              "type": "test",
+              "completed": false
+            }
+          ],
+          "impratio": 3
+        },
+        {
+          "weakData": [
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Types of Friction",
+                "text": "Types of Friction",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Direction of static and kinetic friction",
+                "text": "Direction of static and kinetic friction",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Coefficient of friction",
+                "text": "Coefficient of friction",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Limiting value of friction",
+                "text": "Limiting value of friction",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Transition of friction from static to kinetic",
+                "text": "Transition of friction from static to kinetic",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Angle of repose",
+                "text": "Angle of repose",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Two block problem",
+                "text": "Two block problem",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Three or more block problem",
+                "text": "Three or more block problem",
+                "selected": true,
+                "disabled": false
+              }
+            },
+            {
+              "id": "",
+              "content": {
+                "subject": "Physics",
+                "chapter": "Newton's law of motion",
+                "concept": "Friction",
+                "subConcept": "Contact Force",
+                "text": "Contact Force",
+                "selected": true,
+                "disabled": false
+              }
+            }
+          ],
+          "subject": "Physics",
+          "chapter": "Newton's law of motion",
+          "concept": "Constraint Motion",
+          "importance": null,
+          "ratio": null,
+          "area": "Red",
+          "time": 60,
+          "star": 1,
+          "task": [
+            {
+              "type": "assignment",
+              "completed": false
+            },
+            {
+              "type": "test",
+              "completed": false
+            }
+          ],
+          "impratio": 3
+        }
+      ]
+    }
+  }
+}
