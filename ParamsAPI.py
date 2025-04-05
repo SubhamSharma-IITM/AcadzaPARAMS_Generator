@@ -11,10 +11,19 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from dotenv import load_dotenv
 from google.cloud import texttospeech
+from google.oauth2 import service_account
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+# Load Google credentials from inline JSON if provided
+if os.getenv("GOOGLE_CREDENTIALS_JSON"):
+    credentials_info = json.loads(os.getenv("GOOGLE_CREDENTIALS_JSON"))
+    google_credentials = service_account.Credentials.from_service_account_info(credentials_info)
+    tts_client = texttospeech.TextToSpeechClient(credentials=google_credentials)
+else:
+    tts_client = texttospeech.TextToSpeechClient()
 
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -194,8 +203,6 @@ DOST Tasks: {json.dumps(tasks, indent=2)}
     script = parsed.get("script", "Here's your study plan! You'll find your formula box, revision tasks and practice tests ready to go!")
 
     try:
-        client = texttospeech.TextToSpeechClient()
-
         synthesis_input = texttospeech.SynthesisInput(text=script)
 
         voice = texttospeech.VoiceSelectionParams(
@@ -208,7 +215,7 @@ DOST Tasks: {json.dumps(tasks, indent=2)}
             audio_encoding=texttospeech.AudioEncoding.MP3
         )
 
-        response = client.synthesize_speech(
+        response = tts_client.synthesize_speech(
             input=synthesis_input, voice=voice, audio_config=audio_config
         )
 
@@ -223,6 +230,7 @@ DOST Tasks: {json.dumps(tasks, indent=2)}
     except Exception as e:
         logger.error("Google TTS generation failed: %s", str(e))
         return script, None, parsed.get("tone", "neutral")
+
 
 # ---------------------------------------------
 def build_formula():
