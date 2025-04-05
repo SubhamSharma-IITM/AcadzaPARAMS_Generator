@@ -1,9 +1,11 @@
 import os
 import json
+import uuid
 import openai
 import requests
 from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import JSONResponse
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 
@@ -11,7 +13,7 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 app = FastAPI()
-
+app.mount("/static", StaticFiles(directory="static"), name="static")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # 👈 Use "*" for development; restrict in prod
@@ -134,6 +136,45 @@ def extract_subconcepts(concepts):
                 })
     return subconcepts
 
+#----------------------------------------------
+def generate_audio_reasoning(query, tasks):
+    reasoning_prompt = f"""
+Act like a friendly, witty female Indian teacher who helps students. Based on the following student query and learning tasks, generate:
+1. A short 20–30 sec voiceover script
+2. A tone classification (e.g. chill, sad, confused, confident, motivated)
+Respond in JSON format like:
+{{
+  "tone": "motivated",
+  "script": "Since you're struggling... so I've added a Formula Dost..."
+}}
+
+Query: "{query}"
+
+DOST Tasks: {json.dumps(tasks, indent=2)}
+"""
+    gpt_response = openai.chat.completions.create(
+        model="gpt-4o",
+        messages=[{"role": "user", "content": reasoning_prompt}],
+        temperature=0.6
+    )
+    content = gpt_response.choices[0].message.content.strip()
+    parsed = json.loads(content)
+    script = parsed.get("script", "Here's your study plan!")
+
+    try:
+        audio_response = openai.audio.speech.create(
+            model="tts-1",
+            voice="shimmer",
+            input=script
+        )
+        file_id = f"reasoning_{uuid.uuid4().hex}.mp3"
+        file_path = f"static/{file_id}"
+        with open(file_path, "wb") as f:
+            f.write(audio_response.content)
+        return script, f"/static/{file_id}", parsed.get("tone", "neutral")
+    except Exception as e:
+        return script, None, parsed.get("tone", "neutral")
+
 # ---------------------------------------------
 def build_formula():
     formula_cart = []
@@ -250,4 +291,13 @@ async def process_query_api(file: UploadFile = File(...)):
             requestList.append({"bulkRequestType": "speedRace", **build_race()})
 
     acadza_response = requests.post("https://api.acadza.in/combined/create", json={"requestList": requestList})
-    return JSONResponse(content={"query": query, "result": acadza_response.json()})
+
+    reasoning_text, audio_url, tone = generate_audio_reasoning(query, tasks)
+
+    return JSONResponse(content={
+        "query": query,
+        "result": acadza_response.json(),
+        "reasoning_text": reasoning_text,
+        "reasoning_audio_url": audio_url,
+        "detected_tone": tone
+    })
