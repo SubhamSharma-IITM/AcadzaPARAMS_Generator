@@ -186,7 +186,7 @@ DOST Tasks: {json.dumps(tasks, indent=2)}
     try:
         audio_response = openai.audio.speech.create(
             model="tts-1",
-            voice="shimmer",
+            voice="fable",
             input=script
         )
         file_id = f"reasoning_{uuid.uuid4().hex}.mp3"
