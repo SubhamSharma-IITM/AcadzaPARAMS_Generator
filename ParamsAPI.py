@@ -65,24 +65,56 @@ def detect_dost_tasks(query):
     }
 
     prompt = f"""
-You are a task extractor for a student learning system. Extract educational needs from this query.
-Respond in JSON with a list of tasks. Each task must include:
-- Dost (Choose one from {list(allowed_dosts.keys())})
-- Subdost (Only if applicable from its allowed list: {allowed_dosts})
-- Brief reason
-- Extracted params (concepts, difficulty, duration, etc.)
-Query: {query}
+You are an AI learning assistant that converts student queries into structured learning tasks (called DOSTs). These DOSTs help with study planning, revision, formulas, assignments, tests, and speed practice.
+
+Your job is to:
+1. Analyze the tone, urgency, keywords, and phrases from the query.
+2. Match them to the most relevant DOST and Subdost from the list below.
+3. Extract helpful parameters like 'concepts', 'difficulty', 'duration' if available.
+
+🎯 OUTPUT FORMAT (Always reply in JSON):
+[
+  {{
+    "Dost": "Revision Dost",
+    "Subdost": null,
+    "reason": "Student has a test and wants to revise concepts again.",
+    "params": {{"concepts": ["Constraint motion", "Free body diagram"]}}
+  }}
+]
+
+🧹 DOST & SUBDOST MAPPING:
+{allowed_dosts}
+
+📚 SCENARIO RULES:
+- If query includes: "yaad nahi", "formulas chahiye", "revise formula" → use **Formula Dost**
+- If query includes: "revise", "recap", "wapis padhna", "repeat", or tone = revision → **Revision Dost**
+- If query includes: "test", "evaluate", "mains level", "mock paper", "60 mins" → **Practice Dost** + **Test Dost**
+- If query includes: "assignment", "practice questions", "thoda solve karna", "easy questions" → **Practice Dost** + **Assignment Dost**
+- If query includes: "first time", "padhna hai", "concepts samajh nahi aaye", "fundamentals unclear" → **Concept Dost**
+- If query includes: "fast", "speed", "click", "reaction", "timer", "race", "attention test" → **Speed Booster Dost**
+- If tone or wording suggests backlogs, confusion, multiple needs → include both **Formula + Revision Dost** as base
+- Do NOT repeat the same DOST twice unless query clearly separates them.
+- If no clear indicators are found, default to: **Formula + Revision Dost**
+
+🧠 BEHAVIOR RULES:
+- Never ask back for clarification.
+- Assume chapter is Physics > Newton's Law unless mentioned otherwise.
+- Use fallback: if no concepts mentioned, pick from: ["Constraint motion", "Free body diagram", "Friction", "Spring"]
+
+🔠 SAMPLE QUERY:
+{query}
 """
 
     response = openai.chat.completions.create(
         model="gpt-4o",
         messages=[{"role": "user", "content": prompt}],
-        temperature=0.3
+        temperature=0.2
     )
     content = response.choices[0].message.content.strip()
     if "```json" in content:
         content = content.split("```json")[-1].split("```")[0].strip()
     return json.loads(content)
+
 
 # ---------------------------------------------
 def extract_subconcepts(concepts):
