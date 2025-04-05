@@ -14,7 +14,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://your-production-site.com"],  # or restrict to ["http://localhost:3000"]
+    allow_origins=["*"],  # 👈 Use "*" for development; restrict in prod
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
