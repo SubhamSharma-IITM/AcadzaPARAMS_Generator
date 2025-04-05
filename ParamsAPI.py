@@ -3,11 +3,17 @@ import json
 import uuid
 import openai
 import requests
+import re
+import logging
 from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import JSONResponse
-from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from dotenv import load_dotenv
+
+# Setup logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -54,6 +60,7 @@ def transcribe_voice(file_path):
             file=audio_file,
             response_format="text"
         )
+    logger.info("Transcription done: %s", transcript)
     return transcript.strip()
 
 # ---------------------------------------------
@@ -117,6 +124,7 @@ Your job is to:
     content = response.choices[0].message.content.strip()
     if "```json" in content:
         content = content.split("```json")[-1].split("```")[0].strip()
+    logger.info("GPT DOST response: %s", content)
     return json.loads(content)
 
 
@@ -161,11 +169,13 @@ DOST Tasks: {json.dumps(tasks, indent=2)}
         temperature=0.6
     )
     content = gpt_response.choices[0].message.content.strip()
+    logger.info("GPT Reasoning raw response: %s", content)
 
     try:
         json_string = re.search(r'{.*}', content, re.DOTALL).group()
         parsed = json.loads(json_string)
-    except Exception:
+    except Exception as e:
+        logger.warning("GPT JSON parsing failed, using fallback. Error: %s", str(e))
         parsed = {
             "tone": "neutral",
             "script": "Here's your study plan! You'll find your formula box, revision tasks and practice tests ready to go!"
@@ -183,8 +193,10 @@ DOST Tasks: {json.dumps(tasks, indent=2)}
         file_path = f"static/{file_id}"
         with open(file_path, "wb") as f:
             f.write(audio_response.content)
+        logger.info("Audio reasoning saved at: %s", file_path)
         return script, f"/static/{file_id}", parsed.get("tone", "neutral")
     except Exception as e:
+        logger.error("TTS generation failed: %s", str(e))
         return script, None, parsed.get("tone", "neutral")
 
 # ---------------------------------------------
