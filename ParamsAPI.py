@@ -1,6 +1,7 @@
 import os
 import json
 import openai
+import httpx
 from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import JSONResponse
 from dotenv import load_dotenv
@@ -10,85 +11,34 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 app = FastAPI()
 
-# ---------------------------------------------------------------
+# ------------------ Constants ------------------
 NLM_CONCEPT_TREE = {
-    "Introduction to forces": [
-        "Fundamental forces",
-        "Normal, Tension and friction"
-    ],
-    "Newton's law of motion": [
-        "First law (Law of inertia)",
-        "Momentum and its significance",
-        "Second law",
-        "Third law"
-    ],
-    "Equilibrium of forces": [
-        "Concurrent and Coplanar Forces",
-        "Equilibrium of forces"
-    ],
-    "Frame of reference": [
-        "Inertial and non-inertial F.O.R.",
-        "Pseudo Forces"
-    ],
-    "Free body diagram": [
-        "Fundamentals of drawing F.B.D.",
-        "Train problems(Tension)",
-        "Lift Problems(Normal)",
-        "Wedge problems(Resolving Forces)"
-    ],
-    "Constraint motion": [
-        "String and pulley constraint(Tension)",
-        "Wedge constraint(Normal)",
-        "Rigid Body Constraint(Introduction)"
-    ],
-    "Pulley problems": [
-        "Simple pulley system",
-        "Complex Pulley system",
-        "Mechanical advantage"
-    ],
-    "Spring": [
-        "Spring constant",
-        "Combination of Spring(parallel and series)",
-        "Spring pulley system",
-        "Equivalent Spring constant",
-        "Cutting of spring and string."
-    ],
-    "Pseudo force": [
-        "Problems involving pseudo force"
-    ],
-    "Friction": [
-        "Types of Friction",
-        "Direction of static and kinetic friction",
-        "Coefficient of friction",
-        "Limiting value of friction",
-        "Angle of friction",
-        "Transition of friction from static to kinetic",
-        "Contact Force",
-        "Angle of repose",
-        "Two block problem",
-        "Three or more block problem"
-    ],
-    "Angle of repose": [
-        "Motion on incline with angle more than angle of repose",
-        "Motion on incline with less than the angle of repose",
-        "Motion on vertical surface"
-    ],
-    "Multiple block system": [
-        "Concept of driving force",
-        "Method to find which surface slips",
-        "Method to find acceleration of blocks"
-    ]
+    "Introduction to forces": ["Fundamental forces", "Normal, Tension and friction"],
+    "Newton's law of motion": ["First law (Law of inertia)", "Momentum and its significance", "Second law", "Third law"],
+    "Equilibrium of forces": ["Concurrent and Coplanar Forces", "Equilibrium of forces"],
+    "Frame of reference": ["Inertial and non-inertial F.O.R.", "Pseudo Forces"],
+    "Free body diagram": ["Fundamentals of drawing F.B.D.", "Train problems(Tension)", "Lift Problems(Normal)", "Wedge problems(Resolving Forces)"],
+    "Constraint motion": ["String and pulley constraint(Tension)", "Wedge constraint(Normal)", "Rigid Body Constraint(Introduction)"],
+    "Pulley problems": ["Simple pulley system", "Complex Pulley system", "Mechanical advantage"],
+    "Spring": ["Spring constant", "Combination of Spring(parallel and series)", "Spring pulley system", "Equivalent Spring constant", "Cutting of spring and string."],
+    "Pseudo force": ["Problems involving pseudo force"],
+    "Friction": ["Types of Friction", "Direction of static and kinetic friction", "Coefficient of friction", "Limiting value of friction", "Angle of friction", "Transition of friction from static to kinetic", "Contact Force", "Angle of repose", "Two block problem", "Three or more block problem"],
+    "Angle of repose": ["Motion on incline with angle more than angle of repose", "Motion on incline with less than the angle of repose", "Motion on vertical surface"],
+    "Multiple block system": ["Concept of driving force", "Method to find which surface slips", "Method to find acceleration of blocks"]
 }
 
 ALL_CONCEPTS = list(NLM_CONCEPT_TREE.keys())
 
-# ---------------------------------------------------------------
+# ------------------ Helpers ------------------
 def detect_dost_tasks(query):
     allowed_dosts = {
         "Concept Dost": ["Concept Revision Dost"],
         "Revision Dost": [],
         "Formula Dost": ["Formula Revision Dost"],
-        "Practice Dost": ["Test Dost", "Assignment Dost"]
+        "Practice Dost": ["Test Dost", "Assignment Dost"],
+        "Speed Dost": [],
+        "Clicking Dost": [],
+        "Picking Dost": []
     }
 
     prompt = f"""
@@ -112,7 +62,6 @@ Query: {query}
         content = content.split("```json")[-1].split("```")[0].strip()
     return json.loads(content)
 
-# ---------------------------------------------------------------
 def extract_subconcepts(concepts):
     subconcepts = []
     for concept in concepts:
@@ -128,7 +77,6 @@ def extract_subconcepts(concepts):
                 })
     return subconcepts
 
-# ---------------------------------------------------------------
 def build_formula_dost():
     formula_cart = []
     for concept, sublist in NLM_CONCEPT_TREE.items():
@@ -139,15 +87,11 @@ def build_formula_dost():
                 "concept": concept,
                 "subConcept": sub
             })
-    return {
-        "studentid": "",
-        "title": "NLMF",
-        "formulaCart": formula_cart
-    }
+    return {"bulkRequestType": "formula", "studentid": "", "title": "NLMF", "formulaCart": formula_cart}
 
-# ---------------------------------------------------------------
 def build_test_dost(concepts, level="EASY", time=60):
     return {
+        "bulkRequestType": "practiceTest",
         "userId": "",
         "practiceType": "test",
         "title": "NLMT1",
@@ -162,93 +106,35 @@ def build_test_dost(concepts, level="EASY", time=60):
         "isNCERT": False,
         "helpRequired": False,
         "isMultiple": False,
-        "practicePortion": [
-            {
-                "id": "",
-                "content": {
-                    "subject": "Physics",
-                    "chapter": "Newton's law of motion",
-                    "concept": concept
-                }
-            } for concept in concepts
-        ]
+        "practicePortion": [{"id": "", "content": {"subject": "Physics", "chapter": "Newton's law of motion", "concept": concept}} for concept in concepts]
     }
 
-# ---------------------------------------------------------------
 def build_revision_dost(concepts):
     return {
+        "bulkRequestType": "revision",
         "title": "NLM Revision Plan",
         "allotedDay": 1,
         "allotedTime": 1,
         "strategy": 1,
         "daywisePortion": {
             "day1": {
-                "portion": [
-                    {
-                        "weakData": extract_subconcepts(concepts),
-                        "subject": "Physics",
-                        "chapter": "Newton's law of motion",
-                        "concept": concept,
-                        "importance": None,
-                        "ratio": None,
-                        "area": "Red",
-                        "time": 60,
-                        "star": 1,
-                        "task": [
-                            {"type": "assignment", "completed": False},
-                            {"type": "test", "completed": False}
-                        ],
-                        "impratio": 3
-                    } for concept in concepts
-                ]
+                "portion": [{
+                    "weakData": extract_subconcepts(concepts),
+                    "subject": "Physics",
+                    "chapter": "Newton's law of motion",
+                    "concept": concept,
+                    "importance": None,
+                    "ratio": None,
+                    "area": "Red",
+                    "time": 60,
+                    "star": 1,
+                    "task": [{"type": "assignment", "completed": False}, {"type": "test", "completed": False}],
+                    "impratio": 3
+                } for concept in concepts]
             }
         }
     }
 
-# ---------------------------------------------------------------
-@app.post("/process-query")
-async def process_query_api(file: UploadFile = File(...)):
-    contents = await file.read()
-    with open("temp.wav", "wb") as f:
-        f.write(contents)
-
-    query = transcribe_voice("temp.wav")
-    tasks = detect_dost_tasks(query)
-    results = []
-
-    fallback_concepts = []
-
-    for task in tasks:
-        dost = task.get("Dost")
-        subdost = task.get("Subdost")
-        params = task.get("params", {})
-        concepts = params.get("concepts", [])
-
-        if not concepts and dost == "Formula Dost":
-            concepts = ALL_CONCEPTS
-
-        if dost == "Formula Dost":
-            fallback_concepts = concepts
-            results.append({"Dost": dost, "Subdost": subdost, "data": build_formula_dost()})
-
-        elif dost == "Revision Dost":
-            if not concepts:
-                concepts = fallback_concepts or ALL_CONCEPTS
-            results.append({"Dost": dost, "Subdost": subdost, "data": build_revision_dost(concepts)})
-
-        elif dost == "Practice Dost" and subdost == "Test Dost":
-            if not concepts:
-                concepts = fallback_concepts or ALL_CONCEPTS
-            minutes = int(str(params.get("duration", "60 minutes")).split()[0])
-            level = params.get("difficulty", "EASY")
-            results.append({"Dost": dost, "Subdost": subdost, "data": build_test_dost(concepts, level, minutes)})
-
-        else:
-            results.append({"error": f"Unhandled Dost: {dost} / {subdost}"})
-
-    return JSONResponse(content={"query": query, "result": results})
-
-# ---------------------------------------------------------------
 def transcribe_voice(file_path):
     with open(file_path, "rb") as audio_file:
         transcript = openai.audio.transcriptions.create(
@@ -257,3 +143,45 @@ def transcribe_voice(file_path):
             response_format="text"
         )
     return transcript.strip()
+
+# ------------------ FastAPI Endpoint ------------------
+@app.post("/process-query")
+async def process_query_api(file: UploadFile = File(...)):
+    contents = await file.read()
+    with open("temp.wav", "wb") as f:
+        f.write(contents)
+
+    query = transcribe_voice("temp.wav")
+    tasks = detect_dost_tasks(query)
+    fallback_concepts = []
+    requestList = []
+
+    for task in tasks:
+        dost = task.get("Dost")
+        subdost = task.get("Subdost")
+        params = task.get("params", {})
+        concepts = params.get("concepts", [])
+        if not concepts:
+            concepts = fallback_concepts or ALL_CONCEPTS
+
+        if dost == "Formula Dost":
+            fallback_concepts = concepts
+            requestList.append(build_formula_dost())
+
+        elif dost == "Revision Dost":
+            requestList.append(build_revision_dost(concepts))
+
+        elif dost == "Practice Dost" and subdost == "Test Dost":
+            level = params.get("difficulty", "EASY")
+            time = int(str(params.get("duration", "60")).split()[0])
+            requestList.append(build_test_dost(concepts, level, time))
+
+    async with httpx.AsyncClient() as client:
+        response = await client.post(
+            "https://api.acadza.in/combined/create",
+            headers={"Content-Type": "application/json"},
+            json={"requestList": requestList}
+        )
+        response_data = response.json()
+
+    return JSONResponse(content={"query": query, "result": response_data})
