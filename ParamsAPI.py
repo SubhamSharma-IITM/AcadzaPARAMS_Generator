@@ -158,8 +158,15 @@ DOST Tasks: {json.dumps(tasks, indent=2)}
         temperature=0.6
     )
     content = gpt_response.choices[0].message.content.strip()
-    parsed = json.loads(content)
-    script = parsed.get("script", "Here's your study plan!")
+
+    try:
+        parsed = json.loads(content)
+    except json.JSONDecodeError:
+        parsed = {
+        "tone": "neutral",
+        "script": "Here's your study plan! You'll find your formula box, revision tasks and practice tests ready to go!"
+    }
+
 
     try:
         audio_response = openai.audio.speech.create(
