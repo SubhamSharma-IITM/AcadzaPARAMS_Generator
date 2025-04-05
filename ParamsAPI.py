@@ -142,11 +142,14 @@ def generate_audio_reasoning(query, tasks):
 Act like a friendly, witty female Indian teacher who helps students. Based on the following student query and learning tasks, generate:
 1. A short 20–30 sec voiceover script
 2. A tone classification (e.g. chill, sad, confused, confident, motivated)
-Respond in JSON format like:
+
+Always respond ONLY with a valid JSON object like:
 {{
   "tone": "motivated",
-  "script": "Since you're struggling... so I've added a Formula Dost..."
+  "script": "Since you're weak in constraint motion and friction, I’ve added Formula Dost and Revision Dost. You’ve also got a test coming up, so here's a 60-min mains test to crush it. And clicking Dost for a quick reaction boost! Go rock it!"
 }}
+
+Do not write anything else outside the JSON block.
 
 Query: "{query}"
 
@@ -160,14 +163,15 @@ DOST Tasks: {json.dumps(tasks, indent=2)}
     content = gpt_response.choices[0].message.content.strip()
 
     try:
-        parsed = json.loads(content)
-    except json.JSONDecodeError:
+        json_string = re.search(r'{.*}', content, re.DOTALL).group()
+        parsed = json.loads(json_string)
+    except Exception:
         parsed = {
-        "tone": "neutral",
-        "script": "Here's your study plan! You'll find your formula box, revision tasks and practice tests ready to go!"
-    }
+            "tone": "neutral",
+            "script": "Here's your study plan! You'll find your formula box, revision tasks and practice tests ready to go!"
+        }
 
-    script = parsed.get("script", "Here's your study plan!")
+    script = parsed.get("script", "Here's your study plan! You'll find your formula box, revision tasks and practice tests ready to go!")
 
     try:
         audio_response = openai.audio.speech.create(
