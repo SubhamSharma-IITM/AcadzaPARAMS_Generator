@@ -71,6 +71,8 @@ Your job is to:
 1. Analyze the tone, urgency, keywords, and phrases from the query.
 2. Match them to the most relevant DOST and Subdost from the list below.
 3. Extract helpful parameters like 'concepts', 'difficulty', 'duration' if available.
+4. Only trigger Speed Booster Dosts if tone is energetic, playful OR if keywords like “fast”, “timer”, “race”, “improve speed” are found
+5. Having a test is NOT enough to trigger Practice Test Dost unless test-like practice is requested
 
 🎯 OUTPUT FORMAT (Always reply in JSON):
 [
