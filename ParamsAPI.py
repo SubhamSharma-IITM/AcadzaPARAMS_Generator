@@ -17,6 +17,7 @@ from google.oauth2 import service_account
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
 # Load Google credentials from inline JSON if provided
 if os.getenv("GOOGLE_CREDENTIALS_JSON"):
     credentials_info = json.loads(os.getenv("GOOGLE_CREDENTIALS_JSON"))
@@ -26,6 +27,7 @@ else:
     tts_client = texttospeech.TextToSpeechClient()
 
 load_dotenv()
+logger.info("GOOGLE_CREDENTIALS_JSON exists? %s", bool(os.getenv("GOOGLE_CREDENTIALS_JSON")))
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 app = FastAPI()
