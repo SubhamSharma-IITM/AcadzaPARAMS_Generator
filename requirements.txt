@@ -4,3 +4,4 @@ openai
 python-dotenv
 python-multipart
 requests
+google-cloud-texttospeech

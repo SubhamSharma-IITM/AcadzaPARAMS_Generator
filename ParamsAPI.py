@@ -10,6 +10,7 @@ from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from dotenv import load_dotenv
+from google.cloud import texttospeech
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)
@@ -147,22 +148,31 @@ def extract_subconcepts(concepts):
 #----------------------------------------------
 def generate_audio_reasoning(query, tasks):
     reasoning_prompt = f"""
-Act like a friendly, witty female Indian teacher who helps students. Based on the following student query and learning tasks, generate:
+Act like a friendly, witty female Indian teacher who helps students.
+Based on the student query and the learning tasks below, generate:
+
 1. A short 20–30 sec voiceover script
 2. A tone classification (e.g. chill, sad, confused, confident, motivated)
 
-Always respond ONLY with a valid JSON object like:
+🎙️ SCRIPT FORMAT INSTRUCTIONS:
+- Speak like YOU created each Dost for the student because of what you understood.
+- DO NOT instruct the student like "you should do this"
+- DO speak like: "Since I saw you're shaky on X, I’ve added Y to help you."
+- Talk in a friendly, understanding, non-academic tone — like a caring teacher-friend
+
+🎯 FORMAT:
 {{
   "tone": "motivated",
-  "script": "Since you're weak in constraint motion and friction, I’ve added Formula Dost and Revision Dost. You’ve also got a test coming up, so here's a 60-min mains test to crush it. And clicking Dost for a quick reaction boost! Go rock it!"
+  "script": "Since you're a bit confused about constraint motion, I’ve prepared a concept list for you. And because formulas were tricky, I’ve added a sheet that covers them. I’ve also put together a 60-minute test for practice. Lastly, clicking Dost will boost your speed! You’ve got this!"
 }}
 
-Do not write anything else outside the JSON block.
+Only output the above JSON. Do NOT add explanations or greetings.
 
 Query: "{query}"
 
 DOST Tasks: {json.dumps(tasks, indent=2)}
 """
+
     gpt_response = openai.chat.completions.create(
         model="gpt-4o",
         messages=[{"role": "user", "content": reasoning_prompt}],
@@ -184,19 +194,34 @@ DOST Tasks: {json.dumps(tasks, indent=2)}
     script = parsed.get("script", "Here's your study plan! You'll find your formula box, revision tasks and practice tests ready to go!")
 
     try:
-        audio_response = openai.audio.speech.create(
-            model="tts-1",
-            voice="fable",
-            input=script
+        client = texttospeech.TextToSpeechClient()
+
+        synthesis_input = texttospeech.SynthesisInput(text=script)
+
+        voice = texttospeech.VoiceSelectionParams(
+            language_code="en-IN",
+            name="en-IN-Wavenet-B",
+            ssml_gender=texttospeech.SsmlVoiceGender.FEMALE
         )
+
+        audio_config = texttospeech.AudioConfig(
+            audio_encoding=texttospeech.AudioEncoding.MP3
+        )
+
+        response = client.synthesize_speech(
+            input=synthesis_input, voice=voice, audio_config=audio_config
+        )
+
         file_id = f"reasoning_{uuid.uuid4().hex}.mp3"
         file_path = f"static/{file_id}"
-        with open(file_path, "wb") as f:
-            f.write(audio_response.content)
+        with open(file_path, "wb") as out:
+            out.write(response.audio_content)
+
         logger.info("Audio reasoning saved at: %s", file_path)
         return script, f"/static/{file_id}", parsed.get("tone", "neutral")
+
     except Exception as e:
-        logger.error("TTS generation failed: %s", str(e))
+        logger.error("Google TTS generation failed: %s", str(e))
         return script, None, parsed.get("tone", "neutral")
 
 # ---------------------------------------------

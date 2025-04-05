@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "diesel-ring-452709-h9",
+  "private_key_id": "5dc7be8f5d186b73e22a49245e9f0a8947a7e6df",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDniC6PykRllQ6M\naaMJqgEKAzWb1lg5UqJp5MiudbM5z4shZX/pHDMKA5v/JiBmUBQ/2cAJ6EX+Jse5\nlqHCzHyye/0GqsD/gmVqyhIiRPIp0Z831Y6pdXnSqjgTdrRRePPG0f0J6eiSLveV\nEwBJMAhmbVe8rEZL/1sHwcwQv7fWnq/TdPSikDHUpI0PUIxyyizWAV/Xt0guFHap\nlxaHrzwov5yyfmFA+iGiCaVn6+r8vZDQ+i5WAcN10DaWEdxlbOGVUeoIaVuHkTYX\ndNxMfw59QgUipnpQoaFwNf4//hbbZtmt5c1Andnms2T11ReMfhU0LI4QGDqFNItV\n2TXwHTIvAgMBAAECggEAaN7lnCqVPV+9BbuJZgSzUMowW4REVL6JoyZGAcN9KSfJ\nEJjtTXSA573HyFOIJF+MNHmYQsSLA3mkSHsijN3bc2q2qnDoVzNEZZDektggyfFR\nSVR5OGdmBRYlrSc8uJRs8rbFgtqIhcIxUTwYio3vmBlZvrNXae/hVwugN0vnZJWC\nTowGwco42WEnrhgYxk4BtTSwhZBpFYgqlsW0AhcRwIkhM5bHYSOcmumrpSOVNpp1\nwJJJLhdtjtl58gzrUZpMMXeqmISFFNexm4FKSfw8srgDWY4r6Zaj30Qwa6f6Whem\nqsuDpMvnO7ghsH6V07vdF+1rDph4BwAcMZNv9/XQkQKBgQD7AOQOPCcIMLhE58iW\n7ltYizifFGwDWa6xMk5DDi+XXDHeA1bdHS+gCE4MpTl0XIHh99fiOTP9o2N0E2iP\nTrQcYDVQOcOTNKfJM4q3KiYfY3KhbiPdjjL0OW4WrWHuJfp38MgfCCJKLRrluzh1\njcDisbPgoEhTn6CJL4c0KespHwKBgQDsJBCFI8tuqXAhO2YB46uDG6Vo5Q7EBYxM\nVDz7nNShb0x8GtRw8GnYlQ99o708bwTENI+w4qaqcU4XGDqiZ/WIXwwaPS5HStZc\nxBWPaPcMt1OBM/kh9a86Uje7EvQkK/2lotziajZ08kG5CORWvTHdWn2EBQ4WuLtl\noFLHRQkE8QKBgQDrfAl5ZWvFHlgypTYmi9b9OhhT/sfbWM8xBR4xgOSbX26VeJKM\n/a3JuSDocjZ1+bgM9QYAAmTJh/ltVCwbjt4hZQ1/h8H5oEPt2sJAV3XOqvFHjFpv\nqNIbGKo08lNXJyBWWHqXynzJFIoQj9ZHS0d0Jv24NwfEFJV7PzDceptaRwKBgQCX\n/DpZxwkXZ5zQ9s8X5jYsw216Dvuq9LsxIYLCm1VLtjvvIMGdE0+842u9/NY+gGH7\n+qyFN8v3pceSG7kZcHna1PoQJVKU9jj0KgyKag+gMppfbVkrH1sx2VsfX/qdEWdG\n5YTvgVcdfBMLCgsVPN5MTwK8JxjDTRDoPwEoWmmMsQKBgA/jrU3V3oGY9QfpqXS4\nCLCnkJnTxuNG53TUVZ+dvFYKUQVjy8pq3o1BBJn9qw8gAzy067GL5CnXdPvADuUb\n7zvKgLoiTot9QAPyK7ismrvNyE8WVPm7yr9SjWXHZRm9+FQ/s5k/a1UOPfRbExLR\nTn8CxkYZU7IxEVRP2kFMLgbm\n-----END PRIVATE KEY-----\n",
+  "client_email": "acadzaphysicsocr-service@diesel-ring-452709-h9.iam.gserviceaccount.com",
+  "client_id": "114341326181223172663",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/acadzaphysicsocr-service%40diesel-ring-452709-h9.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

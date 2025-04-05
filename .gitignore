@@ -1,4 +1,5 @@
 *.env
 *.pyc
 __pycache__/
-openaiapi.env
+.env
+google_tts_key.json
