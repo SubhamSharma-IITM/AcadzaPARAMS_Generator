@@ -167,6 +167,7 @@ DOST Tasks: {json.dumps(tasks, indent=2)}
         "script": "Here's your study plan! You'll find your formula box, revision tasks and practice tests ready to go!"
     }
 
+    script = parsed.get("script", "Here's your study plan!")
 
     try:
         audio_response = openai.audio.speech.create(
