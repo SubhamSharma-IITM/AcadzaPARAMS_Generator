@@ -44,14 +44,15 @@ def extract_portion_from_requestList(request_list):
 # 📜 save_query_history()
 # -----------------------------
 def save_query_history(auth_token: str, result: dict):
-    """
-    Sends a POST request to the gpthistory/create API using orchestrator result.
-    Automatically extracts all needed fields.
-    """
     url = "https://api.acadza.in/gpthistory/create"
+
+    # 🧼 Normalize token
+    if auth_token.startswith("Bearer "):
+        auth_token = auth_token.replace("Bearer ", "")
+
     headers = {
         "Content-Type": "application/json",
-        "Authorization": {auth_token}
+        "Authorization": f"Bearer {auth_token}"  # ✅ Always a proper string
     }
 
     request_list = result.get("requestList", [])
@@ -61,12 +62,10 @@ def save_query_history(auth_token: str, result: dict):
         print(f"⚠️ Query name too long ({len(query_name)} chars), trimming to 500.")
         query_name = query_name[:500]
 
-    # Extract first subject/chapter as overview
     first_subject = ""
     first_chapter = ""
     if request_list:
-        first_task = request_list[0]
-        chapter_groups = first_task.get("chapter_groups", [])
+        chapter_groups = request_list[0].get("chapter_groups", [])
         if chapter_groups:
             first_subject = chapter_groups[0].get("subject", "")
             first_chapter = chapter_groups[0].get("chapter", "")
