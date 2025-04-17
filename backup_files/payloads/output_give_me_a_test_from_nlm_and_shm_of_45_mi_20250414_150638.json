@@ -1,0 +1,53 @@
+{
+  "raw_query": "give me a test from nlm and shm of 45 minutes duration",
+  "requestList": [
+    {
+      "bulkRequestType": "practiceTest",
+      "userId": "",
+      "practiceType": "test",
+      "title": "Newton's law of motion Test",
+      "paperPattern": "Mains",
+      "level": "EASY",
+      "natureOfTest": "Random",
+      "noOfMinutes": 45,
+      "coachingView": "PACE",
+      "batchs": [],
+      "sectionOrder": [
+        "singleQuestions",
+        "multipleQuestions",
+        "integerQuestions",
+        "passageQuestions",
+        "matchQuestions"
+      ],
+      "passageQuestionLimit": 3,
+      "isNCERT": false,
+      "helpRequired": false,
+      "isMultiple": false,
+      "practicePortion": []
+    },
+    {
+      "bulkRequestType": "practiceTest",
+      "userId": "",
+      "practiceType": "test",
+      "title": "Oscillations (SHM) Test",
+      "paperPattern": "Mains",
+      "level": "EASY",
+      "natureOfTest": "Random",
+      "noOfMinutes": 45,
+      "coachingView": "PACE",
+      "batchs": [],
+      "sectionOrder": [
+        "singleQuestions",
+        "multipleQuestions",
+        "integerQuestions",
+        "passageQuestions",
+        "matchQuestions"
+      ],
+      "passageQuestionLimit": 3,
+      "isNCERT": false,
+      "helpRequired": false,
+      "isMultiple": false,
+      "practicePortion": []
+    }
+  ]
+}

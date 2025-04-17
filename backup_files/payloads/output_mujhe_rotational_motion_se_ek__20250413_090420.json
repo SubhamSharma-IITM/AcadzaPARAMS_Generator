@@ -1,0 +1,911 @@
+{
+  "raw_query": "mujhe rotational motion se ek assignment dedo 25 questions ka aur ek formula sheet dedo",
+  "requestList": [
+    {
+      "bulkRequestType": "practiceAssignment",
+      "userId": "",
+      "practiceType": "assignment",
+      "title": "Rotational Motion Assignment",
+      "isNCERT": false,
+      "level": "EASY",
+      "assignmentQuesCount": {
+        "scq": 10,
+        "mcq": 10,
+        "integerQuestion": 0,
+        "passageQuestion": 0,
+        "matchQuestion": 0
+      },
+      "practicePortion": [
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Kinematics of rotational motion",
+            "subConcept": "Analogy between rotational and translational quantities"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Kinematics of rotational motion",
+            "subConcept": "Kinematics of rotation about fixed axis."
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Kinematics of rotational motion",
+            "subConcept": "Constraint relations in rotation motion"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Kinematics of rotational motion",
+            "subConcept": "Combined Translational and rotational motion"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Kinematics of rotational motion",
+            "subConcept": "Instantaneous Centre of Rotation in Plane Motion"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Perpendicular Axis Theorems and Applications."
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Physical significance of moment of inertia"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Moment of inertia of a system of point masses."
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "MOI of continuous bodies."
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Uniform Thin Ring and Disc about its axis"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Uniform Solid and hollow Right Circular Cone about Its Axis"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Uniform Solid and hollow Cylinder About Its Axis"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Uniform Solid and hollow Sphere through its Centre"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Uniform Thin Rectangular and triangular Lamina"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Bodies with Cavities."
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Radius of Gyration"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Parallel Axis Theorems and Applications"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Torque",
+            "subConcept": "Torque about a point and Axis."
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Torque",
+            "subConcept": "Force couple"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Torque",
+            "subConcept": "Rotational Equilibrium"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Torque",
+            "subConcept": "Conditions for toppling and sliding"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Second law of rotational motion",
+            "subConcept": "Newton`s 2nd Law in Rotation"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Second law of rotational motion",
+            "subConcept": "Application about fixed Axis"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Second law of rotational motion",
+            "subConcept": "Forces due to and on hinge"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Second law of rotational motion",
+            "subConcept": "Pulley System."
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Second law of rotational motion",
+            "subConcept": "Application about moving axis (About COM)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Work and kinetic energy in rotational motion",
+            "subConcept": "Total Kinetic Energy of body in combined motion"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Work and kinetic energy in rotational motion",
+            "subConcept": "Work Done due to Torque"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Work and kinetic energy in rotational motion",
+            "subConcept": "Application of Work Energy theorem in Rotational Motion"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Angular momentum (L) and its conservation",
+            "subConcept": "Definition"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Angular momentum (L) and its conservation",
+            "subConcept": "L of a rigid body rotating about fixed point or axis"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Angular momentum (L) and its conservation",
+            "subConcept": "L in combined rotational and translational motion"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Angular momentum (L) and its conservation",
+            "subConcept": "Angular momentum conservation"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Rolling motion",
+            "subConcept": "Rolling on fixed horizontal surface"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Rolling motion",
+            "subConcept": "Rolling on a Fixed Incline"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Rolling motion",
+            "subConcept": "Rolling on Moving Surface"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Rolling motion",
+            "subConcept": "Distance travelled by a point on rolling body"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Rolling motion",
+            "subConcept": "Instantaneous Centre of Rotation"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Rolling motion",
+            "subConcept": "Direction of friction in Rolling"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Collision in rotation",
+            "subConcept": "Rotational Collision and Angular Momentum"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Collision in rotation",
+            "subConcept": "Effect on rolling motion after a collision"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Miscellaneous(optional)",
+            "subConcept": "Rotation of a Body About a Rotating Axis"
+          }
+        }
+      ]
+    },
+    {
+      "bulkRequestType": "formula",
+      "studentid": "",
+      "title": "Rotational Motion Formula Sheet",
+      "formulaCart": [
+        {
+          "id": "63de581a-8784-4905-ace2-e7e7dc9e86b4",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Kinematics of rotational motion",
+            "subConcept": "Analogy between rotational and translational quantities",
+            "text": "Analogy between rotational and translational quantities",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "791d7e34-74b3-4bc6-82f9-057ed2937c95",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Kinematics of rotational motion",
+            "subConcept": "Kinematics of rotation about fixed axis.",
+            "text": "Kinematics of rotation about fixed axis.",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "913fae9d-14f8-4895-be7c-40210007c441",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Kinematics of rotational motion",
+            "subConcept": "Constraint relations in rotation motion",
+            "text": "Constraint relations in rotation motion",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "904577a9-2c81-4ce5-a0bb-42e31ed0ea27",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Kinematics of rotational motion",
+            "subConcept": "Combined Translational and rotational motion",
+            "text": "Combined Translational and rotational motion",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "27be983e-f6c3-4537-bf97-ac580f564147",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Kinematics of rotational motion",
+            "subConcept": "Instantaneous Centre of Rotation in Plane Motion",
+            "text": "Instantaneous Centre of Rotation in Plane Motion",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "6c991bc0-000c-49ac-9ca7-0840ae8815fc",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Perpendicular Axis Theorems and Applications.",
+            "text": "Perpendicular Axis Theorems and Applications.",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "6ef51c9c-276a-499f-af23-370af581bb81",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Physical significance of moment of inertia",
+            "text": "Physical significance of moment of inertia",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "34394f57-a82b-4308-ba7e-18ded7502843",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Moment of inertia of a system of point masses.",
+            "text": "Moment of inertia of a system of point masses.",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "7778c3a3-6ad4-4ba5-81ae-ac93200fe8be",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "MOI of continuous bodies.",
+            "text": "MOI of continuous bodies.",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "deebde70-10a8-448f-a37b-b8069e73ff28",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Uniform Thin Ring and Disc about its axis",
+            "text": "Uniform Thin Ring and Disc about its axis",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "16ffc405-c0c5-4bc4-b8b5-5594d32eb1ad",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Uniform Solid and hollow Right Circular Cone about Its Axis",
+            "text": "Uniform Solid and hollow Right Circular Cone about Its Axis",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "0adadbc0-61b1-4af0-b52e-361731b85b78",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Uniform Solid and hollow Cylinder About Its Axis",
+            "text": "Uniform Solid and hollow Cylinder About Its Axis",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "757526f6-121e-4b09-8e7d-900fd7e0df10",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Uniform Solid and hollow Sphere through its Centre",
+            "text": "Uniform Solid and hollow Sphere through its Centre",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "9d248a9d-faba-414b-9212-276291e404b6",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Uniform Thin Rectangular and triangular Lamina",
+            "text": "Uniform Thin Rectangular and triangular Lamina",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "7d9b7823-275f-486e-b0c9-6254a263bdad",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Bodies with Cavities.",
+            "text": "Bodies with Cavities.",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "7282458d-6354-4fa3-b812-836ee3b1e75b",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Radius of Gyration",
+            "text": "Radius of Gyration",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "f5f2cea6-0a9a-4dcb-8d24-862ac6ebd09f",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Moment of inertia (MOI)",
+            "subConcept": "Parallel Axis Theorems and Applications",
+            "text": "Parallel Axis Theorems and Applications",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "f9cf1863-5e5e-4908-855f-fcd31196dcff",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Torque",
+            "subConcept": "Torque about a point and Axis.",
+            "text": "Torque about a point and Axis.",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "2ea432be-c9cb-4d4a-99fd-7a43474e92a4",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Torque",
+            "subConcept": "Force couple",
+            "text": "Force couple",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "2cf0407f-4fcd-4abf-88d7-df906017813d",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Torque",
+            "subConcept": "Rotational Equilibrium",
+            "text": "Rotational Equilibrium",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "8e929af2-4d77-459b-bcb1-cc09708e9d3d",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Torque",
+            "subConcept": "Conditions for toppling and sliding",
+            "text": "Conditions for toppling and sliding",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "0f5c6773-b859-413c-b910-4bed7d31bee4",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Second law of rotational motion",
+            "subConcept": "Newton`s 2nd Law in Rotation",
+            "text": "Newton`s 2nd Law in Rotation",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "972e0f3d-83b6-46dc-ae8e-414cd72d4908",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Second law of rotational motion",
+            "subConcept": "Application about fixed Axis",
+            "text": "Application about fixed Axis",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "cb0fbf91-4eb7-4962-ba96-5a82e2713f53",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Second law of rotational motion",
+            "subConcept": "Forces due to and on hinge",
+            "text": "Forces due to and on hinge",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "6174ff33-952c-4a3e-87ed-0136532cc4a4",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Second law of rotational motion",
+            "subConcept": "Pulley System.",
+            "text": "Pulley System.",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "e70b5a2a-6931-4211-b07d-50c695d4fc0b",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Second law of rotational motion",
+            "subConcept": "Application about moving axis (About COM)",
+            "text": "Application about moving axis (About COM)",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "600123ab-e233-407f-87e8-bbd09d42d0c7",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Work and kinetic energy in rotational motion",
+            "subConcept": "Total Kinetic Energy of body in combined motion",
+            "text": "Total Kinetic Energy of body in combined motion",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "b319a110-8bc6-4257-9291-66251843ac1f",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Work and kinetic energy in rotational motion",
+            "subConcept": "Work Done due to Torque",
+            "text": "Work Done due to Torque",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "a5245dd5-de71-49cf-9cae-c677832edee6",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Work and kinetic energy in rotational motion",
+            "subConcept": "Application of Work Energy theorem in Rotational Motion",
+            "text": "Application of Work Energy theorem in Rotational Motion",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "9eddcfe1-17dc-4ce6-ab92-91fca19ade35",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Angular momentum (L) and its conservation",
+            "subConcept": "Definition",
+            "text": "Definition",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "11a666c6-8625-47ed-b1cb-bd958c6bf7fc",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Angular momentum (L) and its conservation",
+            "subConcept": "L of a rigid body rotating about fixed point or axis",
+            "text": "L of a rigid body rotating about fixed point or axis",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "0acf160a-b64b-40ee-bf8d-9854c5bebf30",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Angular momentum (L) and its conservation",
+            "subConcept": "L in combined rotational and translational motion",
+            "text": "L in combined rotational and translational motion",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "2867b998-da98-4910-a3ae-512762a24c5f",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Angular momentum (L) and its conservation",
+            "subConcept": "Angular momentum conservation",
+            "text": "Angular momentum conservation",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "0fbc42b0-c433-4853-b9ce-1520671d7493",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Rolling motion",
+            "subConcept": "Rolling on fixed horizontal surface",
+            "text": "Rolling on fixed horizontal surface",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "0e6f800e-a071-4681-8071-a91386c2b14e",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Rolling motion",
+            "subConcept": "Rolling on a Fixed Incline",
+            "text": "Rolling on a Fixed Incline",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "6c128737-5e52-4f89-bb7b-c7922ce8fc58",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Rolling motion",
+            "subConcept": "Rolling on Moving Surface",
+            "text": "Rolling on Moving Surface",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "3fa560dd-5c31-4c7d-a358-28c9d3727784",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Rolling motion",
+            "subConcept": "Distance travelled by a point on rolling body",
+            "text": "Distance travelled by a point on rolling body",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "7ad4d0ca-ef9a-40a0-96de-8d540d89d7d1",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Rolling motion",
+            "subConcept": "Instantaneous Centre of Rotation",
+            "text": "Instantaneous Centre of Rotation",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "7ead4c3d-6fc0-4941-bf69-2536ce2c7525",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Rolling motion",
+            "subConcept": "Direction of friction in Rolling",
+            "text": "Direction of friction in Rolling",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "60aa1049-546f-47fe-93ac-71833b8196a9",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Collision in rotation",
+            "subConcept": "Rotational Collision and Angular Momentum",
+            "text": "Rotational Collision and Angular Momentum",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "40dcef86-eb23-45c8-972d-9a5ceeb4b75f",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Collision in rotation",
+            "subConcept": "Effect on rolling motion after a collision",
+            "text": "Effect on rolling motion after a collision",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "233e13e9-25fa-42ae-b012-3e41e2e005c6",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Rotational Motion",
+            "concept": "Miscellaneous(optional)",
+            "subConcept": "Rotation of a Body About a Rotating Axis",
+            "text": "Rotation of a Body About a Rotating Axis",
+            "selected": true,
+            "disabled": false
+          }
+        }
+      ]
+    }
+  ]
+}

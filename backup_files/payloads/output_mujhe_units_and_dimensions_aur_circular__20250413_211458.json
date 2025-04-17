@@ -1,0 +1,282 @@
+{
+  "raw_query": "mujhe units and dimensions aur circular motion se ek concept basket dedo",
+  "requestList": [
+    {
+      "bulkRequestType": "concept",
+      "shorturl": "cb-802d1532-7bc0-4330-bafb-617e9b45a08c",
+      "longurl": "/dosts/share-concept-basket/view/cb-802d1532-7bc0-4330-bafb-617e9b45a08c",
+      "meta": {
+        "chapter": "Units and dimensions + Circular Motion",
+        "discription": "Concept Basket",
+        "conceptBasketData": [
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Units",
+            "subConcept": "SI system of units & SI prefixes"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Units",
+            "subConcept": "Fundamental and derived quantities"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Dimensional Analysis",
+            "subConcept": "Dimensions of fundamental and derived quantities"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Dimensional Analysis",
+            "subConcept": "Rules in Dimensional Analysis"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Dimensional Analysis",
+            "subConcept": "Dimensional Correctness of a Equation"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Dimensional Analysis",
+            "subConcept": "Deriving New Formula using Dimensional Analysis"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Dimensional Analysis",
+            "subConcept": "Converting from One Unit to Another using Dimensional Analysis"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Dimensional Analysis",
+            "subConcept": "Writting dimensional formula in a new system"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Errors",
+            "subConcept": "Mean absolute error"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Errors",
+            "subConcept": "Relative or Fractional Error"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Errors",
+            "subConcept": "Accuracy and Precision"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Errors",
+            "subConcept": "Uncertainties and Error Propagation"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Propogation of errors",
+            "subConcept": "Error Propagation Subtraction and Addition"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Propogation of errors",
+            "subConcept": "Error Propagation Multiplication and Division"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Propogation of errors",
+            "subConcept": "Error Propagation in case of Exponential"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Propogation of errors",
+            "subConcept": "Error Propagation in case of dependent Errors"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Rounding off & significant figures",
+            "subConcept": "Rounding off"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Rounding off & significant figures",
+            "subConcept": "Significant figures"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Rounding off & significant figures",
+            "subConcept": "Significant figures in +/- and product/division"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Introduction to circular motion",
+            "subConcept": "Angular displacement"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Introduction to circular motion",
+            "subConcept": "Angular velocity"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Introduction to circular motion",
+            "subConcept": "Angular acceleration"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Kinematics of circular motion",
+            "subConcept": "Uniform Circular Motion"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Kinematics of circular motion",
+            "subConcept": "Centripetal acceleration."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Kinematics of circular motion",
+            "subConcept": "Non- uniform circular motion"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Kinematics of circular motion",
+            "subConcept": "Tangential acceleration"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Kinematics of circular motion",
+            "subConcept": "Motion along arbitrary curve"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Kinematics of circular motion",
+            "subConcept": "Radius of curvature"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Dynamics of uniform circular motion",
+            "subConcept": "Centripetal force."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Dynamics of uniform circular motion",
+            "subConcept": "Uniform circular motion in a horizontal plane."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Dynamics of uniform circular motion",
+            "subConcept": "Banking of roads."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Dynamics of uniform circular motion",
+            "subConcept": "Death well & conical pendulum."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Dynamics of uniform circular motion",
+            "subConcept": "Effect of earth\u2019s rotation"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Vertical circular motion",
+            "subConcept": "Vertical circular motion of a pendulum bob."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Vertical circular motion",
+            "subConcept": "Vertical circular motion of a pendulum connected to a light rigid rod."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Vertical circular motion",
+            "subConcept": "Circular motion on a vertical circular track."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Rotating frame of reference",
+            "subConcept": "Centrifugal force"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Rotating frame of reference",
+            "subConcept": "Relative motion in circular motion"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+# Cache and OS files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.DS_Store
+*.swp
+Thumbs.db
+
+# Environment + Audio + Local
+.env
+*.wav
+*.mp3
+*.sqlite3
+
+# Virtual environments
+venv/
+queryvenv/
+queryvenv310/
+.env/
+.idea/
+.vscode/
+
+# Render or build files
+build/
+dist/
+*.egg-info/

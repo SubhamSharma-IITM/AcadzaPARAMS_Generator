@@ -1,0 +1,58 @@
+{
+  "raw_query": "mujhe pseudo force or parabola ka ek saath concepts padha do aur ek formula sheet dedo",
+  "requestList": [
+    {
+      "bulkRequestType": "concept",
+      "shorturl": "cb-c6eafa9c-dbf2-4c12-8fb5-eaea42d76093",
+      "longurl": "/dosts/share-concept-basket/view/cb-c6eafa9c-dbf2-4c12-8fb5-eaea42d76093",
+      "meta": {
+        "chapter": "Newton's law of motion + Parabola",
+        "discription": "Concept Basket",
+        "conceptBasketData": [
+          {
+            "subject": "Math",
+            "subSubject": "Math",
+            "chapter": "Newton's law of motion",
+            "concept": "Pseudo force",
+            "subConcept": "Problems involving pseudo force"
+          },
+          {
+            "subject": "Math",
+            "subSubject": "Math",
+            "chapter": "Parabola",
+            "concept": "Fundamentals of Parabola",
+            "subConcept": "Definition & Term related to parabola"
+          },
+          {
+            "subject": "Math",
+            "subSubject": "Math",
+            "chapter": "Parabola",
+            "concept": "Fundamentals of Parabola",
+            "subConcept": "Standard equation of parabola"
+          },
+          {
+            "subject": "Math",
+            "subSubject": "Math",
+            "chapter": "Parabola",
+            "concept": "Fundamentals of Parabola",
+            "subConcept": "Other form of parabola and terms related to them"
+          },
+          {
+            "subject": "Math",
+            "subSubject": "Math",
+            "chapter": "Parabola",
+            "concept": "Fundamentals of Parabola",
+            "subConcept": "Parabola with vertex at (h,k) and axis parallel to coordinate axes"
+          },
+          {
+            "subject": "Math",
+            "subSubject": "Math",
+            "chapter": "Parabola",
+            "concept": "Fundamentals of Parabola",
+            "subConcept": "Parabola referred to perpendicular lines"
+          }
+        ]
+      }
+    }
+  ]
+}

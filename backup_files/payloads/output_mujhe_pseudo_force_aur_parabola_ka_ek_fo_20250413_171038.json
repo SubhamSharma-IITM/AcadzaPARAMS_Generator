@@ -1,0 +1,372 @@
+{
+  "raw_query": "mujhe pseudo force aur parabola ka ek formula sheet dedo",
+  "requestList": [
+    {
+      "bulkRequestType": "formula",
+      "studentid": "",
+      "title": "Newton's law of motion + Parabola Formula Sheet",
+      "formulaCart": [
+        {
+          "id": "774c4d54-b6ab-483e-a997-2773193b7606",
+          "content": {
+            "subject": "Math",
+            "chapter": "Newton's law of motion",
+            "concept": "Pseudo force",
+            "subConcept": "Problems involving pseudo force",
+            "text": "Problems involving pseudo force",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "f914cdb1-ed5b-483f-8a1c-6c71c884d11c",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Introduction of conic",
+            "subConcept": "Conic section definition,Recognition of conics",
+            "text": "Conic section definition,Recognition of conics",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "1714e811-f751-4a07-af8e-365d816c446b",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Introduction of conic",
+            "subConcept": "Equation of conic with given focus ,directrix and eccentricity",
+            "text": "Equation of conic with given focus ,directrix and eccentricity",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "819e55a8-6e22-450e-9d6a-b1df91dde93a",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Introduction of conic",
+            "subConcept": "How to find centre of conic",
+            "text": "How to find centre of conic",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "a734cdd5-4147-44f9-b451-87f430367606",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Fundamentals of Parabola",
+            "subConcept": "Definition & Term related to parabola",
+            "text": "Definition & Term related to parabola",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "7deeec45-9515-4aff-81b6-f857e9113ec7",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Fundamentals of Parabola",
+            "subConcept": "Standard equation of parabola",
+            "text": "Standard equation of parabola",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "ed14e5c3-7ad6-4c64-a9d9-74fd3ac8cb42",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Fundamentals of Parabola",
+            "subConcept": "Other form of parabola and terms related to them",
+            "text": "Other form of parabola and terms related to them",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "232510e9-9063-47d4-a186-6979ae0c3233",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Fundamentals of Parabola",
+            "subConcept": "Parabola with vertex at (h,k) and axis parallel to coordinate axes",
+            "text": "Parabola with vertex at (h,k) and axis parallel to coordinate axes",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "b6dfb251-3fe3-482c-9439-202aa7cfe37e",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Fundamentals of Parabola",
+            "subConcept": "Parabola referred to perpendicular lines",
+            "text": "Parabola referred to perpendicular lines",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "924374ad-0db2-4116-afbc-e4769083f468",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Chord of Parabola",
+            "subConcept": "Equation of chord of parabola",
+            "text": "Equation of chord of parabola",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "6b4dc9ae-8ae5-4bc3-ad1d-3823792b3327",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Chord of Parabola",
+            "subConcept": "Focal Chord",
+            "text": "Focal Chord",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "960cf6c7-6069-4f07-8f3f-8b80b4de776c",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Position of a Point w.r.t Parabola",
+            "subConcept": "Position of a Point w.r.t Parabola",
+            "text": "Position of a Point w.r.t Parabola",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "9e794bd0-fa50-45ea-a8ab-692b17347e6e",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Intersection of line and Parabola",
+            "subConcept": "Intersection of line and parabola,Condition of tangency",
+            "text": "Intersection of line and parabola,Condition of tangency",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "e9374519-db29-4bca-b49d-ca4e6623b93f",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Tangent to a Parabola",
+            "subConcept": "Slope form of Tangent & Point of Tangency",
+            "text": "Slope form of Tangent & Point of Tangency",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "9ffdabf7-de71-4497-82d5-9d84967dbbf3",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Tangent to a Parabola",
+            "subConcept": "Point form & Parametric form of tangent (parabola)",
+            "text": "Point form & Parametric form of tangent (parabola)",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "dcbcb047-4f13-4075-b278-90e948e35702",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Tangent to a Parabola",
+            "subConcept": "Intersection point of Tangents, Director Circle",
+            "text": "Intersection point of Tangents, Director Circle",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "e7660f4b-6651-411a-b612-645fe572e288",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Normal to a Parabola",
+            "subConcept": "Slope form of Normal to Parabola",
+            "text": "Slope form of Normal to Parabola",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "dd467de3-1f55-422e-9723-1137aa8a5acc",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Normal to a Parabola",
+            "subConcept": "Point form ,Parametric form of Normal to Parabola",
+            "text": "Point form ,Parametric form of Normal to Parabola",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "70b44c58-8792-4a6e-93e9-7ff9ebba54a8",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Normal to a Parabola",
+            "subConcept": "Normal Intersecting on the Parabola",
+            "text": "Normal Intersecting on the Parabola",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "8396a797-2e8a-407d-b0fb-1dcc71717bc3",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Normal to a Parabola",
+            "subConcept": "Point of Intersection and other Properties",
+            "text": "Point of Intersection and other Properties",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "d8137489-c131-4b10-8823-5ec7574d1f93",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Normal to a Parabola",
+            "subConcept": "Number of normals",
+            "text": "Number of normals",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "5cc56908-14ad-443e-8e96-ca3de8ca9279",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Normal to a Parabola",
+            "subConcept": "Conormal Points and their properties",
+            "text": "Conormal Points and their properties",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "72ed81a4-819b-4df2-a809-f67af5db2c6d",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Normal to a Parabola",
+            "subConcept": "Length of Tangent, Subtangent, Normal, Subnormal to Parabola",
+            "text": "Length of Tangent, Subtangent, Normal, Subnormal to Parabola",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "e3626d4b-d8b5-4c56-8560-157583ccf9ef",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Normal to a Parabola",
+            "subConcept": "Reflection Property of Parabola",
+            "text": "Reflection Property of Parabola",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "a19e9bb0-cf42-4d8f-91c7-907b21b0f9ce",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Equation of Chord of Contact to a Parabola",
+            "subConcept": "Equation of chord of contact to a parabola T= 0",
+            "text": "Equation of chord of contact to a parabola T= 0",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "1ebbde38-cc99-4b50-a35a-65db20a50321",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Equation of Chord of Parabola with given Midpoint",
+            "subConcept": "Equation of Chord of Parabola with given Midpoint",
+            "text": "Equation of Chord of Parabola with given Midpoint",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "1b212b23-a666-4f7e-abc5-e5a7d22a1ca9",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Pair of Tangents to the Parabola",
+            "subConcept": "Pair of tangents equation",
+            "text": "Pair of tangents equation",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "1b7493a0-ef2e-483f-bd04-399abc386b6b",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Diameter of Parabola",
+            "subConcept": "Diameter of Parabola",
+            "text": "Diameter of Parabola",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "3fac19b7-a41e-433a-8e0c-76e70e90df4e",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Pole and Polar of Parabola",
+            "subConcept": "Pole and Polar of Parabola",
+            "text": "Pole and Polar of Parabola",
+            "selected": true,
+            "disabled": false
+          }
+        },
+        {
+          "id": "ebbc5a57-7017-465b-8d92-85a58b1bc2e5",
+          "content": {
+            "subject": "Math",
+            "chapter": "Parabola",
+            "concept": "Some standard properties of parabola",
+            "subConcept": "Standard properties",
+            "text": "Standard properties",
+            "selected": true,
+            "disabled": false
+          }
+        }
+      ]
+    }
+  ]
+}

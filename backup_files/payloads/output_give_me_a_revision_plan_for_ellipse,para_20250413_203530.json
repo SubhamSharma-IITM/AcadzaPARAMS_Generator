@@ -1,0 +1,1643 @@
+{
+  "raw_query": "give me a revision plan for ellipse,parabola and hyperbola for 5 days with importance to ellipse and i can give daily 2 hours for this",
+  "requestList": [
+    {
+      "bulkRequestType": "revision",
+      "title": "Ellipse + Parabola + Hyperbola + Ellipse + Parabola + Hyperbola Revision Plan",
+      "allotedDay": 5,
+      "allotedTime": 1,
+      "strategy": 1,
+      "daywisePortion": {
+        "day1": {
+          "portion": [
+            {
+              "subject": "Math",
+              "chapter": "Ellipse",
+              "concept": "Definition and basics of ellipse",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Definition and basics of ellipse",
+                  "subConcept": "Locus Ellipse Definition,Standard equation of ellipse",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Definition and basics of ellipse",
+                  "subConcept": "Basics of Ellipse when a>b, a<b",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Definition and basics of ellipse",
+                  "subConcept": "Second definition of ellipse",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Definition and basics of ellipse",
+                  "subConcept": "Equation of ellipse referred to two perpendicular lines",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Ellipse",
+              "concept": "Auxiliary circle and parametric coordinates (Ellipse)",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Auxiliary circle and parametric coordinates (Ellipse)",
+                  "subConcept": "Auxiliary circle and eccentric angle",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Auxiliary circle and parametric coordinates (Ellipse)",
+                  "subConcept": "Parametric coordinates",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Ellipse",
+              "concept": "Equation of chord ellipse",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Equation of chord ellipse",
+                  "subConcept": "Equation of Chord,Condition for Focal Chord of the Ellipse",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Ellipse",
+              "concept": "Position of a point w.r.t. ellipse",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Position of a point w.r.t. ellipse",
+                  "subConcept": "Position of a point w.r.t. ellipse",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Ellipse",
+              "concept": "Line and Ellipse",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Line and Ellipse",
+                  "subConcept": "Intersection of a line and ellipse, condition of tangency",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Ellipse",
+              "concept": "Equation of tangent ellipse",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Equation of tangent ellipse",
+                  "subConcept": "Slope form of Tangent & Point of Contact",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Equation of tangent ellipse",
+                  "subConcept": "Point form & Parametric form of Tangent to an Ellipse",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Equation of tangent ellipse",
+                  "subConcept": "Intersection point of tangents",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Equation of tangent ellipse",
+                  "subConcept": "Equation of pair of tangents",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Ellipse",
+              "concept": "Important terms and their equation ellipse",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Important terms and their equation ellipse",
+                  "subConcept": "Director Circle of an Ellipse",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Important terms and their equation ellipse",
+                  "subConcept": "Chord of Contact of an Ellipse",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Important terms and their equation ellipse",
+                  "subConcept": "Chord to Ellipse with Given midpoint",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Important terms and their equation ellipse",
+                  "subConcept": "Pole and polar Ellipse",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            }
+          ]
+        },
+        "day2": {
+          "portion": [
+            {
+              "subject": "Math",
+              "chapter": "Ellipse",
+              "concept": "Normal to an Ellipse",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Normal to an Ellipse",
+                  "subConcept": "Point form of Normal to an Ellipse",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Normal to an Ellipse",
+                  "subConcept": "Slope form of Normal, Point of Contact",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Normal to an Ellipse",
+                  "subConcept": "Parametric form of Normal to an Ellipse",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Normal to an Ellipse",
+                  "subConcept": "Subtangent and Subnormal to an Ellipse",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Normal to an Ellipse",
+                  "subConcept": "Number of normals from a point",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Normal to an Ellipse",
+                  "subConcept": "Conormal points Ellipse",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Normal to an Ellipse",
+                  "subConcept": "Reflection property of ellipse",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Ellipse",
+              "concept": "Diameter of an Ellipse",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Diameter of an Ellipse",
+                  "subConcept": "Definition of diameter, Equation of diameter",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Diameter of an Ellipse",
+                  "subConcept": "Conjugate Diameters of Ellipse",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Diameter of an Ellipse",
+                  "subConcept": "Properties of Conjugate Diameters of an Ellipse",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Ellipse",
+              "concept": "Standard properties of ellipse",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Ellipse",
+                  "concept": "Standard properties of ellipse",
+                  "subConcept": "Standard properties Ellipse",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Parabola",
+              "concept": "Introduction of conic",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Introduction of conic",
+                  "subConcept": "Conic section definition,Recognition of conics",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Introduction of conic",
+                  "subConcept": "Equation of conic with given focus ,directrix and eccentricity",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Introduction of conic",
+                  "subConcept": "How to find centre of conic",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Parabola",
+              "concept": "Fundamentals of Parabola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Fundamentals of Parabola",
+                  "subConcept": "Definition & Term related to parabola",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Fundamentals of Parabola",
+                  "subConcept": "Standard equation of parabola",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Fundamentals of Parabola",
+                  "subConcept": "Other form of parabola and terms related to them",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Fundamentals of Parabola",
+                  "subConcept": "Parabola with vertex at (h,k) and axis parallel to coordinate axes",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Fundamentals of Parabola",
+                  "subConcept": "Parabola referred to perpendicular lines",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Parabola",
+              "concept": "Chord of Parabola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Chord of Parabola",
+                  "subConcept": "Equation of chord of parabola",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Chord of Parabola",
+                  "subConcept": "Focal Chord",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Parabola",
+              "concept": "Position of a Point w.r.t Parabola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Position of a Point w.r.t Parabola",
+                  "subConcept": "Position of a Point w.r.t Parabola",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            }
+          ]
+        },
+        "day3": {
+          "portion": [
+            {
+              "subject": "Math",
+              "chapter": "Parabola",
+              "concept": "Intersection of line and Parabola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Intersection of line and Parabola",
+                  "subConcept": "Intersection of line and parabola,Condition of tangency",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Parabola",
+              "concept": "Tangent to a Parabola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Tangent to a Parabola",
+                  "subConcept": "Slope form of Tangent & Point of Tangency",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Tangent to a Parabola",
+                  "subConcept": "Point form & Parametric form of tangent (parabola)",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Tangent to a Parabola",
+                  "subConcept": "Intersection point of Tangents, Director Circle",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Parabola",
+              "concept": "Normal to a Parabola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Normal to a Parabola",
+                  "subConcept": "Slope form of Normal to Parabola",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Normal to a Parabola",
+                  "subConcept": "Point form ,Parametric form of Normal to Parabola",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Normal to a Parabola",
+                  "subConcept": "Normal Intersecting on the Parabola",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Normal to a Parabola",
+                  "subConcept": "Point of Intersection and other Properties",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Normal to a Parabola",
+                  "subConcept": "Number of normals",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Normal to a Parabola",
+                  "subConcept": "Conormal Points and their properties",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Normal to a Parabola",
+                  "subConcept": "Length of Tangent, Subtangent, Normal, Subnormal to Parabola",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Normal to a Parabola",
+                  "subConcept": "Reflection Property of Parabola",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Parabola",
+              "concept": "Equation of Chord of Contact to a Parabola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Equation of Chord of Contact to a Parabola",
+                  "subConcept": "Equation of chord of contact to a parabola T= 0",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Parabola",
+              "concept": "Equation of Chord of Parabola with given Midpoint",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Equation of Chord of Parabola with given Midpoint",
+                  "subConcept": "Equation of Chord of Parabola with given Midpoint",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Parabola",
+              "concept": "Pair of Tangents to the Parabola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Pair of Tangents to the Parabola",
+                  "subConcept": "Pair of tangents equation",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Parabola",
+              "concept": "Diameter of Parabola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Diameter of Parabola",
+                  "subConcept": "Diameter of Parabola",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            }
+          ]
+        },
+        "day4": {
+          "portion": [
+            {
+              "subject": "Math",
+              "chapter": "Parabola",
+              "concept": "Pole and Polar of Parabola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Pole and Polar of Parabola",
+                  "subConcept": "Pole and Polar of Parabola",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Parabola",
+              "concept": "Some standard properties of parabola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Parabola",
+                  "concept": "Some standard properties of parabola",
+                  "subConcept": "Standard properties",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Hyperbola",
+              "concept": "Introduction of hyperbola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Introduction of hyperbola",
+                  "subConcept": "Definition,Standard equation of hyperbola",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Introduction of hyperbola",
+                  "subConcept": "Basic terms related to hyperbola",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Introduction of hyperbola",
+                  "subConcept": "Conjugate hyperbola",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Introduction of hyperbola",
+                  "subConcept": "Auxiliary circle and Parametric Form",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Introduction of hyperbola",
+                  "subConcept": "Equation of hyperbola referred to two perpendicular lines as axes",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Hyperbola",
+              "concept": "Position of a point w.r.t hyperbola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Position of a point w.r.t hyperbola",
+                  "subConcept": "Position of a point w.r.t Hyperbola",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Hyperbola",
+              "concept": "Equation of chord hyperbola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Equation of chord hyperbola",
+                  "subConcept": "Equation of chord, condition for focal chord of hyperbola",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Hyperbola",
+              "concept": "Line and hyperbola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Line and hyperbola",
+                  "subConcept": "Intersection of line and Hyperbola,Condition of tangency",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Hyperbola",
+              "concept": "Tangent to Hyperbola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Tangent to Hyperbola",
+                  "subConcept": "Slope form of Tangent & Point of Contact",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Tangent to Hyperbola",
+                  "subConcept": "Point form & Parametric form of Tangent to Hyperbola",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Tangent to Hyperbola",
+                  "subConcept": "Point of intersection of tangents of Hyperbola",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            }
+          ]
+        },
+        "day5": {
+          "portion": [
+            {
+              "subject": "Math",
+              "chapter": "Hyperbola",
+              "concept": "Normal to Hyperbola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Normal to Hyperbola",
+                  "subConcept": "Point form & Parametric form of Normal to Hyperbola",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Normal to Hyperbola",
+                  "subConcept": "Slope form of Normal & Point of Contact Hyperbola",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Normal to Hyperbola",
+                  "subConcept": "Conormal points and their properties",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Normal to Hyperbola",
+                  "subConcept": "Subtangent and subnormal",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Hyperbola",
+              "concept": "Reflection property of hyperbola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Reflection property of hyperbola",
+                  "subConcept": "Reflection property of hyperbola",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Hyperbola",
+              "concept": "Director Circle Hyperbola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Director Circle Hyperbola",
+                  "subConcept": "Director circle",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Hyperbola",
+              "concept": "Chord of Contact of Hyperbola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Chord of Contact of Hyperbola",
+                  "subConcept": "Chord of contact",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Hyperbola",
+              "concept": "Chord of Hyperbola with given Midpoint",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Chord of Hyperbola with given Midpoint",
+                  "subConcept": "Chord bisected at a given point",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Hyperbola",
+              "concept": "Pair of Tangents to Hyperbola from an Outside Point",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Pair of Tangents to Hyperbola from an Outside Point",
+                  "subConcept": "Equation of pair of tangents",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Hyperbola",
+              "concept": "Diameter of Hyperbola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Diameter of Hyperbola",
+                  "subConcept": "Definition and equation of diameter",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Diameter of Hyperbola",
+                  "subConcept": "Definition and equation of Conjugate Diameters",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Diameter of Hyperbola",
+                  "subConcept": "Properties of Conjugate Diameters of Hyperbola",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Hyperbola",
+              "concept": "Pole and Polar of hyperbola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Pole and Polar of hyperbola",
+                  "subConcept": "Pole and polar of Hyperbola",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Hyperbola",
+              "concept": "Asymptotes of hyperbola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Asymptotes of hyperbola",
+                  "subConcept": "Definition & Equation of asymptotes",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Asymptotes of hyperbola",
+                  "subConcept": "Properties of asymptotes",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Hyperbola",
+              "concept": "Highlights and Properties of Hyperbola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Highlights and Properties of Hyperbola",
+                  "subConcept": "Highlights and Properties",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Math",
+              "chapter": "Hyperbola",
+              "concept": "Rectangular Hyperbola",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 120,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Rectangular Hyperbola",
+                  "subConcept": "General equation of Rectangular Hyperbola",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Rectangular Hyperbola",
+                  "subConcept": "Parametric Coordinates of Rectangular Hyperbola",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Rectangular Hyperbola",
+                  "subConcept": "Equation of chord",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Rectangular Hyperbola",
+                  "subConcept": "Equation of Tangent to Rectangular Hyperbola",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Math",
+                  "chapter": "Hyperbola",
+                  "concept": "Rectangular Hyperbola",
+                  "subConcept": "Equation of Normal Rectangular Hyperbola",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

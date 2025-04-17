@@ -1,0 +1,682 @@
+{
+  "raw_query": "give me one test from units and dimension and chemical kinetics and another test from probability and coordination compounds and one formula sheet from shm",
+  "requestList": [
+    {
+      "bulkRequestType": "practiceTest",
+      "userId": "",
+      "practiceType": "test",
+      "title": "Units and dimensions + Chemical kinetics Test",
+      "paperPattern": "Mains",
+      "level": "EASY",
+      "natureOfTest": "Random",
+      "noOfMinutes": 60,
+      "coachingView": "PACE",
+      "batchs": [],
+      "sectionOrder": [
+        "singleQuestions",
+        "multipleQuestions",
+        "integerQuestions",
+        "passageQuestions",
+        "matchQuestions"
+      ],
+      "passageQuestionLimit": 3,
+      "isNCERT": false,
+      "helpRequired": false,
+      "isMultiple": false,
+      "practicePortion": [
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Units",
+            "subConcept": "SI system of units & SI prefixes"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Units",
+            "subConcept": "Fundamental and derived quantities"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Dimensional Analysis",
+            "subConcept": "Dimensions of fundamental and derived quantities"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Dimensional Analysis",
+            "subConcept": "Rules in Dimensional Analysis"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Dimensional Analysis",
+            "subConcept": "Dimensional Correctness of a Equation"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Dimensional Analysis",
+            "subConcept": "Deriving New Formula using Dimensional Analysis"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Dimensional Analysis",
+            "subConcept": "Converting from One Unit to Another using Dimensional Analysis"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Dimensional Analysis",
+            "subConcept": "Writting dimensional formula in a new system"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Errors",
+            "subConcept": "Mean absolute error"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Errors",
+            "subConcept": "Relative or Fractional Error"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Errors",
+            "subConcept": "Accuracy and Precision"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Errors",
+            "subConcept": "Uncertainties and Error Propagation"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Propogation of errors",
+            "subConcept": "Error Propagation Subtraction and Addition"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Propogation of errors",
+            "subConcept": "Error Propagation Multiplication and Division"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Propogation of errors",
+            "subConcept": "Error Propagation in case of Exponential"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Propogation of errors",
+            "subConcept": "Error Propagation in case of dependent Errors"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Rounding off & significant figures",
+            "subConcept": "Rounding off"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Rounding off & significant figures",
+            "subConcept": "Significant figures"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Rounding off & significant figures",
+            "subConcept": "Significant figures in +/- and product/division"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Rate of reaction",
+            "subConcept": "Differential and instantaneous rate"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Rate of reaction",
+            "subConcept": "Rate law and order of chemical reaction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Integrated rate law",
+            "subConcept": "Zero order reaction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Integrated rate law",
+            "subConcept": "First order reaction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Integrated rate law",
+            "subConcept": "Molecularity and Pseudo first-order reaction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Analysis of some important first order reaction",
+            "subConcept": "First order kinetics in terms of pressure and volume"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Analysis of some important first order reaction",
+            "subConcept": "First order kinetics in terms of titration and optical rotation"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Integrated rate law of higher order",
+            "subConcept": "Second order and Third order reactions"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Integrated rate law of higher order",
+            "subConcept": "nth order reaction and ostwald's equation"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Integrated rate law of higher order",
+            "subConcept": "Graphs for different order chemical reaction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Complex kinetics (First order reaction)",
+            "subConcept": "Parallel kinetics"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Complex kinetics (First order reaction)",
+            "subConcept": "Sequential kinetics"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Complex kinetics (First order reaction)",
+            "subConcept": "Reversible kinetics"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Effect of temperature on rate of reaction",
+            "subConcept": "Arrhenius concept of chemical reactions"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Effect of temperature on rate of reaction",
+            "subConcept": "Arrhenius equation and temperature coefficient"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Effect of temperature on rate of reaction",
+            "subConcept": "Effect of Catalyst"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Mechanism of chemical reaction",
+            "subConcept": "Elementary and Non-elementary reaction and its order and molecularity"
+          }
+        }
+      ]
+    },
+    {
+      "bulkRequestType": "practiceTest",
+      "userId": "",
+      "practiceType": "test",
+      "title": "Probability + Coordination Compounds Test",
+      "paperPattern": "Mains",
+      "level": "EASY",
+      "natureOfTest": "Random",
+      "noOfMinutes": 60,
+      "coachingView": "PACE",
+      "batchs": [],
+      "sectionOrder": [
+        "singleQuestions",
+        "multipleQuestions",
+        "integerQuestions",
+        "passageQuestions",
+        "matchQuestions"
+      ],
+      "passageQuestionLimit": 3,
+      "isNCERT": false,
+      "helpRequired": false,
+      "isMultiple": false,
+      "practicePortion": [
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Probability",
+            "concept": "Basic terms in Probability",
+            "subConcept": "Experiment, Sample space, Event and Definition"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Probability",
+            "concept": "Basic terms in Probability",
+            "subConcept": "Exhaustive, Equally likely, Mutually exclusive events"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Probability",
+            "concept": "Set Theory in Probability",
+            "subConcept": "Containing two events"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Probability",
+            "concept": "Set Theory in Probability",
+            "subConcept": "Containing more than two events"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Probability",
+            "concept": "Dependent and Independent events",
+            "subConcept": "Dependent and Independent events"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Probability",
+            "concept": "Odds",
+            "subConcept": "Odds in Favor & Against of an Event in Probability"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Probability",
+            "concept": "Conditional probability",
+            "subConcept": "Conditional Probability"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Probability",
+            "concept": "Conditional probability",
+            "subConcept": "Multiplication Theorem in Probability"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Probability",
+            "concept": "Law of total probability and Bayes' theorem",
+            "subConcept": "Law of Total Probability"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Probability",
+            "concept": "Law of total probability and Bayes' theorem",
+            "subConcept": "Bayes' Theorem in Probability"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Probability",
+            "concept": "Probability Distribution",
+            "subConcept": "Probability Distribution"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Probability",
+            "concept": "Probability Distribution",
+            "subConcept": "Binomial Distribution in Probability"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Probability",
+            "concept": "Probability Distribution",
+            "subConcept": "Mean & Variance of Probability"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Probability",
+            "concept": "Geometrical probability",
+            "subConcept": "Geometrical application of Probability"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Inorganic Chemistry",
+            "chapter": "Coordination Compounds",
+            "concept": "Type and Introduction of salts",
+            "subConcept": "Types of salts and Introduction of coordination compound"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Inorganic Chemistry",
+            "chapter": "Coordination Compounds",
+            "concept": "Some Important terms of coordination compound",
+            "subConcept": "Classification of ligands"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Inorganic Chemistry",
+            "chapter": "Coordination Compounds",
+            "concept": "Some Important terms of coordination compound",
+            "subConcept": "Chelation, Oxidation and Coordination number (C.N) of complex compound"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Inorganic Chemistry",
+            "chapter": "Coordination Compounds",
+            "concept": "Some Important terms of coordination compound",
+            "subConcept": "Effective atomic number (E.A.N) rule and Sidgwick rule"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Inorganic Chemistry",
+            "chapter": "Coordination Compounds",
+            "concept": "Nomenclature of co-ordination compounds",
+            "subConcept": "Rules for Nomenclature of coordination compounds"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Inorganic Chemistry",
+            "chapter": "Coordination Compounds",
+            "concept": "Nomenclature of co-ordination compounds",
+            "subConcept": "Nomenclature of important coordination compound"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Inorganic Chemistry",
+            "chapter": "Coordination Compounds",
+            "concept": "Isomerism in Co-ordination Compounds",
+            "subConcept": "Introduction and types of isomerism and Structural isomerism"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Inorganic Chemistry",
+            "chapter": "Coordination Compounds",
+            "concept": "Isomerism in Co-ordination Compounds",
+            "subConcept": "Introduction of stereo isomerism and geometrical isomerism"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Inorganic Chemistry",
+            "chapter": "Coordination Compounds",
+            "concept": "Isomerism in Co-ordination Compounds",
+            "subConcept": "Optical isomerism and calculation of total stereomers"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Inorganic Chemistry",
+            "chapter": "Coordination Compounds",
+            "concept": "Werner's concept",
+            "subConcept": "Werner\u2019s Co-ordination Theory and Werner\u2019s Representation of Complexes"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Inorganic Chemistry",
+            "chapter": "Coordination Compounds",
+            "concept": "Valence bond theory",
+            "subConcept": "Introduction of VBT, Hybridisation and Geometry of coordination compound"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Inorganic Chemistry",
+            "chapter": "Coordination Compounds",
+            "concept": "Valence bond theory",
+            "subConcept": "Drawback of valence bond theory and Introduction of Crystal field theory and spectrochemical series"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Inorganic Chemistry",
+            "chapter": "Coordination Compounds",
+            "concept": "Crystal field theory",
+            "subConcept": "Crystal field splitting of d-orbitals in Octahedral complexes"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Inorganic Chemistry",
+            "chapter": "Coordination Compounds",
+            "concept": "Crystal field theory",
+            "subConcept": "Crystal field splitting of d-orbitals in Tetrahedral Complexes and Square planar complexes"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Inorganic Chemistry",
+            "chapter": "Coordination Compounds",
+            "concept": "Crystal field theory",
+            "subConcept": "Factors affecting the magnitude of orbital splitting energy"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Inorganic Chemistry",
+            "chapter": "Coordination Compounds",
+            "concept": "Miscellaneous Concepts",
+            "subConcept": "Jahn teller distortion"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Inorganic Chemistry",
+            "chapter": "Coordination Compounds",
+            "concept": "Miscellaneous Concepts",
+            "subConcept": "Colour in Co-ordination Compounds and Stability of Co-ordination Compounds in Solutions"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Inorganic Chemistry",
+            "chapter": "Coordination Compounds",
+            "concept": "Miscellaneous Concepts",
+            "subConcept": "Stability of complex and Factors affecting the stability of a complex ion"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Inorganic Chemistry",
+            "chapter": "Coordination Compounds",
+            "concept": "Metal Carbonyls & Bonding in Metal Carbonyls",
+            "subConcept": "Organometallic compound and its application"
+          }
+        }
+      ]
+    },
+    {
+      "bulkRequestType": "formula",
+      "studentid": "",
+      "title": "SHM Formula Sheet",
+      "formulaCart": []
+    }
+  ]
+}

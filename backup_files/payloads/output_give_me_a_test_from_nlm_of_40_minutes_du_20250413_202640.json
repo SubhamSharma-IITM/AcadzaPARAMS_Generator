@@ -1,0 +1,408 @@
+{
+  "raw_query": "give me a test from nlm of 40 minutes duration of advanced level with medium difficulty",
+  "requestList": [
+    {
+      "bulkRequestType": "practiceTest",
+      "userId": "",
+      "practiceType": "test",
+      "title": "Newton's law of motion + Newton's law of motion Test",
+      "paperPattern": "Mains",
+      "level": "MEDIUM",
+      "natureOfTest": "Random",
+      "noOfMinutes": 40,
+      "coachingView": "PACE",
+      "batchs": [],
+      "sectionOrder": [
+        "singleQuestions",
+        "multipleQuestions",
+        "integerQuestions",
+        "passageQuestions",
+        "matchQuestions"
+      ],
+      "passageQuestionLimit": 3,
+      "isNCERT": false,
+      "helpRequired": false,
+      "isMultiple": false,
+      "practicePortion": [
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Introduction to forces",
+            "subConcept": "Fundamental forces"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Introduction to forces",
+            "subConcept": "Normal, Tension and friction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "First law (Law of inertia)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "Momentum and its significance"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "Second law"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "Third law"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Equilibrium of forces",
+            "subConcept": "Concurrent and Coplanar Forces"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Equilibrium of forces",
+            "subConcept": "Equilibrium of forces"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Frame of reference",
+            "subConcept": "Inertial and non-inertial F.O.R."
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Frame of reference",
+            "subConcept": "Pseudo Forces"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Fundamentals of drawing F.B.D."
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Train problems(Tension)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Lift Problems(Normal)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Wedge problems(Resolving Forces)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Constraint motion",
+            "subConcept": "String and pulley constraint(Tension)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Constraint motion",
+            "subConcept": "Wedge constraint(Normal)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Constraint motion",
+            "subConcept": "Rigid Body Constraint(Introduction)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pulley problems",
+            "subConcept": "Simple pulley system"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pulley problems",
+            "subConcept": "Complex Pulley system"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pulley problems",
+            "subConcept": "Mechanical advantage"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Spring constant"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Combination of Spring(parallel and series)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Spring pulley system"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Equivalent Spring constant"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Cutting of spring and string."
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pseudo force",
+            "subConcept": "Problems involving pseudo force"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Types of Friction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Direction of static and kinetic friction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Coefficient of friction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Limiting value of friction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Angle of friction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Transition of friction from static to kinetic"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Contact Force"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Angle of repose"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Two block problem"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Three or more block problem"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Angle of repose",
+            "subConcept": "Motion on incline with angle more than angle of repose"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Angle of repose",
+            "subConcept": "Motion on incline with less than the angle of repose"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Angle of repose",
+            "subConcept": "Motion on vertical surface"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Multiple block system",
+            "subConcept": "Concept of driving force"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Multiple block system",
+            "subConcept": "Method to find which surface slips"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Multiple block system",
+            "subConcept": "Method to find acceleration of blocks"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+from rag.rag_engine import run_rag_pipeline
+from acadza_concept_tree import load_concept_tree
+from modules.builders import build_payload
+from modules.utils import get_concepts, get_subconcepts
+from param_config import get_param_specs
+from modules.logger import save_full_log
+
+# -----------------------------
+# 🧱 Helper: Expand Chapter from Tree
+# -----------------------------
+def enrich_chapter_group(chapter: str, subject: str) -> dict:
+    acadza_tree = load_concept_tree()
+    chapter = chapter.strip()
+    subject = subject.strip()
+
+    for stream in acadza_tree:
+        for subj in acadza_tree[stream]:
+            if subj.lower() == subject.lower():
+                for ch in acadza_tree[stream][subj]:
+                    if ch.lower() == chapter.lower():
+                        concepts = list(acadza_tree[stream][subj][ch].keys())
+                        subconcepts = {
+                            concept: list(acadza_tree[stream][subj][ch][concept].keys())
+                            for concept in concepts
+                        }
+                        return {
+                            "subject": subj,
+                            "chapter": ch,
+                            "concepts": concepts,
+                            "subconcepts": subconcepts
+                        }
+    return {"subject": subject, "chapter": chapter}  # fallback
+
+# -----------------------------
+# 🚀 Main Orchestrator
+# -----------------------------
+def run_orchestrator(query):
+    acadza_tree = load_concept_tree()
+    all_logs = {}
+    final_payloads = []
+    combined_tasks = {}
+    counter_map = {
+        "practiceAssignment": 0,
+        "practiceTest": 0,
+        "formula": 0,
+        "revision": 0,
+        "concept": 0,
+        "clickingPower": 0,
+        "pickingPower": 0,
+        "speedRace": 0
+    }
+
+    result = run_rag_pipeline(query)
+    request_list = result.get("requestList", [])
+
+    for req in request_list:
+        dost_type = req.get("dost_type")
+        param_specs = get_param_specs(dost_type)
+        subject = req.get("subject")
+
+        enriched_groups = []
+        for group in req.get("chapter_groups", []):
+            chapter = group.get("chapter")
+            if not group.get("concepts") or not group.get("subconcepts"):
+                enriched = enrich_chapter_group(chapter, subject)
+                enriched_groups.append(enriched)
+            else:
+                enriched_groups.append(group)
+
+        # 🔐 Inject Defaults
+        expected = param_specs.get("expected_fields", [])
+        defaults = param_specs.get("defaults", {})
+        for field in expected:
+            if field not in req:
+                req[field] = defaults.get(field)
+
+        counter = counter_map[dost_type]
+        key = (dost_type, subject, counter)
+
+        if key not in combined_tasks:
+            combined_tasks[key] = {
+                "dost_type": dost_type,
+                "subject": subject,
+                "chapter_groups": []
+            }
+
+        combined_tasks[key]["chapter_groups"].extend(enriched_groups)
+        counter_map[dost_type] += 1
+
+    for key, task in combined_tasks.items():
+        payload = build_payload(task["dost_type"], task, acadza_tree)
+        if payload:
+            final_payloads.append(payload)
+        else:
+            print(f"❌ Payload generation failed for {task['dost_type']} → {task['subject']}")
+
+    if not final_payloads:
+        print("❌ No valid payloads generated for this query. Possible issue in portion enrichment or GPT extraction.")
+
+    save_full_log(query=query, logs=all_logs, final_output=final_payloads)
+
+    return {
+        "raw_query": query,
+        "requestList": final_payloads
+    }
+
+# Optional: For local testing
+if __name__ == "__main__":
+    query = input("\n🎤 Enter student query: ")
+    output = run_orchestrator(query)
+    print("\n✅ Final API Payload:")
+    print(output)

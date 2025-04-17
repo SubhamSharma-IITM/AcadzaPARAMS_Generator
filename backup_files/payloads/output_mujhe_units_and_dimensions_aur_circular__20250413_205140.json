@@ -1,0 +1,125 @@
+{
+  "raw_query": "mujhe units and dimensions aur circular motion se ek concept basket dedo",
+  "requestList": [
+    {
+      "bulkRequestType": "concept",
+      "shorturl": "cb-5fac0639-85b9-412c-9c38-060d2851490f",
+      "longurl": "/dosts/share-concept-basket/view/cb-5fac0639-85b9-412c-9c38-060d2851490f",
+      "meta": {
+        "chapter": "Units and dimensions + Units and dimensions",
+        "discription": "Concept Basket",
+        "conceptBasketData": [
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Dimensional Analysis",
+            "subConcept": ""
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Dimensional Analysis",
+            "subConcept": "Dimensions of fundamental and derived quantities"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Dimensional Analysis",
+            "subConcept": "Rules in Dimensional Analysis"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Dimensional Analysis",
+            "subConcept": "Dimensional Correctness of a Equation"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Dimensional Analysis",
+            "subConcept": "Deriving New Formula using Dimensional Analysis"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Dimensional Analysis",
+            "subConcept": "Converting from One Unit to Another using Dimensional Analysis"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Units and dimensions",
+            "concept": "Dimensional Analysis",
+            "subConcept": "Writting dimensional formula in a new system"
+          }
+        ]
+      }
+    },
+    {
+      "bulkRequestType": "concept",
+      "shorturl": "cb-f2049d24-2dfa-4b48-89be-e9e272d5ce68",
+      "longurl": "/dosts/share-concept-basket/view/cb-f2049d24-2dfa-4b48-89be-e9e272d5ce68",
+      "meta": {
+        "chapter": "Circular Motion + Circular Motion",
+        "discription": "Concept Basket",
+        "conceptBasketData": [
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Kinematics of circular motion",
+            "subConcept": ""
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Kinematics of circular motion",
+            "subConcept": "Uniform Circular Motion"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Kinematics of circular motion",
+            "subConcept": "Centripetal acceleration."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Kinematics of circular motion",
+            "subConcept": "Non- uniform circular motion"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Kinematics of circular motion",
+            "subConcept": "Tangential acceleration"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Kinematics of circular motion",
+            "subConcept": "Motion along arbitrary curve"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Kinematics of circular motion",
+            "subConcept": "Radius of curvature"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,361 @@
+{
+  "raw_query": "Give me test from kinematics and ellipse",
+  "requestList": [
+    {
+      "bulkRequestType": "practiceTest",
+      "userId": "",
+      "practiceType": "test",
+      "title": "Ellipse Test",
+      "paperPattern": "Mains",
+      "level": "EASY",
+      "natureOfTest": "Random",
+      "noOfMinutes": 60,
+      "coachingView": "PACE",
+      "batchs": [],
+      "sectionOrder": [
+        "singleQuestions",
+        "multipleQuestions",
+        "integerQuestions",
+        "passageQuestions",
+        "matchQuestions"
+      ],
+      "passageQuestionLimit": 3,
+      "isNCERT": false,
+      "helpRequired": false,
+      "isMultiple": false,
+      "practicePortion": [
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Definition and basics of ellipse",
+            "subConcept": "Locus Ellipse Definition,Standard equation of ellipse"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Definition and basics of ellipse",
+            "subConcept": "Basics of Ellipse when a>b, a<b"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Definition and basics of ellipse",
+            "subConcept": "Second definition of ellipse"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Definition and basics of ellipse",
+            "subConcept": "Equation of ellipse referred to two perpendicular lines"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Auxiliary circle and parametric coordinates (Ellipse)",
+            "subConcept": "Auxiliary circle and eccentric angle"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Auxiliary circle and parametric coordinates (Ellipse)",
+            "subConcept": "Parametric coordinates"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Equation of chord ellipse",
+            "subConcept": "Equation of Chord,Condition for Focal Chord of the Ellipse"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Position of a point w.r.t. ellipse",
+            "subConcept": "Position of a point w.r.t. ellipse"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Line and Ellipse",
+            "subConcept": "Intersection of a line and ellipse, condition of tangency"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Equation of tangent ellipse",
+            "subConcept": "Slope form of Tangent & Point of Contact"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Equation of tangent ellipse",
+            "subConcept": "Point form & Parametric form of Tangent to an Ellipse"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Equation of tangent ellipse",
+            "subConcept": "Intersection point of tangents"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Equation of tangent ellipse",
+            "subConcept": "Equation of pair of tangents"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Important terms and their equation ellipse",
+            "subConcept": "Director Circle of an Ellipse"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Important terms and their equation ellipse",
+            "subConcept": "Chord of Contact of an Ellipse"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Important terms and their equation ellipse",
+            "subConcept": "Chord to Ellipse with Given midpoint"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Important terms and their equation ellipse",
+            "subConcept": "Pole and polar Ellipse"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Normal to an Ellipse",
+            "subConcept": "Point form of Normal to an Ellipse"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Normal to an Ellipse",
+            "subConcept": "Slope form of Normal, Point of Contact"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Normal to an Ellipse",
+            "subConcept": "Parametric form of Normal to an Ellipse"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Normal to an Ellipse",
+            "subConcept": "Subtangent and Subnormal to an Ellipse"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Normal to an Ellipse",
+            "subConcept": "Number of normals from a point"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Normal to an Ellipse",
+            "subConcept": "Conormal points Ellipse"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Normal to an Ellipse",
+            "subConcept": "Reflection property of ellipse"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Diameter of an Ellipse",
+            "subConcept": "Definition of diameter, Equation of diameter"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Diameter of an Ellipse",
+            "subConcept": "Conjugate Diameters of Ellipse"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Diameter of an Ellipse",
+            "subConcept": "Properties of Conjugate Diameters of an Ellipse"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Math",
+            "chapter": "Ellipse",
+            "concept": "Standard properties of ellipse",
+            "subConcept": "Standard properties Ellipse"
+          }
+        }
+      ]
+    },
+    {
+      "bulkRequestType": "practiceTest",
+      "userId": "",
+      "practiceType": "test",
+      "title": "Circular Motion Test",
+      "paperPattern": "Mains",
+      "level": "EASY",
+      "natureOfTest": "Random",
+      "noOfMinutes": 60,
+      "coachingView": "PACE",
+      "batchs": [],
+      "sectionOrder": [
+        "singleQuestions",
+        "multipleQuestions",
+        "integerQuestions",
+        "passageQuestions",
+        "matchQuestions"
+      ],
+      "passageQuestionLimit": 3,
+      "isNCERT": false,
+      "helpRequired": false,
+      "isMultiple": false,
+      "practicePortion": [
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Kinematics of circular motion",
+            "subConcept": "Uniform Circular Motion"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Kinematics of circular motion",
+            "subConcept": "Centripetal acceleration."
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Kinematics of circular motion",
+            "subConcept": "Non- uniform circular motion"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Kinematics of circular motion",
+            "subConcept": "Tangential acceleration"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Kinematics of circular motion",
+            "subConcept": "Motion along arbitrary curve"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Circular Motion",
+            "concept": "Kinematics of circular motion",
+            "subConcept": "Radius of curvature"
+          }
+        }
+      ]
+    }
+  ]
+}

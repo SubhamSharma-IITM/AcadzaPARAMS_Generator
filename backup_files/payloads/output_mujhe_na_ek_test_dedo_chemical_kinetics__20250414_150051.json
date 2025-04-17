@@ -1,0 +1,69 @@
+{
+  "raw_query": "mujhe na ek test dedo chemical kinetics and morphology se aur ek test dedo proability se aur ek assignment dedo units and dimensions aur gravity se 45 questions ka",
+  "requestList": [
+    {
+      "bulkRequestType": "practiceTest",
+      "userId": "",
+      "practiceType": "test",
+      "title": "Chemical kinetics + Morphology Test",
+      "paperPattern": "Mains",
+      "level": "EASY",
+      "natureOfTest": "Random",
+      "noOfMinutes": 60,
+      "coachingView": "PACE",
+      "batchs": [],
+      "sectionOrder": [
+        "singleQuestions",
+        "multipleQuestions",
+        "integerQuestions",
+        "passageQuestions",
+        "matchQuestions"
+      ],
+      "passageQuestionLimit": 3,
+      "isNCERT": false,
+      "helpRequired": false,
+      "isMultiple": false,
+      "practicePortion": []
+    },
+    {
+      "bulkRequestType": "practiceTest",
+      "userId": "",
+      "practiceType": "test",
+      "title": "Probability Test",
+      "paperPattern": "Mains",
+      "level": "EASY",
+      "natureOfTest": "Random",
+      "noOfMinutes": 60,
+      "coachingView": "PACE",
+      "batchs": [],
+      "sectionOrder": [
+        "singleQuestions",
+        "multipleQuestions",
+        "integerQuestions",
+        "passageQuestions",
+        "matchQuestions"
+      ],
+      "passageQuestionLimit": 3,
+      "isNCERT": false,
+      "helpRequired": false,
+      "isMultiple": false,
+      "practicePortion": []
+    },
+    {
+      "bulkRequestType": "practiceAssignment",
+      "userId": "",
+      "practiceType": "assignment",
+      "title": "Units and dimensions + Gravitation Assignment",
+      "isNCERT": false,
+      "level": "EASY",
+      "assignmentQuesCount": {
+        "scq": 20,
+        "mcq": 10,
+        "integerQuestion": 5,
+        "passageQuestion": 0,
+        "matchQuestion": 0
+      },
+      "practicePortion": []
+    }
+  ]
+}

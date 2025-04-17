@@ -1,0 +1,763 @@
+{
+  "raw_query": "give me one test from chemical kinetics and concept dost from newtons laws of motion and revision plan for aldehydes for 4 days",
+  "requestList": [
+    {
+      "bulkRequestType": "practiceTest",
+      "userId": "",
+      "practiceType": "test",
+      "title": "Chemical kinetics Test",
+      "paperPattern": "Mains",
+      "level": "EASY",
+      "natureOfTest": "Random",
+      "noOfMinutes": 60,
+      "coachingView": "PACE",
+      "batchs": [],
+      "sectionOrder": [
+        "singleQuestions",
+        "multipleQuestions",
+        "integerQuestions",
+        "passageQuestions",
+        "matchQuestions"
+      ],
+      "passageQuestionLimit": 3,
+      "isNCERT": false,
+      "helpRequired": false,
+      "isMultiple": false,
+      "practicePortion": [
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Rate of reaction",
+            "subConcept": "Differential and instantaneous rate"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Rate of reaction",
+            "subConcept": "Rate law and order of chemical reaction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Integrated rate law",
+            "subConcept": "Zero order reaction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Integrated rate law",
+            "subConcept": "First order reaction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Integrated rate law",
+            "subConcept": "Molecularity and Pseudo first-order reaction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Analysis of some important first order reaction",
+            "subConcept": "First order kinetics in terms of pressure and volume"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Analysis of some important first order reaction",
+            "subConcept": "First order kinetics in terms of titration and optical rotation"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Integrated rate law of higher order",
+            "subConcept": "Second order and Third order reactions"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Integrated rate law of higher order",
+            "subConcept": "nth order reaction and ostwald's equation"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Integrated rate law of higher order",
+            "subConcept": "Graphs for different order chemical reaction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Complex kinetics (First order reaction)",
+            "subConcept": "Parallel kinetics"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Complex kinetics (First order reaction)",
+            "subConcept": "Sequential kinetics"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Complex kinetics (First order reaction)",
+            "subConcept": "Reversible kinetics"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Effect of temperature on rate of reaction",
+            "subConcept": "Arrhenius concept of chemical reactions"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Effect of temperature on rate of reaction",
+            "subConcept": "Arrhenius equation and temperature coefficient"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Effect of temperature on rate of reaction",
+            "subConcept": "Effect of Catalyst"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physical Chemistry",
+            "chapter": "Chemical kinetics",
+            "concept": "Mechanism of chemical reaction",
+            "subConcept": "Elementary and Non-elementary reaction and its order and molecularity"
+          }
+        }
+      ]
+    },
+    {
+      "bulkRequestType": "concept",
+      "shorturl": "cb-87d794cb-b88d-470e-9d43-e465237fd067",
+      "longurl": "/dosts/share-concept-basket/view/cb-87d794cb-b88d-470e-9d43-e465237fd067",
+      "meta": {
+        "chapter": "Newton's law of motion",
+        "discription": "Concept Basket",
+        "conceptBasketData": [
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Introduction to forces",
+            "subConcept": "Fundamental forces"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Introduction to forces",
+            "subConcept": "Normal, Tension and friction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "First law (Law of inertia)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "Momentum and its significance"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "Second law"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "Third law"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Equilibrium of forces",
+            "subConcept": "Concurrent and Coplanar Forces"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Equilibrium of forces",
+            "subConcept": "Equilibrium of forces"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Frame of reference",
+            "subConcept": "Inertial and non-inertial F.O.R."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Frame of reference",
+            "subConcept": "Pseudo Forces"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Fundamentals of drawing F.B.D."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Train problems(Tension)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Lift Problems(Normal)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Wedge problems(Resolving Forces)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Constraint motion",
+            "subConcept": "String and pulley constraint(Tension)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Constraint motion",
+            "subConcept": "Wedge constraint(Normal)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Constraint motion",
+            "subConcept": "Rigid Body Constraint(Introduction)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pulley problems",
+            "subConcept": "Simple pulley system"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pulley problems",
+            "subConcept": "Complex Pulley system"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pulley problems",
+            "subConcept": "Mechanical advantage"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Spring constant"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Combination of Spring(parallel and series)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Spring pulley system"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Equivalent Spring constant"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Cutting of spring and string."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pseudo force",
+            "subConcept": "Problems involving pseudo force"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Types of Friction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Direction of static and kinetic friction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Coefficient of friction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Limiting value of friction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Angle of friction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Transition of friction from static to kinetic"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Contact Force"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Angle of repose"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Two block problem"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Three or more block problem"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Angle of repose",
+            "subConcept": "Motion on incline with angle more than angle of repose"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Angle of repose",
+            "subConcept": "Motion on incline with less than the angle of repose"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Angle of repose",
+            "subConcept": "Motion on vertical surface"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Multiple block system",
+            "subConcept": "Concept of driving force"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Multiple block system",
+            "subConcept": "Method to find which surface slips"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Multiple block system",
+            "subConcept": "Method to find acceleration of blocks"
+          }
+        ]
+      }
+    },
+    {
+      "bulkRequestType": "revision",
+      "title": "Carbonyl compounds (Aldehydes and ketones) Revision Plan",
+      "allotedDay": 1,
+      "allotedTime": 1,
+      "strategy": 1,
+      "daywisePortion": {
+        "day1": {
+          "portion": [
+            {
+              "subject": "Organic Chemistry",
+              "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+              "concept": "Preparations",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 60,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Preparations",
+                  "subConcept": "From hydrocarbons and halides, By heating allyl-vinyl ethers",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Preparations",
+                  "subConcept": "Carbonylation of aromatic compounds and Etard oxidation reaction",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Preparations",
+                  "subConcept": "By oxidation of alcohols, Fries rearrangement reaction",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Preparations",
+                  "subConcept": "Stephen's aldehyde synthesis, Nef's and Rosenmund\u2019s reaction",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Preparations",
+                  "subConcept": "From nitriles, From carboxylic acids and derivatives",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            },
+            {
+              "subject": "Organic Chemistry",
+              "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+              "concept": "Properties of carbonyl compounds",
+              "importance": null,
+              "ratio": null,
+              "area": "Red",
+              "time": 60,
+              "star": 1,
+              "task": [
+                {
+                  "type": "assignment",
+                  "completed": false
+                },
+                {
+                  "type": "test",
+                  "completed": false
+                }
+              ],
+              "impratio": 3,
+              "weakData": [
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Physical properties and General Nucleophilic addition",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Nucleophilic addition of water, alcohols, Cyanohydrin formation",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Addition of sodium bisulphite, Addition of organometallic compounds",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Michael addition reaction, Wittig reaction",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Addition elimination with ammonia and derivatives",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Enamine formation with secondary amines",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Beckmann rearrangement reaction",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Reduction reactions",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Oxidation reactions",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Distinction tests of aldehydes and ketones",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Aldol condensation reaction",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Claisen-Schmidt reaction",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Knoevenagel condensation reaction",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Perkin condensation reaction",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Reformatsky rearrangement reaction",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Benzoin reaction",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Mannich reaction",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Cannizzaro reaction",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Benzil-benzilic acid rearrangement reaction",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Tischenko reaction",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Favorskii rearrangement reaction",
+                  "area": "Red",
+                  "importance": null
+                },
+                {
+                  "subject": "Organic Chemistry",
+                  "chapter": "Carbonyl compounds (Aldehydes and ketones)",
+                  "concept": "Properties of carbonyl compounds",
+                  "subConcept": "Polymerization reactions",
+                  "area": "Red",
+                  "importance": null
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
