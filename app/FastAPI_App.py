@@ -146,7 +146,7 @@ async def process_query(
     # ✅ STEP: Save to history
     try:
         save_response = save_query_history(auth_token, result)
-        print("📜 History saved:", save_response.status_code)
+        print("📜 History saved: Status Code: ", save_response.statusCode)
     except Exception as e:
         print(f"❌ History saver failed: {e}")
 
