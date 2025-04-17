@@ -142,6 +142,24 @@ async def process_query(
         except Exception as e:
             print(f"❌ API call failed for {dost_type}: {e}")
 
+        # ✅ Save to History API if fields available
+    try:
+        history_payload = {
+            "queryName": result.get("queryName", "Untitled Query"),
+            "portion": result.get("portion", []),
+            "subject": result.get("detected_subject", ""),
+            "chapter": result.get("detected_chapter", ""),
+            "queryAnalyzeText": result.get("queryAnalyzeText", ""),
+            "queryResponseText": result.get("queryResponseText", "")
+        }
+        print("📚 Saving history entry...")
+        headers = {"Authorization": auth_token}
+        requests.post("https://api.acadza.in/gpthistory/create", json=history_payload, headers=headers)
+    except Exception as e:
+        print(f"⚠️ History save failed: {e}")    
+
+
+
     return {
         "query": query_text,
         "result": {
