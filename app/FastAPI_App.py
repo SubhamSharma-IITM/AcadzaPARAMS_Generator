@@ -143,22 +143,12 @@ async def process_query(
             print(f"❌ API call failed for {dost_type}: {e}")
 
         # ✅ Save to History API if fields available
+    # ✅ STEP: Save to history
     try:
-        history_payload = {
-            "queryName": result.get("queryName", "Untitled Query"),
-            "portion": result.get("portion", []),
-            "subject": result.get("detected_subject", ""),
-            "chapter": result.get("detected_chapter", ""),
-            "queryAnalyzeText": result.get("queryAnalyzeText", ""),
-            "queryResponseText": result.get("queryResponseText", "")
-        }
-        print("📚 Saving history entry...")
-        headers = {"Authorization": auth_token}
-        requests.post("https://api.acadza.in/gpthistory/create", json=history_payload, headers=headers)
+        save_response = save_query_history(auth_token, result)
+        print("📜 History saved:", save_response.status_code)
     except Exception as e:
-        print(f"⚠️ History save failed: {e}")    
-
-
+        print(f"❌ History saver failed: {e}")
 
     return {
         "query": query_text,

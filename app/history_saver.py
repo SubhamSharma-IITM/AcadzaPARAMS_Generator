@@ -51,12 +51,12 @@ def save_query_history(auth_token: str, result: dict):
     url = "https://api.acadza.in/gpthistory/create"
     headers = {
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {auth_token}"
+        "Authorization": {auth_token}
     }
 
     request_list = result.get("requestList", [])
     portions = extract_portion_from_requestList(request_list)
-    query_name = result.get("raw_query", "Student Query")
+    query_name = result.get("raw_query") or result.get("query")
     if len(query_name) > 500:
         print(f"⚠️ Query name too long ({len(query_name)} chars), trimming to 500.")
         query_name = query_name[:500]
