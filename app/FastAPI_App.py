@@ -7,7 +7,7 @@ import os
 from openai import OpenAI
 from app.main import run_orchestrator
 from app.history_saver import save_query_history
-
+from app.query_checker import query_checker
 
 # -----------------------------
 # 🔧 Setup
@@ -23,19 +23,15 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
-# Enable Swagger auth header
-
-
-
 # -----------------------------
-# 🧠 Whisper Transcriber
+# 🤠 Whisper Transcriber
 # -----------------------------
 def transcribe_audio(file: UploadFile):
     with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as tmp:
         tmp.write(file.file.read())
         tmp_path = tmp.name
 
-    print("🎧 Transcribing audio with Whisper...")
+    print("🎿 Transcribing audio with Whisper...")
     with open(tmp_path, "rb") as audio_file:
         transcript = openai.audio.transcriptions.create(
             model="whisper-1",
@@ -54,7 +50,6 @@ async def process_query(
     query: str = Form(None),
     student_id: str = Header(None)
 ):
-    #student_id = "66ab1c67c5484a224c5244ae"  # For now
     auth_token = request.headers.get("authorization")
 
     if not student_id or not auth_token:
@@ -67,7 +62,30 @@ async def process_query(
     else:
         return {"error": "No query or file provided."}
 
-    result = run_orchestrator(query_text, student_id)
+    # 🔍 First check if it's a DOST need or a General Query
+    checker_result = query_checker(query_text)
+
+    if not checker_result.get("dosts_needed"):
+        structured_answer = checker_result.get("structured_answer", [])
+
+        return {
+            "query": query_text,
+            "result": {
+                "status": "ok",
+                "statusCode": 0,
+                "isSuccessful": True,
+                "statusMessage": "Success",
+                "data": None
+            },
+            "reasoning": {
+                "script": structured_answer,
+                "analysis": "General Query Mode",
+                "tone": "motivated"
+            }
+        }
+
+    # 🚀 If DOST needed, continue normal orchestrator flow
+    result = run_orchestrator(query_text)
     request_list = result.get("requestList", [])
 
     final_response_data = {}
@@ -94,7 +112,7 @@ async def process_query(
                 })
 
             else:
-                print(f"📡 Calling combined API for: {title} [{dost_type}]")
+                print(f"🛁 Calling combined API for: {title} [{dost_type}]")
                 resp = requests.post("https://api.acadza.in/combined/create", json={"requestList": [req]})
                 resp.raise_for_status()
                 response_data = resp.json().get("data", {}).get(dost_type, {})
@@ -142,8 +160,7 @@ async def process_query(
         except Exception as e:
             print(f"❌ API call failed for {dost_type}: {e}")
 
-        # ✅ Save to History API if fields available
-    # ✅ STEP: Save to history
+    # ✅ Save to History
     try:
         save_response = save_query_history(auth_token, result)
         print("📜 History saved: Status Code: ", save_response.statusCode)
