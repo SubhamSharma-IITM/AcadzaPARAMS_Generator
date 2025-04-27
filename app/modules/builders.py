@@ -121,7 +121,7 @@ def build_revision(subject, chapter_groups, params, student_id):
         subconcepts = group.get("subconcepts", {})
 
         for concept in concepts:
-            imp = importance_map.get(concept, None)
+            imp = importance_map
             weak_data = [
                 {
                     "subject": subject,
@@ -204,29 +204,53 @@ def build_race(subject, chapter, student_id):
     }
 
 def build_concept(subject, chapter_groups, student_id):
+    import uuid
     concept_basket_data = []
+    seen_concept_subconcept = set()
+
+    print("\n🔎 START build_concept Dry Run:")
+    print(f"Received chapter_groups:\n{chapter_groups}\n")
+
     for group in chapter_groups:
         chapter = group["chapter"]
-        concepts = group.get("concepts", [])
-        subconcepts = group.get("subconcepts", {})
-        for concept in concepts:
-            subs = subconcepts.get(concept, [])
+        requested_concepts = group.get("concepts", [])
+        requested_subconcepts = group.get("subconcepts", {})
+
+        print(f"📚 Chapter: {chapter}")
+        print(f"🎯 Requested Concepts: {requested_concepts}")
+        print(f"🎯 Requested Subconcepts: {requested_subconcepts}")
+
+        for concept in requested_concepts:
+            subs = requested_subconcepts.get(concept, [])
             if not subs:
-                concept_basket_data.append({
-                    "subject": subject,
-                    "subSubject": subject,
-                    "chapter": chapter,
-                    "concept": concept,
-                    "subConcept": ""
-                })
-            for sub in subs:
-                concept_basket_data.append({
-                    "subject": subject,
-                    "subSubject": subject,
-                    "chapter": chapter,
-                    "concept": concept,
-                    "subConcept": sub
-                })
+                key = (chapter, concept, "")
+                if key not in seen_concept_subconcept:
+                    print(f"➕ Adding concept (no subconcepts): {concept}")
+                    concept_basket_data.append({
+                        "subject": subject,
+                        "subSubject": subject,
+                        "chapter": chapter,
+                        "concept": concept,
+                        "subConcept": ""
+                    })
+                    seen_concept_subconcept.add(key)
+            else:
+                for sub in subs:
+                    key = (chapter, concept, sub)
+                    if key not in seen_concept_subconcept:
+                        print(f"➕ Adding subconcept: {concept} ➔ {sub}")
+                        concept_basket_data.append({
+                            "subject": subject,
+                            "subSubject": subject,
+                            "chapter": chapter,
+                            "concept": concept,
+                            "subConcept": sub
+                        })
+                        seen_concept_subconcept.add(key)
+
+    print("\n✅ Final Concept Basket Data:")
+    for item in concept_basket_data:
+        print(item)
 
     chapters_seen = set()
     chapter_title = " + ".join([
@@ -237,17 +261,20 @@ def build_concept(subject, chapter_groups, student_id):
     unique_id = str(uuid.uuid4())
     shorturl = f"cb-{unique_id}"
     longurl = f"/dosts/share-concept-basket/view/{shorturl}"
+
     return {
         "bulkRequestType": "concept",
         "studentid": student_id,
         "shorturl": shorturl,
         "longurl": longurl,
+        "title": f"{chapter_title} Concept Basket",
         "meta": {
             "chapter": chapter_title,
             "discription": "Concept Basket",
             "conceptBasketData": concept_basket_data
         }
     }
+
 
 # -------------------------
 # 🧠 FINAL PAYLOAD ROUTER
@@ -258,6 +285,7 @@ def build_payload(dost_type, request, student_id):
     params = request
 
     if dost_type == "practiceTest":
+        print(build_test(subject, chapter_groups, params, student_id))
         return build_test(subject, chapter_groups, params, student_id)
     elif dost_type == "practiceAssignment":
         return build_assignment(subject, chapter_groups, params, student_id)
@@ -281,7 +309,47 @@ def build_payload(dost_type, request, student_id):
 
     if not payloads:
         return None
-    elif len(payloads) == 1:
-        return payloads[0]
     else:
-        return {"requestList": payloads}
+        return payloads
+
+
+if __name__ == "__main__":
+    # 📚 Define sample inputs
+
+    # Clicking Power Test
+    req_clicking = {
+        "subject": "Physics",
+        "chapter": "Current Electricity"
+    }
+
+    # Picking Power Test
+    req_picking = {
+        "subject": "Chemistry",
+        "chapter": "Chemical Kinetics"
+    }
+
+    # Speed Race Test
+    req_speed = {
+        "subject": "Physics",
+        "chapter": "Motion in one dimension"
+    }
+
+    # 🧠 Student ID
+    student_id = "test_student_123"
+
+    # 🛠️ Test build_clicking
+    print("\n🔵 Clicking Power Payload:")
+    output_clicking = build_clicking(req_clicking["subject"], req_clicking["chapter"], student_id)
+    print(output_clicking)
+
+    # 🛠️ Test build_picking
+    print("\n🟣 Picking Power Payload:")
+    output_picking = build_picking(req_picking["subject"], req_picking["chapter"], student_id)
+    print(output_picking)
+
+    # 🛠️ Test build_race
+    print("\n🔴 Speed Race Payload:")
+    output_race = build_race(req_speed["subject"], req_speed["chapter"], student_id)
+    print(output_race)
+
+

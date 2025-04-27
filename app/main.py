@@ -16,7 +16,6 @@ import json
 # 🚀 Main Orchestrator
 # -----------------------------
 def run_orchestrator(query, student_id=None):
-    #acadza_tree = load_concept_tree()
     final_payloads = []
     combined_tasks = {}
     counter_map = {
@@ -35,12 +34,13 @@ def run_orchestrator(query, student_id=None):
     chunks = result.get("chunks", [])
     request_list = result.get("requestList", [])
     analyze_text = result.get("reasoning", "")
-    response_text = result.get("script", "")
+    main_script = result.get("main_script", "")  # ✅ New
+    dost_steps = result.get("dost_steps", [])      # ✅ New
 
     log_sent_chunks(query, chunks)
     log_gpt_response(query, request_list)
 
-    print("\n🧠 GPT's requestList:")
+    print("\n🧐 GPT's requestList:")
     print(json.dumps(request_list, indent=2))
 
     for req in request_list:
@@ -65,31 +65,41 @@ def run_orchestrator(query, student_id=None):
             continue
 
         enriched_groups = []
-        for group in chapter_groups:
-            chapter = group.get("chapter")
-            subject = group.get("subject")
 
-            concepts = group.get("concepts") or get_concepts(subject, chapter)
-            subconcepts = group.get("subconcepts") or {
-                c: get_subconcepts(subject, chapter, c) for c in concepts
-            }
+        # 🚀 ADD THIS CHECK:
+        if dost_type in ["clickingPower", "pickingPower", "speedRace"]:
+            enriched_groups = chapter_groups
+        else:
+            for group in chapter_groups:
+                chapter = group.get("chapter")
+                subject = group.get("subject")
 
-            enriched_groups.append({
-                "subject": subject,
-                "chapter": chapter,
-                "concepts": concepts,
-                "subconcepts": subconcepts
-            })
+                if "concepts" not in group:
+                    concepts = get_concepts(subject, chapter)
+                    subconcepts = {c: get_subconcepts(subject, chapter, c) for c in concepts}
+                else:
+                    concepts = group.get("concepts", [])
+                    if "subconcepts" not in group:
+                        subconcepts = {c: get_subconcepts(subject, chapter, c) for c in concepts}
+                    else:
+                        subconcepts = group.get("subconcepts", {})
 
-        log_enriched_portion(dost_type, enriched_groups)
+                enriched_groups.append({
+                    "subject": subject,
+                    "chapter": chapter,
+                    "concepts": concepts,
+                    "subconcepts": subconcepts
+                })
+
+            log_enriched_portion(dost_type, enriched_groups)
 
         counter = counter_map[dost_type]
         key = (dost_type, subject, counter)
 
         if key not in combined_tasks:
             combined_tasks[key] = req.copy()
-
-        combined_tasks[key]["chapter_groups"] = combined_tasks[key].get("chapter_groups", []) + enriched_groups
+        # 🚨 Very important correction:
+        combined_tasks[key]["chapter_groups"] = enriched_groups  # NOT += anymore
         counter_map[dost_type] += 1
 
     for key, task in combined_tasks.items():
@@ -97,17 +107,23 @@ def run_orchestrator(query, student_id=None):
         print(f"\n⚙️ Building payload for DOST: {dost_type} | Subject: {subject}")
         log_builder_call(dost_type, subject, task)
 
+       
+
         payload = build_payload(dost_type, task, student_id)
 
         if student_id and not any(k in payload and payload[k] == student_id for k in ["userId", "studentid", "user"]):
             print(f"⚠️ Student ID was not correctly injected in builder for {dost_type}")
 
         if payload:
-            final_payloads.append(payload)
+            if isinstance(payload, list):
+                final_payloads.extend(payload)
+            else:
+                final_payloads.append(payload)
             print("✅ Payload built successfully!")
         else:
             print(f"❌ Payload generation failed for {dost_type} → {subject}")
             print(f"🔍 Debug Task Data: {json.dumps(task, indent=2)}")
+
 
     if not final_payloads:
         print("❌ No valid payloads generated for this query. Possible issue in GPT extraction or chapter mismatch.")
@@ -117,15 +133,26 @@ def run_orchestrator(query, student_id=None):
     return {
         "raw_query": query,
         "requestList": final_payloads,
-        "queryAnalyzeText": analyze_text,  # ✅ Backend-only reasoning
-        "queryResponseText": response_text  # ✅ Friendly frontend script
+        "queryAnalyzeText": analyze_text,   # 🔍 For backend logging
+        "main_script": main_script,         # 🔍 New for frontend motivational journey
+        "dost_steps": dost_steps            # 🔍 New for frontend per-DOST scripts
     }
 
 # -----------------------------
 # 🧪 Manual CLI Runner
 # -----------------------------
 if __name__ == "__main__":
-    query = input("\n🎤 Enter student query: ")
-    output = run_orchestrator(query)
-    print("\n✅ Final API Payload:\nExecution Finished!")
-    print(json.dumps(output, indent=2))
+    # Simulate a user query manually
+    query = "Create a 4-day revision plan for Current Electricity. I can give 2 hours per day. And I want to first increase my clicking power and then race with air 1 on this topic. I am slow in it please help."
+
+    # Dummy student_id for testing
+    student_id = "test_student_123"
+
+    print("\n🚀 Starting manual dry run for run_orchestrator()...\n")
+
+    result = run_orchestrator(query, student_id=student_id)
+
+    print("\n✅ FINAL OUTPUT from run_orchestrator():")
+    import json
+    print(json.dumps(result, indent=2))
+

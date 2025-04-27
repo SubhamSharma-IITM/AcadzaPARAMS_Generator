@@ -69,21 +69,27 @@ def retrieve_relevant_chunks(query, cutoff=SIMILARITY_CUTOFF):
     print(f"✅ {len(all_filtered)} chunks passed similarity cutoff {cutoff}")
 
     selected_chunks = []
-    seen_chapters = set()
+    from collections import defaultdict
+
+    chapter_chunks = defaultdict(list)
 
     for chunk in all_filtered:
         chapter_key = f"{chunk.get('subject')}::{chunk.get('chapter')}"
-        if chapter_key not in seen_chapters:
-            seen_chapters.add(chapter_key)
-            selected_chunks.append(chunk)
-        if len(selected_chunks) == MAX_CHAPTERS:
+        chapter_chunks[chapter_key].append(chunk)
+
+    for chapter_key, chunks in chapter_chunks.items():
+        top_chunks = chunks[:5]  # Pick top 3
+        selected_chunks.extend(top_chunks)
+        if len(selected_chunks) >= 33:
+            selected_chunks = selected_chunks[:33]
             break
 
-    print(f"\n🎯 Retrieved Chunks: {len(selected_chunks)} (First {MAX_CHAPTERS} unique chapters)")
+    print(f"\n🎯 Retrieved Chunks: {len(selected_chunks)} (Max 3 per chapter, Max 33 overall)")
     for c in selected_chunks:
         print(f"- {c['text']}")
 
     return selected_chunks
+
 
 # -----------------------------
 # 🧪 Demo
