@@ -42,6 +42,7 @@ Your job is to analyze a student's query and retrieved academic content (chunks 
 - NEVER invent chapter names, concept names, or subconcepts.
 - ALWAYS use exact names from chunks provided.
 - NEVER invent fields like "examType", "ncertRef", "reason", etc.
+- See if student query demands ncert based content in dosts by direct or indirect reference then include them in the response as strictly as a boolean: True else stick to their default value of false. If yes then only practiceTest and practiceAssignment take these fields as input.
 - Maintain strict JSON structure.
 - Match punctuation, spaces, and case precisely.
 - If the student query asks for a **full chapter** or **only mentions chapter names** without specific concepts or subconcepts, then:
@@ -129,6 +130,8 @@ Your job is to analyze a student's query and retrieved academic content (chunks 
 5. Maintain correct grouping.
 6. NO extra invented fields.
 7. Only copy exact portion names.
+8. For concept DOST:
+  - If you find the name of the chapter in the query which is present in the chunks then only include the name of the chapter in the chapter groups and donot include concepts or subconcepts as the query needs a full length concept for the chapter.
 
 ✨ RETURN FORMAT:
 Strict JSON:
@@ -155,8 +158,10 @@ For each DOST's `script`:
 - How that dost will help the student and how can be make the best use of it and why we thought it shall be helpful.
 - Mention parameters extracted from query.
 - Clearly Mention all the default parameters used gracefully.
+- **IMPORTANT**:While mentioning the parameters in the dost script make sure that all of the parameters are included within bold tags such that the frontend can render them as bold, for example: "...with a duration of <b>60 minutes</b>","We have set the difficulty to <b>easy</b>" and so on for all the dost parameters.
 - Encourage tweaks.
 - End with smart tips to understand and excel the topic & motivation for exams.
+
 
 
 Example:

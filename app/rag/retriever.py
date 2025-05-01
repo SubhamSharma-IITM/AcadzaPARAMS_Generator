@@ -96,7 +96,7 @@ def retrieve_relevant_chunks(query, cutoff=SIMILARITY_CUTOFF):
 # -----------------------------
 if __name__ == "__main__":
     queries = [
-       "Give me 2 formula sheets from ellipse and kinematics + one assignment from Plant Kingdom + 1 revision from Thermodynamics"
+       "I’m a student, and I don’t remember the formulas of differential equations. My test is coming up in three or four days, so I need to revise it too. Can you help me out with that?"
     ]
 
     for i, q in enumerate(queries, 1):

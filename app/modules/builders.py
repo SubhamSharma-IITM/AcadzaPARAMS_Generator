@@ -18,7 +18,7 @@ def build_assignment(subject, chapter_groups, params, student_id):
         "userId": student_id,
         "practiceType": "assignment",
         "title": title,
-        "isNCERT": False,
+        "isNCERT": params.get("isNCERT"),
         "level": params.get("difficulty", "easy").upper(),
         "assignmentQuesCount": params.get("type_split", {
             "scq": 10, "mcq": 10, "integerQuestion": 0, "passageQuestion": 0, "matchQuestion": 0
@@ -47,7 +47,7 @@ def build_test(subject, chapter_groups, params, student_id):
         "batchs": [],
         "sectionOrder": ["singleQuestions", "multipleQuestions", "integerQuestions", "passageQuestions", "matchQuestions"],
         "passageQuestionLimit": 3,
-        "isNCERT": False,
+        "isNCERT": params.get("isNCERT"),
         "helpRequired": False,
         "isMultiple": False,
         "practicePortion": portion

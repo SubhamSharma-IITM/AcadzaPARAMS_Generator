@@ -1,132 +1,186 @@
-# 📜 query_checker.py — Updated Version for DOST / General / Mixed Query Detection
+# 📜 query_checker.py — SuperDOST Enhanced Query Classification & Structuring
 
 import json
+from typing import Literal
 from openai import OpenAI
+import re
 
 # Initialize OpenAI client
 openai = OpenAI()
 
-def query_checker(query_text: str) -> dict:
+
+def query_checker(
+    text: str,
+    *,
+    translate_if_dost_or_mixed: bool = False,
+    input_type: Literal["text", "image"] = "text"
+) -> dict:
     """
-    Decides if a query needs DOSTs, general explanation, or both (mixed).
-    If general or mixed, returns structured answer ready for frontend rendering.
+    Classify student queries into 'dost', 'general', 'mixed', or detect harmful content.
+    For 'general' and 'mixed', return a richly structured 'structured_answer' array.
+    If translate_if_dost_or_mixed is True and mode is 'dost' or 'mixed', also return 'translated'.
+    input_type informs prompt: 'image' input may contain diagrams, LaTeX, labels.
     """
 
-    prompt = f"""
-You are an intelligent academic backend agent for the ACADZA SuperDOST platform.
+    # System-level instructions
+    system_instructions = rf"""
+You are ACADZA’s SuperDOST query classifier.
 
-You must always:
+• Input Type: {input_type}
+  - If "image", the text may include diagram descriptions (e.g. "circle labeled r=5 cm"), raw labels, and LaTeX equations. Extract **all** details precisely.
+  - VERY IMPORTANT:**If Input Type is "image" AND the user’s context (below) contains no explicit request for assignment/test/formula/revision/practice,etc., then you MUST set `"mode":"general"` and skip any DOST logic.**  
+  - If the input is an "image" and mode is "mixed" and the query includes vague intent like:
+     "Help me solve this and give similar questions to practice/revise/any dost..."
+     You MUST enrich the "translated" text by appending a clear intent like:
+     “The student wants a [DOST_TYPE] for the [mention the topics or portion]"
+     Examples:
+     "Help me solve this." →
+     "Help me solve this. The student wants a practiceTest for this portion[mention the topics or portion]."
+     "Revise this chapter." →
+     "Revise this chapter. The student wants a revision plan for the [name of the chapter(s)]"
+    🛑 Avoid generic terms like “any DOST.”
+   ✅ Always mention the specific DOST (practiceTest, formula, revision, etc.)and mention the portion clearly and most importantly only return the enriched dost in the translated text and not anywhere else not even in the structured answer.
+
+
+• Harmful-Content Check: if any violence, abuse, or sexual content is detected, **stop** and return ONLY:
+  {{
+    "mode": "error",
+    "error": "Harmful content detected"
+  }}
+• Translation: if translate_if_dost_or_mixed=True AND you classify mode as "dost" or "mixed", include:
+  "translated": <English version of the original text>
+• Emojis: inline emojis (😊,👍) are allowed inside 'paragraph' or 'heading'.
+• Math: use `\(...\)` or `\[...\]` for inline or block LaTeX.
+
+Available block types in your 'structured_answer':
+  - heading: main title
+  - subheading: section subtitle
+  - paragraph: free text (LaTeX + emojis OK)
+  - bold: one-line highlights
+  - bullet: unordered lists
+  - number: ordered lists
+  - latex: stand-alone equations
+  -ALWAYS STRICTLY FOLLOW,IMPORTANT: When emitting LaTeX or any content containing backslashes in your JSON strings, escape each backslash by doubling it.
+    -For example, write '\\\\(' for '\\(', '\\\\sin' for '\\sin', and '\\\\frac' for '\\frac'.
+    -This ensures the JSON you return parses cleanly.
+  - table: {{ "headers": […], "rows": [[…],[…]] }} for comparisons
+  - callout: {{ "style": "info"|"warning"|"tip", "content": … }}
+  - definition: {{ "term": …, "definition": … }}
+  - quote: {{ "content": …, "author"?: … }}
+  - code: {{ "language": …, "code": … }}
+
+Only return valid JSON matching the schema:
+{{
+  "mode": "general"|"dost"|"mixed"|"error",
+  "error"?: "Harmful content detected",
+  "structured_answer"?: [ …blocks… ],
+  "translated"?: "English text"
+}}
+"""
+
+    # Query-level instructions
+    query_instructions = f"""
+You must:
 
 1. CAREFULLY analyze the STUDENT QUERY.
+
 2. Detect if the query directly or indirectly indicates a need for DOST resources:
    - DOSTs include needs like Assignment, Test, Formula Sheet, Revision Plan, Speed Practice (clicking power, picking power, race dost), Concept Basket.
-   - If the student says things like "help me study", "I want to revise", "give me practice", "give me revision plan", "give assignment" etc., it means DOSTS ARE NEEDED.
-   - If there is any slightest direct or indirect reference towards dosts like formula, revision, practice, test,assignment,padhna hai,short notes,etc., assume DOSTS ARE NEEDED.
+   - Phrases such as "help me study", "I want to revise", "give me practice", "give me revision plan", "give assignment" trigger DOST needs.
+   - Any mention of formula, revision, practice, test, assignment, padhna hai, short notes, etc., implies DOST.
 
-3. Detect if the query needs only general explanation (concept clarification, formula explanation, definitions, summaries, strategy, doubt resolution).
+3. Detect if the query needs only general explanation (concept clarification, formula explanation, definitions, summaries, strategy, doubt resolution) or an exhaustive detailed explanation.
 
-4. 🔥 NEW INSTRUCTION: You must recognize 3 possible cases:
-   - If the query needs only DOSTs → Reply with:
-     ```json
-     {{ "mode": "dost" }}
-     ```
+4. Recognize 3 possible cases:
+   - Only DOSTs → Reply with {{ "mode": "dost" }}
+   - Only general explanation → Reply with {{ "mode": "general", "structured_answer": [ … ] }}
+   - Both explanation + DOSTs → Mixed → Reply with {{ "mode": "mixed", "structured_answer": [ … ] }}
 
-   - If the query needs only general conceptual explanation → Reply with:
-     ```json
-     {{ 
-       "mode": "general", 
-       "structured_answer": [ {{...}} ] 
-     }}
-     ```
+⚡ Hint:
+- If the query mentions what/why/how/define/explain/summarize AND assignment/test/formula/revision → Mixed.
+- Mixed intent may be direct or implicit ("sikhao bhi aur assignment bhi do").
+- Prefer identifying any dual-intent as Mixed.
 
-   - If the query needs both explanation + DOSTs → classify it as Mixed Query → Reply with:
-     ```json
-     {{ 
-       "mode": "mixed", 
-       "structured_answer": [ {...} ] 
-     }}
-     ```
-
-⚡ Hint for detection:
-- If the query mentions concepts to be explained (what/why/how/define/explain/summarize) AND also asks for assignment/test/formula/revision → it's Mixed.
-- Mixed intent could be direct OR hidden inside phrasing ("sikhao bhi aur assignment bhi do", "summary bhi do + test bhi").
-- Prefer identifying even slightly implied dual-intent queries as Mixed.
-
-5. For "general" or "mixed" modes, structured_answer must:
-   - Have separate objects for each block:
-     - paragraph (normal text)
-     - latex (math expressions)
-     - bold (important highlights)
-     - bullet (important bullet points)
-     - number (numbered steps)
-     - emoji (motivational or summary emojis)
+5. For general/mixed, 'structured_answer' must include separate blocks:
+   - paragraph, latex, bold, bullet, number
 
 6. CONTEXT AWARENESS:
-   - Always assume the student is preparing for JEE/NEET or Class 11/12 Board Exams.
-   - Adjust language and technical level accordingly: academic rigor, exam tips, strategy.
-   - Include small smart tips, exam strategies, cautionary notes if topic-specific.
-   - If suitable, add motivational one-liners relevant to students' exam preparation journey.
-   - If the query demands a certain level of exhaustive explanation then give it to them in a proper scientific way which follows their exam standards.
+   - Assume JEE/NEET or Class 11/12 Board Exams,NCERT.
+   - Adjust language and technical level: academic rigor, exam tips, strategy.
+   - Include smart tips, exam strategies, cautionary notes as needed.
+   - Add motivational one-liners when appropriate.
+   - For exhaustive explanations, follow scientific standards.
 
 7. TONE ADAPTATION:
-   - Highly motivational and positive by default.
+   - Motivational and positive by default.
    - If user seems anxious/sad → extra motivational tone.
-   - If user seems over-smart → witty yet respectful reply.
-   - If user is neutral → warm and professional tone.
+   - If user seems over-smart → witty yet respectful.
+   - If neutral → warm and professional.
 
 8. IMPORTANT:
    - NEVER invent DOST needs if not implied.
    - NEVER mix types inside one block.
-   - Maintain clear format so that frontend can render easily.
-   - If equations come in paragraph,number,bullet then use proper latex notations to help fronend render easily.
+   - Maintain clear format for frontend rendering.
+   - Use proper LaTeX in paragraphs, numbers, bullets.
 
-ONLY return valid JSON.
-DO NOT include greetings, explanations, or extra notes outside JSON.
+ONLY return valid JSON. DO NOT include any text outside the JSON.
 
 === STUDENT QUERY ===
-{query_text}
+{text}
 """
 
+    messages = [
+        {"role": "system", "content": system_instructions},
+        {"role": "user",   "content": query_instructions}
+    ]
+
     try:
-        # Call OpenAI Chat Completion
-        response = openai.chat.completions.create(
+        resp = openai.chat.completions.create(
             model="gpt-4o",
-            messages=[{"role": "user", "content": prompt}],
+            messages=messages,
             temperature=0.0
         )
-        content = response.choices[0].message.content.strip()
+        content = resp.choices[0].message.content.strip()
+        print("🔍 Raw GPT response:", content)
 
-        print("\n📝 Raw GPT Response:")
-        print(content)  # 🛠️ Debug
-
-        # 🛡️ Extract clean JSON safely
+        # --- Extract JSON between fences if present ---
         if "```json" in content:
-            content = content.split("```json")[-1].split("```", 1)[0].strip()
+            content = content.split("```json")[-1].split("```",1)[0].strip()
 
-        parsed_response = json.loads(content)
-        return parsed_response
+        # … after you strip out the ```json fences …
+        # First attempt
+        try:
+            return json.loads(content)
+        except json.JSONDecodeError:
+            fixed = normalize_backslashes(content)
+            return json.loads(fixed)
 
     except Exception as e:
-        print(f"❌ query_checker() failed: {e}")
+        print(f"❌ query_checker() error: {e}")
         return {
             "mode": "general",
             "structured_answer": [
-                {"type": "paragraph", "content": "Sorry, could not process the query properly due to an internal error."}
+                {"type":"paragraph","content":"Sorry, we couldn't process your query due to an internal error. Please try again."}
             ]
         }
+
+def normalize_backslashes(s: str) -> str:
+    def repl(m):
+        slashes = m.group(1)
+        char   = m.group(2)
+        # keep only the largest even count ≤ len(slashes)
+        keep = (len(slashes)//2)*2
+        return "\\" * keep + char
+    # (\\+)([^"\\/bfnrtu]) => group1 = all slashes, group2 = next char
+    return re.sub(r'(\\+)([^"\\/bfnrtu])', repl, s)
 
 # ------------------------------
 # 🧪 Local CLI Test Mode
 # ------------------------------
 if __name__ == "__main__":
     while True:
-        user_query = input("\n🎤 Enter a student query (or type 'exit' to quit):\n> ")
-        if user_query.lower() in ["exit", "quit"]:
+        q = input("Enter student query (or 'exit'): ")
+        if q.lower() in ['exit', 'quit']:
             break
-
-        print("\n🔍 Running Query Checker...")
-        result = query_checker(user_query)
-
-        print("\n📦 Query Checker Output:")
-        print(json.dumps(result, indent=2))
-        print("\n" + "="*50)
+        out = query_checker(q, translate_if_dost_or_mixed=True, input_type="text")
+        print(json.dumps(out, indent=2))

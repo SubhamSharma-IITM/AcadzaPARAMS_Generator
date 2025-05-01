@@ -19,9 +19,10 @@ allowed_dosts = {
 def get_param_specs(dost_type: str) -> dict:
     specs = {
         "practiceAssignment": {
-            "expected_fields": ["difficulty", "type_split"],
+            "expected_fields": ["difficulty", "type_split","isNCERT"],
             "defaults": {
                 "difficulty": "easy",
+                "isNCERT": False,
                 "type_split": {
                     "scq": 20,
                     "mcq": 10,
@@ -32,9 +33,10 @@ def get_param_specs(dost_type: str) -> dict:
             }
         },
         "practiceTest": {
-            "expected_fields": ["difficulty", "duration_minutes","paperPattern"],
+            "expected_fields": ["difficulty", "duration_minutes","paperPattern","isNCERT"],
             "defaults": {
                 "difficulty": "easy",
+                "isNCERT": False,
                 "duration_minutes": 60,
                 "paperPattern": "Mains"
             }
