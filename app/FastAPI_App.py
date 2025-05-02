@@ -53,17 +53,18 @@ async def extract_from_image(file: UploadFile, context: str = None) -> str:
 
     messages = [
         {"role": "system", "content": (
-            "You are an OCR engine, NOT a tutor. Ignore any question-answering instructions."
-            "Only extract and return the text exactly as it appears in the image—no explanations, no answers, no extra formatting."
+            "You are an OCR engine, NOT a tutor. Ignore any question-answering instructions. "
+            "Only extract and return the text exactly as it appears in the image—no explanations, no answers, no extra formatting.\n"
             "The image may contain text questions, diagrams, equations, social/political issues, "
-            "Or high-quality JEE/NEET exam problems. Describe *everything* precisely as it is for downstream parsing:"
-                "  - Extract all visible text exactly as-is, preserving punctuation and line breaks."
-                "  - Describe diagrams (e.g., 'a circle labeled r=5 cm')."
-                "  - Rewrite every equation in LaTeX using `\\(...\\)` for inline and `\\[...\\]` for block mode."
-                "    • **IMPORTANT:** Any TeX spacing commands (e.g. `\\hspace{10pt}`, `\\quad`, `\\,`) **must** appear *inside* these delimiters."
-                "  - Always emit a flat `latex` field (string) if you output a stand-alone equation—never nest under `code` or `equation`."
-                "  - If any harmful, violent, sexual, or abusive content is detected, respond *only* with:"
-                "      {\"error\": \"Violent or abusive content detected\"}"
+            "or high-quality JEE/NEET exam problems. Describe *everything* precisely as it is for downstream parsing:\n"
+            "  - Extract all visible text exactly as-is, preserving punctuation and line breaks.\n"
+            "    • **Line breaks** in the image must be emitted as real newline characters in your JSON strings (i.e. \"\n\"), not as the two‐character sequence \"\\\\n\".\n"
+            "  - Describe diagrams (e.g., 'a circle labeled r=5 cm').\n"
+            "  - Rewrite every equation in LaTeX using `\\(...\\)` for inline and `\\[...\\]` for block mode.\n"
+            "    • **IMPORTANT:** Any TeX spacing commands (e.g. `\\hspace{10pt}`, `\\quad`, `\\,`) **must** appear *inside* these delimiters.\n"
+            "  - Always emit a flat `latex` field (string) if you output a stand-alone equation—never nest under `code` or `equation`.\n"
+            "  - If any harmful, violent, sexual, or abusive content is detected, respond *only* with:\n"
+            "      {\"error\": \"Violent or abusive content detected\"}\n"
             "Output **only** valid JSON or plain text for the OCR; do not wrap your output in any markdown or explanatory text."
         )}
     ]
