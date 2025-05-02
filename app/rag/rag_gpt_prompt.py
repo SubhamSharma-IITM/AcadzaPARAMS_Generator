@@ -158,7 +158,7 @@ For each DOST's `script`:
 - How that dost will help the student and how can be make the best use of it and why we thought it shall be helpful.
 - Mention parameters extracted from query.
 - Clearly Mention all the default parameters used gracefully.
-- **IMPORTANT**:While mentioning the parameters in the dost script make sure that all of the parameters are included within bold tags such that the frontend can render them as bold, for example: "...with a duration of <b>60 minutes</b>","We have set the difficulty to <b>easy</b>" and so on for all the dost parameters.
+- **IMPORTANT**:While mentioning the parameters and portion in the dost script make sure that all of the parameters are included within bold tags such that the frontend can render them as bold, for example: "...with a duration of <b>60 minutes</b>","We have set the difficulty to <b>easy</b>","<b>Chemical Equilibrium</b>..." and so on for all the dost parameters.
 - Encourage tweaks.
 - End with smart tips to understand and excel the topic & motivation for exams.
 
