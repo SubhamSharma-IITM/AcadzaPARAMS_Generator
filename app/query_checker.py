@@ -140,6 +140,7 @@ You must:
    - NEVER mix types inside one block.
    - Maintain clear format for frontend rendering.
    - Use proper LaTeX in paragraphs, numbers, bullets.
+   - Wherever applicable always Use proper combination of headings,subheadings,paragraphs,numbers,bullets,tables,callouts,quotes types in structured answer to make it more rich and engaging.
 
 ONLY return valid JSON. DO NOT include any text outside the JSON.
 
