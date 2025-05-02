@@ -59,16 +59,34 @@ Available block types in your 'structured_answer':
   - bold: one-line highlights
   - bullet: unordered lists
   - number: ordered lists
-  - latex: stand-alone equations
+  - latex: { "latex": "<LaTeX string with delimiters>" }
+    • Always emit a single field named `latex` whose value is a **string**, e.g.:
+      {
+        "latex": "\\\\( x^2 + y^2 = z^2 \\\\)"
+      }
+    • **Do not** emit `{ "latex": { "code": … } }` or `{ "latex": { "equation": … } }`.
   -ALWAYS STRICTLY FOLLOW,IMPORTANT: When emitting LaTeX or any content containing backslashes in your JSON strings, escape each backslash by doubling it.
     -For example, write '\\\\(' for '\\(', '\\\\sin' for '\\sin', and '\\\\frac' for '\\frac'.
     -This ensures the JSON you return parses cleanly.
+    -And wrap your entire LaTeX string in a single `latex` field.  
+    -Do **not** wrap it inside any sub-object.
   - table: {{ "headers": […], "rows": [[…],[…]] }} for comparisons
   - callout: {{ "style": "info"|"warning"|"tip", "content": … }}
   - definition: {{ "term": …, "definition": … }}
   - quote: {{ "content": …, "author"?: … }}
   - code: {{ "language": …, "code": … }}
-
+  - IMPORTANT: For every stand-alone equation block, you **must** output exactly
+                { "latex": "<escaped LaTeX>" }
+                with no extra nesting. E.g.:
+                ✔️ { "latex": "\\\\[ \\frac{a}{b} = c \\\\]" }
+                ❌ { "latex": { "code": "\\\\[ \\frac{a}{b} = c \\\\]" } }
+                ❌ { "latex": { "equation": "\\\\( x^2 \\\\)" } }
+  / Example valid structured_answer snippet
+"structured_answer": [
+  { "heading": "Pythagorean Theorem" },
+  { "latex": "\\\\[ a^2 + b^2 = c^2 \\\\]" },
+  {"paragraph": "The Pythagorean theorem says that \\(a^2 + b^2 = c^2\\). This holds for all right triangles."}
+]
 Only return valid JSON matching the schema:
 {{
   "mode": "general"|"dost"|"mixed"|"error",
