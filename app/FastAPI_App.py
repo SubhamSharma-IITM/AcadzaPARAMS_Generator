@@ -236,7 +236,7 @@ async def process_query(
     original_text = raw_text
     DOST_KEYWORDS = {
     "assignment", "test", "practice", "formula", "revision",
-    "clicking", "picking", "speed", "race", "concept"
+    "clicking", "picking", "speed", "race", "concept","practiceTest"
 }
     # 2️⃣ Classify & translate if needed
     merged = raw_text
@@ -249,14 +249,16 @@ async def process_query(
         input_type=input_type
    )
     
+    translated_text = checker_result.get("translated")
+
     if input_type=="image" and checker_result.get("mode")in("mixed,dost"):
-        user_ctx = (context or "").lower()
+        user_ctx = (translated_text or "").lower()
         if not any(k in user_ctx for k in DOST_KEYWORDS):
                 checker_result["mode"]="general"
 
     mode            = checker_result.get("mode")
     structured      = checker_result.get("structured_answer", [])
-    translated_text = checker_result.get("translated")
+    
 
     # Use translated text downstream when present
     pipeline_text = translated_text or raw_text
