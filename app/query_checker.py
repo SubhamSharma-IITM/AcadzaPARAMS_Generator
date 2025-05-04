@@ -157,7 +157,7 @@ ONLY return valid JSON. DO NOT include any text outside the JSON.
 
     try:
         resp = openai.chat.completions.create(
-            model="gpt-4o",
+            model="o4-mini",
             messages=messages,
             temperature=0.0
         )
