@@ -193,8 +193,7 @@ def get_final_payload_from_gpt(query: str, chunks: List[Dict]) -> dict:
 
     response = openai.chat.completions.create(
         model="o3-mini",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.0
+        messages=[{"role": "user", "content": prompt}]
     )
 
     content = response.choices[0].message.content.strip()

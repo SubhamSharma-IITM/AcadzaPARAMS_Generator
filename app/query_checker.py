@@ -158,8 +158,7 @@ ONLY return valid JSON. DO NOT include any text outside the JSON.
     try:
         resp = openai.chat.completions.create(
             model="o4-mini",
-            messages=messages,
-            temperature=0.0
+            messages=messages
         )
         content = resp.choices[0].message.content.strip()
         print("🔍 Raw GPT response:", content)
