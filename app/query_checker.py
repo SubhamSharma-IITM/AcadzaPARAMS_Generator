@@ -157,7 +157,7 @@ ONLY return valid JSON. DO NOT include any text outside the JSON.
 
     try:
         resp = openai.chat.completions.create(
-            model="o4-mini",
+            model="4o",
             messages=messages
         )
         content = resp.choices[0].message.content.strip()
