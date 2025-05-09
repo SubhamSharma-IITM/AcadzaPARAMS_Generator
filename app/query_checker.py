@@ -49,14 +49,15 @@ You are ACADZA’s SuperDOST query classifier.
   }}
 • Translation: if translate_if_dost_or_mixed=True AND you classify mode as "dost" or "mixed", include:
   "translated": <English version of the original text>
-• Emojis: inline emojis (😊,👍) are allowed inside 'paragraph' or 'heading'.
+• Emojis: inline emojis are allowed inside 'paragraph' or 'heading'.
 • Math: use `\(...\)` or `\[...\]` for inline or block LaTeX.
+• If the query asks for a full solution, provide a step-by-step breakdown of the solution process ensuring clarity and understanding and that you give the final answer at the end of the solution always.
 
 Available block types in your 'structured_answer':
   - heading: main title
   - subheading: section subtitle
   - paragraph: free text (LaTeX + emojis OK)
-  - bold: one-line highlights
+  - bold: one-line highlights or use in paragraphs/numbers/bullets under <b>
   - bullet: unordered lists
   - number: ordered lists
   - latex: {{ "latex": "<LaTeX string with delimiters>" }}
@@ -75,7 +76,7 @@ Available block types in your 'structured_answer':
   - definition: {{ "term": …, "definition": … }}
   - quote: {{ "content": …, "author"?: … }}
   - code: {{ "language": …, "code": … }}
-  - IMPORTANT: For every stand-alone equation block, you **must** output exactly
+  - IMPORTANT:-For every stand-alone equation block, you **must** output exactly
                 {{ "latex": "<escaped LaTeX>" }}
                 with no extra nesting. E.g.:
                 ✔️ {{ "latex": "\\\\[ \\frac{{a}}{{b}} = c \\\\]" }}
@@ -87,6 +88,9 @@ Available block types in your 'structured_answer':
   {{ "latex": "\\\\[ a^2 + b^2 = c^2 \\\\]" }},
   {{"paragraph": "The Pythagorean theorem says that \\(a^2 + b^2 = c^2\\). This holds for all right triangles."}}
 ]
+ 
+**VERY IMPORTANT** -Always ensure that the structured_answer contains clearly defined blocks including latex as per the instructions given above with no ambiguity so that the frontend can render them correctly.
+
 Only return valid JSON matching the schema:
 {{
   "mode": "general"|"dost"|"mixed"|"error",
@@ -142,8 +146,11 @@ You must:
    - NEVER mix types inside one block.
    - Maintain clear format for frontend rendering.
    - Use proper LaTeX in paragraphs, numbers, bullets.
-   - Wherever applicable always Use proper combination of headings,subheadings,paragraphs,numbers,bullets,tables,callouts,quotes types in structured answer to make it more rich and engaging.
-   
+   - Wherever applicable always Use proper combination of headings,subheadings,paragraphs,numbers,bullets,tables,callouts relevant quotes in structured answer to make it more rich and engaging.
+   - Wherever applicable use relevant quotes around the question or the situation of the student that you can guage from the context from the great Indian Scientific Scholars particularly from Chanakya and others from India. 
+   - Wherever applicable use boxed LaTeX for equations and formulas to conclude the answer.
+
+
 ONLY return valid JSON. DO NOT include any text outside the JSON.
 
 === STUDENT QUERY ===
@@ -157,7 +164,7 @@ ONLY return valid JSON. DO NOT include any text outside the JSON.
 
     try:
         resp = openai.chat.completions.create(
-            model="gpt-4o",
+            model="gpt-4.1",
             messages=messages,
             temperature=0.0
         )

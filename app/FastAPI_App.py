@@ -65,7 +65,7 @@ async def extract_from_image(file: UploadFile, context: str = None) -> str:
             "  - Always emit a flat `latex` field (string) if you output a stand-alone equation—never nest under `code` or `equation`.\n"
             "  - If any harmful, violent, sexual, or abusive content is detected, respond *only* with:\n"
             "      {\"error\": \"Violent or abusive content detected\"}\n"
-            "Output **only** valid JSON or plain text for the OCR; do not wrap your output in any markdown or explanatory text."
+            "Output **only** valid JSON for the OCR; do not wrap your output in any markdown or explanatory text."
         )}
     ]
     
@@ -83,6 +83,7 @@ async def extract_from_image(file: UploadFile, context: str = None) -> str:
 
     response = openai.chat.completions.create(
         model="gpt-4o",
+        response_format={"type": "json_object"},
         messages=messages,
         temperature=0.0
     )
@@ -90,12 +91,13 @@ async def extract_from_image(file: UploadFile, context: str = None) -> str:
 
     try:
         data = json.loads(extracted)
-        if isinstance(data, dict) and data.get("error"):
-            return extracted
+        if isinstance(data, dict):
+            return data
     except json.JSONDecodeError:
         pass
 
-    return extracted
+    # otherwise, it’s just plain text
+    return {"text": extracted, "latex": None}
 
 
 # -----------------------------
@@ -240,6 +242,10 @@ async def process_query(
 }
     # 2️⃣ Classify & translate if needed
     merged = raw_text
+
+    if isinstance(merged, dict):
+        merged = str(merged)
+
     if context:
        merged += "\n\n[User context:]\n" + context
 
