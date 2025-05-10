@@ -7325,3 +7325,3503 @@
     }
   ]
 }
+
+===== LOG ENTRY =====
+{
+  "timestamp": "2025-05-10 19:40:45",
+  "step": "Chunks Sent to GPT",
+  "query": "Give me one assignment from Simple Harmonic Motion (SHM) and one from Newton's Laws of Motion (NLM), and one combined concept DOST for both of them. The student wants: 1. An assignment for SHM, 2. An assignment for NLM, 3. A concept basket (theory + videos) covering both SHM and NLM together.",
+  "chunk_count": 33,
+  "chunk_sample": [
+    "Physics > Oscillations (SHM) > Simple harmonic motion > Superposition of SHM",
+    "Physics > Oscillations (SHM) > Simple harmonic motion > SHM as the projection of uniform circular motion",
+    "Physics > Oscillations (SHM) > Simple harmonic motion > Introduction and General equation of SHM",
+    "Physics > Oscillations (SHM) > Periodic and Oscillatory Motion > Introduction",
+    "Physics > Oscillations (SHM) > Simple harmonic motion > Velocity and acceleration in SHM"
+  ]
+}
+
+===== LOG ENTRY =====
+{
+  "timestamp": "2025-05-10 19:40:45",
+  "step": "GPT Response (requestList)",
+  "query": "Give me one assignment from Simple Harmonic Motion (SHM) and one from Newton's Laws of Motion (NLM), and one combined concept DOST for both of them. The student wants: 1. An assignment for SHM, 2. An assignment for NLM, 3. A concept basket (theory + videos) covering both SHM and NLM together.",
+  "requestList": [
+    {
+      "dost_type": "practiceAssignment",
+      "subject": "Physics",
+      "chapter_groups": [
+        {
+          "subject": "Physics",
+          "chapter": "Oscillations (SHM)"
+        }
+      ],
+      "difficulty": "easy",
+      "isNCERT": false,
+      "type_split": {
+        "scq": 20,
+        "mcq": 10,
+        "integerQuestion": 5,
+        "passageQuestion": 0,
+        "matchQuestion": 0
+      }
+    },
+    {
+      "dost_type": "practiceAssignment",
+      "subject": "Physics",
+      "chapter_groups": [
+        {
+          "subject": "Physics",
+          "chapter": "Newton's law of motion"
+        }
+      ],
+      "difficulty": "easy",
+      "isNCERT": false,
+      "type_split": {
+        "scq": 20,
+        "mcq": 10,
+        "integerQuestion": 5,
+        "passageQuestion": 0,
+        "matchQuestion": 0
+      }
+    },
+    {
+      "dost_type": "concept",
+      "subject": "Physics",
+      "chapter_groups": [
+        {
+          "subject": "Physics",
+          "chapter": "Oscillations (SHM)"
+        },
+        {
+          "subject": "Physics",
+          "chapter": "Newton's law of motion"
+        }
+      ]
+    }
+  ]
+}
+
+===== LOG ENTRY =====
+{
+  "timestamp": "2025-05-10 19:40:46",
+  "step": "Enriched Portion for practiceAssignment",
+  "portion": [
+    {
+      "subject": "Physics",
+      "chapter": "Oscillations (SHM)",
+      "concepts": [
+        "Periodic and Oscillatory Motion",
+        "Simple harmonic motion",
+        "Time period in SHM",
+        "Problem based on Amplitude",
+        "Angular SHM",
+        "Free, damped and forced oscillation"
+      ],
+      "subconcepts": {
+        "Periodic and Oscillatory Motion": [
+          "Introduction"
+        ],
+        "Simple harmonic motion": [
+          "Introduction and General equation of SHM",
+          "Velocity and acceleration in SHM",
+          "Graphs in SHM",
+          "Energy of a particle in SHM",
+          "SHM as the projection of uniform circular motion",
+          "Application of phasor in SHM",
+          "Superposition of SHM"
+        ],
+        "Time period in SHM": [
+          "Force method",
+          "Energy method",
+          "Combination of springs in SHM",
+          "Reduced mass method",
+          "Oscillations of springs pulley block systems",
+          "Oscillations of Fluid Column"
+        ],
+        "Problem based on Amplitude": [
+          "Problem based on Amplitude"
+        ],
+        "Angular SHM": [
+          "Torque method and Simple pendulum",
+          "Oscillations of a Rolling Body on Horizontal and curved surface",
+          "Compound pendulum",
+          "Torsional pendulum"
+        ],
+        "Free, damped and forced oscillation": [
+          "Damped Oscillation",
+          "Forced oscillations."
+        ]
+      }
+    }
+  ]
+}
+
+===== LOG ENTRY =====
+{
+  "timestamp": "2025-05-10 19:40:46",
+  "step": "Enriched Portion for practiceAssignment",
+  "portion": [
+    {
+      "subject": "Physics",
+      "chapter": "Newton's law of motion",
+      "concepts": [
+        "Introduction to forces",
+        "Newton's law of motion",
+        "Equilibrium of forces",
+        "Frame of reference",
+        "Free body diagram",
+        "Constraint motion",
+        "Pulley problems",
+        "Spring",
+        "Pseudo force",
+        "Friction",
+        "Angle of repose",
+        "Multiple block system"
+      ],
+      "subconcepts": {
+        "Introduction to forces": [
+          "Fundamental forces",
+          "Normal, Tension and friction"
+        ],
+        "Newton's law of motion": [
+          "First law (Law of inertia)",
+          "Momentum and its significance",
+          "Second law",
+          "Third law"
+        ],
+        "Equilibrium of forces": [
+          "Concurrent and Coplanar Forces",
+          "Equilibrium of forces"
+        ],
+        "Frame of reference": [
+          "Inertial and non-inertial F.O.R.",
+          "Pseudo Forces"
+        ],
+        "Free body diagram": [
+          "Fundamentals of drawing F.B.D.",
+          "Train problems(Tension)",
+          "Lift Problems(Normal)",
+          "Wedge problems(Resolving Forces)"
+        ],
+        "Constraint motion": [
+          "String and pulley constraint(Tension)",
+          "Wedge constraint(Normal)",
+          "Rigid Body Constraint(Introduction)"
+        ],
+        "Pulley problems": [
+          "Simple pulley system",
+          "Complex Pulley system",
+          "Mechanical advantage"
+        ],
+        "Spring": [
+          "Spring constant",
+          "Combination of Spring(parallel and series)",
+          "Spring pulley system",
+          "Equivalent Spring constant",
+          "Cutting of spring and string."
+        ],
+        "Pseudo force": [
+          "Problems involving pseudo force"
+        ],
+        "Friction": [
+          "Types of Friction",
+          "Direction of static and kinetic friction",
+          "Coefficient of friction",
+          "Limiting value of friction",
+          "Angle of friction",
+          "Transition of friction from static to kinetic",
+          "Contact Force",
+          "Angle of repose",
+          "Two block problem",
+          "Three or more block problem"
+        ],
+        "Angle of repose": [
+          "Motion on incline with angle more than angle of repose",
+          "Motion on incline with less than the angle of repose",
+          "Motion on vertical surface"
+        ],
+        "Multiple block system": [
+          "Concept of driving force",
+          "Method to find which surface slips",
+          "Method to find acceleration of blocks"
+        ]
+      }
+    }
+  ]
+}
+
+===== LOG ENTRY =====
+{
+  "timestamp": "2025-05-10 19:40:46",
+  "step": "Enriched Portion for concept",
+  "portion": [
+    {
+      "subject": "Physics",
+      "chapter": "Oscillations (SHM)",
+      "concepts": [
+        "Periodic and Oscillatory Motion",
+        "Simple harmonic motion",
+        "Time period in SHM",
+        "Problem based on Amplitude",
+        "Angular SHM",
+        "Free, damped and forced oscillation"
+      ],
+      "subconcepts": {
+        "Periodic and Oscillatory Motion": [
+          "Introduction"
+        ],
+        "Simple harmonic motion": [
+          "Introduction and General equation of SHM",
+          "Velocity and acceleration in SHM",
+          "Graphs in SHM",
+          "Energy of a particle in SHM",
+          "SHM as the projection of uniform circular motion",
+          "Application of phasor in SHM",
+          "Superposition of SHM"
+        ],
+        "Time period in SHM": [
+          "Force method",
+          "Energy method",
+          "Combination of springs in SHM",
+          "Reduced mass method",
+          "Oscillations of springs pulley block systems",
+          "Oscillations of Fluid Column"
+        ],
+        "Problem based on Amplitude": [
+          "Problem based on Amplitude"
+        ],
+        "Angular SHM": [
+          "Torque method and Simple pendulum",
+          "Oscillations of a Rolling Body on Horizontal and curved surface",
+          "Compound pendulum",
+          "Torsional pendulum"
+        ],
+        "Free, damped and forced oscillation": [
+          "Damped Oscillation",
+          "Forced oscillations."
+        ]
+      }
+    },
+    {
+      "subject": "Physics",
+      "chapter": "Newton's law of motion",
+      "concepts": [
+        "Introduction to forces",
+        "Newton's law of motion",
+        "Equilibrium of forces",
+        "Frame of reference",
+        "Free body diagram",
+        "Constraint motion",
+        "Pulley problems",
+        "Spring",
+        "Pseudo force",
+        "Friction",
+        "Angle of repose",
+        "Multiple block system"
+      ],
+      "subconcepts": {
+        "Introduction to forces": [
+          "Fundamental forces",
+          "Normal, Tension and friction"
+        ],
+        "Newton's law of motion": [
+          "First law (Law of inertia)",
+          "Momentum and its significance",
+          "Second law",
+          "Third law"
+        ],
+        "Equilibrium of forces": [
+          "Concurrent and Coplanar Forces",
+          "Equilibrium of forces"
+        ],
+        "Frame of reference": [
+          "Inertial and non-inertial F.O.R.",
+          "Pseudo Forces"
+        ],
+        "Free body diagram": [
+          "Fundamentals of drawing F.B.D.",
+          "Train problems(Tension)",
+          "Lift Problems(Normal)",
+          "Wedge problems(Resolving Forces)"
+        ],
+        "Constraint motion": [
+          "String and pulley constraint(Tension)",
+          "Wedge constraint(Normal)",
+          "Rigid Body Constraint(Introduction)"
+        ],
+        "Pulley problems": [
+          "Simple pulley system",
+          "Complex Pulley system",
+          "Mechanical advantage"
+        ],
+        "Spring": [
+          "Spring constant",
+          "Combination of Spring(parallel and series)",
+          "Spring pulley system",
+          "Equivalent Spring constant",
+          "Cutting of spring and string."
+        ],
+        "Pseudo force": [
+          "Problems involving pseudo force"
+        ],
+        "Friction": [
+          "Types of Friction",
+          "Direction of static and kinetic friction",
+          "Coefficient of friction",
+          "Limiting value of friction",
+          "Angle of friction",
+          "Transition of friction from static to kinetic",
+          "Contact Force",
+          "Angle of repose",
+          "Two block problem",
+          "Three or more block problem"
+        ],
+        "Angle of repose": [
+          "Motion on incline with angle more than angle of repose",
+          "Motion on incline with less than the angle of repose",
+          "Motion on vertical surface"
+        ],
+        "Multiple block system": [
+          "Concept of driving force",
+          "Method to find which surface slips",
+          "Method to find acceleration of blocks"
+        ]
+      }
+    }
+  ]
+}
+
+===== LOG ENTRY =====
+{
+  "timestamp": "2025-05-10 19:40:46",
+  "step": "Builder Called: practiceAssignment | Subject: Physics",
+  "portion": {
+    "dost_type": "practiceAssignment",
+    "subject": "Physics",
+    "chapter_groups": [
+      {
+        "subject": "Physics",
+        "chapter": "Oscillations (SHM)",
+        "concepts": [
+          "Periodic and Oscillatory Motion",
+          "Simple harmonic motion",
+          "Time period in SHM",
+          "Problem based on Amplitude",
+          "Angular SHM",
+          "Free, damped and forced oscillation"
+        ],
+        "subconcepts": {
+          "Periodic and Oscillatory Motion": [
+            "Introduction"
+          ],
+          "Simple harmonic motion": [
+            "Introduction and General equation of SHM",
+            "Velocity and acceleration in SHM",
+            "Graphs in SHM",
+            "Energy of a particle in SHM",
+            "SHM as the projection of uniform circular motion",
+            "Application of phasor in SHM",
+            "Superposition of SHM"
+          ],
+          "Time period in SHM": [
+            "Force method",
+            "Energy method",
+            "Combination of springs in SHM",
+            "Reduced mass method",
+            "Oscillations of springs pulley block systems",
+            "Oscillations of Fluid Column"
+          ],
+          "Problem based on Amplitude": [
+            "Problem based on Amplitude"
+          ],
+          "Angular SHM": [
+            "Torque method and Simple pendulum",
+            "Oscillations of a Rolling Body on Horizontal and curved surface",
+            "Compound pendulum",
+            "Torsional pendulum"
+          ],
+          "Free, damped and forced oscillation": [
+            "Damped Oscillation",
+            "Forced oscillations."
+          ]
+        }
+      }
+    ],
+    "difficulty": "easy",
+    "isNCERT": false,
+    "type_split": {
+      "scq": 20,
+      "mcq": 10,
+      "integerQuestion": 5,
+      "passageQuestion": 0,
+      "matchQuestion": 0
+    }
+  }
+}
+
+===== LOG ENTRY =====
+{
+  "timestamp": "2025-05-10 19:40:46",
+  "step": "Builder Called: practiceAssignment | Subject: Physics",
+  "portion": {
+    "dost_type": "practiceAssignment",
+    "subject": "Physics",
+    "chapter_groups": [
+      {
+        "subject": "Physics",
+        "chapter": "Newton's law of motion",
+        "concepts": [
+          "Introduction to forces",
+          "Newton's law of motion",
+          "Equilibrium of forces",
+          "Frame of reference",
+          "Free body diagram",
+          "Constraint motion",
+          "Pulley problems",
+          "Spring",
+          "Pseudo force",
+          "Friction",
+          "Angle of repose",
+          "Multiple block system"
+        ],
+        "subconcepts": {
+          "Introduction to forces": [
+            "Fundamental forces",
+            "Normal, Tension and friction"
+          ],
+          "Newton's law of motion": [
+            "First law (Law of inertia)",
+            "Momentum and its significance",
+            "Second law",
+            "Third law"
+          ],
+          "Equilibrium of forces": [
+            "Concurrent and Coplanar Forces",
+            "Equilibrium of forces"
+          ],
+          "Frame of reference": [
+            "Inertial and non-inertial F.O.R.",
+            "Pseudo Forces"
+          ],
+          "Free body diagram": [
+            "Fundamentals of drawing F.B.D.",
+            "Train problems(Tension)",
+            "Lift Problems(Normal)",
+            "Wedge problems(Resolving Forces)"
+          ],
+          "Constraint motion": [
+            "String and pulley constraint(Tension)",
+            "Wedge constraint(Normal)",
+            "Rigid Body Constraint(Introduction)"
+          ],
+          "Pulley problems": [
+            "Simple pulley system",
+            "Complex Pulley system",
+            "Mechanical advantage"
+          ],
+          "Spring": [
+            "Spring constant",
+            "Combination of Spring(parallel and series)",
+            "Spring pulley system",
+            "Equivalent Spring constant",
+            "Cutting of spring and string."
+          ],
+          "Pseudo force": [
+            "Problems involving pseudo force"
+          ],
+          "Friction": [
+            "Types of Friction",
+            "Direction of static and kinetic friction",
+            "Coefficient of friction",
+            "Limiting value of friction",
+            "Angle of friction",
+            "Transition of friction from static to kinetic",
+            "Contact Force",
+            "Angle of repose",
+            "Two block problem",
+            "Three or more block problem"
+          ],
+          "Angle of repose": [
+            "Motion on incline with angle more than angle of repose",
+            "Motion on incline with less than the angle of repose",
+            "Motion on vertical surface"
+          ],
+          "Multiple block system": [
+            "Concept of driving force",
+            "Method to find which surface slips",
+            "Method to find acceleration of blocks"
+          ]
+        }
+      }
+    ],
+    "difficulty": "easy",
+    "isNCERT": false,
+    "type_split": {
+      "scq": 20,
+      "mcq": 10,
+      "integerQuestion": 5,
+      "passageQuestion": 0,
+      "matchQuestion": 0
+    }
+  }
+}
+
+===== LOG ENTRY =====
+{
+  "timestamp": "2025-05-10 19:40:46",
+  "step": "Builder Called: concept | Subject: Physics",
+  "portion": {
+    "dost_type": "concept",
+    "subject": "Physics",
+    "chapter_groups": [
+      {
+        "subject": "Physics",
+        "chapter": "Oscillations (SHM)",
+        "concepts": [
+          "Periodic and Oscillatory Motion",
+          "Simple harmonic motion",
+          "Time period in SHM",
+          "Problem based on Amplitude",
+          "Angular SHM",
+          "Free, damped and forced oscillation"
+        ],
+        "subconcepts": {
+          "Periodic and Oscillatory Motion": [
+            "Introduction"
+          ],
+          "Simple harmonic motion": [
+            "Introduction and General equation of SHM",
+            "Velocity and acceleration in SHM",
+            "Graphs in SHM",
+            "Energy of a particle in SHM",
+            "SHM as the projection of uniform circular motion",
+            "Application of phasor in SHM",
+            "Superposition of SHM"
+          ],
+          "Time period in SHM": [
+            "Force method",
+            "Energy method",
+            "Combination of springs in SHM",
+            "Reduced mass method",
+            "Oscillations of springs pulley block systems",
+            "Oscillations of Fluid Column"
+          ],
+          "Problem based on Amplitude": [
+            "Problem based on Amplitude"
+          ],
+          "Angular SHM": [
+            "Torque method and Simple pendulum",
+            "Oscillations of a Rolling Body on Horizontal and curved surface",
+            "Compound pendulum",
+            "Torsional pendulum"
+          ],
+          "Free, damped and forced oscillation": [
+            "Damped Oscillation",
+            "Forced oscillations."
+          ]
+        }
+      },
+      {
+        "subject": "Physics",
+        "chapter": "Newton's law of motion",
+        "concepts": [
+          "Introduction to forces",
+          "Newton's law of motion",
+          "Equilibrium of forces",
+          "Frame of reference",
+          "Free body diagram",
+          "Constraint motion",
+          "Pulley problems",
+          "Spring",
+          "Pseudo force",
+          "Friction",
+          "Angle of repose",
+          "Multiple block system"
+        ],
+        "subconcepts": {
+          "Introduction to forces": [
+            "Fundamental forces",
+            "Normal, Tension and friction"
+          ],
+          "Newton's law of motion": [
+            "First law (Law of inertia)",
+            "Momentum and its significance",
+            "Second law",
+            "Third law"
+          ],
+          "Equilibrium of forces": [
+            "Concurrent and Coplanar Forces",
+            "Equilibrium of forces"
+          ],
+          "Frame of reference": [
+            "Inertial and non-inertial F.O.R.",
+            "Pseudo Forces"
+          ],
+          "Free body diagram": [
+            "Fundamentals of drawing F.B.D.",
+            "Train problems(Tension)",
+            "Lift Problems(Normal)",
+            "Wedge problems(Resolving Forces)"
+          ],
+          "Constraint motion": [
+            "String and pulley constraint(Tension)",
+            "Wedge constraint(Normal)",
+            "Rigid Body Constraint(Introduction)"
+          ],
+          "Pulley problems": [
+            "Simple pulley system",
+            "Complex Pulley system",
+            "Mechanical advantage"
+          ],
+          "Spring": [
+            "Spring constant",
+            "Combination of Spring(parallel and series)",
+            "Spring pulley system",
+            "Equivalent Spring constant",
+            "Cutting of spring and string."
+          ],
+          "Pseudo force": [
+            "Problems involving pseudo force"
+          ],
+          "Friction": [
+            "Types of Friction",
+            "Direction of static and kinetic friction",
+            "Coefficient of friction",
+            "Limiting value of friction",
+            "Angle of friction",
+            "Transition of friction from static to kinetic",
+            "Contact Force",
+            "Angle of repose",
+            "Two block problem",
+            "Three or more block problem"
+          ],
+          "Angle of repose": [
+            "Motion on incline with angle more than angle of repose",
+            "Motion on incline with less than the angle of repose",
+            "Motion on vertical surface"
+          ],
+          "Multiple block system": [
+            "Concept of driving force",
+            "Method to find which surface slips",
+            "Method to find acceleration of blocks"
+          ]
+        }
+      }
+    ]
+  }
+}
+
+===== LOG ENTRY =====
+{
+  "timestamp": "2025-05-10 19:40:46",
+  "step": "Final API Payload",
+  "query": "Give me one assignment from Simple Harmonic Motion (SHM) and one from Newton's Laws of Motion (NLM), and one combined concept DOST for both of them. The student wants: 1. An assignment for SHM, 2. An assignment for NLM, 3. A concept basket (theory + videos) covering both SHM and NLM together.",
+  "requestList": [
+    {
+      "bulkRequestType": "practiceAssignment",
+      "userId": null,
+      "practiceType": "assignment",
+      "title": "Oscillations (SHM) Assignment",
+      "isNCERT": false,
+      "level": "EASY",
+      "assignmentQuesCount": {
+        "scq": 20,
+        "mcq": 10,
+        "integerQuestion": 5,
+        "passageQuestion": 0,
+        "matchQuestion": 0
+      },
+      "practicePortion": [
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Periodic and Oscillatory Motion",
+            "subConcept": "Introduction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Introduction and General equation of SHM"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Velocity and acceleration in SHM"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Graphs in SHM"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Energy of a particle in SHM"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "SHM as the projection of uniform circular motion"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Application of phasor in SHM"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Superposition of SHM"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Force method"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Energy method"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Combination of springs in SHM"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Reduced mass method"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Oscillations of springs pulley block systems"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Oscillations of Fluid Column"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Problem based on Amplitude",
+            "subConcept": "Problem based on Amplitude"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Angular SHM",
+            "subConcept": "Torque method and Simple pendulum"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Angular SHM",
+            "subConcept": "Oscillations of a Rolling Body on Horizontal and curved surface"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Angular SHM",
+            "subConcept": "Compound pendulum"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Angular SHM",
+            "subConcept": "Torsional pendulum"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Free, damped and forced oscillation",
+            "subConcept": "Damped Oscillation"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Free, damped and forced oscillation",
+            "subConcept": "Forced oscillations."
+          }
+        }
+      ]
+    },
+    {
+      "bulkRequestType": "practiceAssignment",
+      "userId": null,
+      "practiceType": "assignment",
+      "title": "Newton's law of motion Assignment",
+      "isNCERT": false,
+      "level": "EASY",
+      "assignmentQuesCount": {
+        "scq": 20,
+        "mcq": 10,
+        "integerQuestion": 5,
+        "passageQuestion": 0,
+        "matchQuestion": 0
+      },
+      "practicePortion": [
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Introduction to forces",
+            "subConcept": "Fundamental forces"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Introduction to forces",
+            "subConcept": "Normal, Tension and friction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "First law (Law of inertia)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "Momentum and its significance"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "Second law"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "Third law"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Equilibrium of forces",
+            "subConcept": "Concurrent and Coplanar Forces"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Equilibrium of forces",
+            "subConcept": "Equilibrium of forces"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Frame of reference",
+            "subConcept": "Inertial and non-inertial F.O.R."
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Frame of reference",
+            "subConcept": "Pseudo Forces"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Fundamentals of drawing F.B.D."
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Train problems(Tension)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Lift Problems(Normal)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Wedge problems(Resolving Forces)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Constraint motion",
+            "subConcept": "String and pulley constraint(Tension)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Constraint motion",
+            "subConcept": "Wedge constraint(Normal)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Constraint motion",
+            "subConcept": "Rigid Body Constraint(Introduction)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pulley problems",
+            "subConcept": "Simple pulley system"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pulley problems",
+            "subConcept": "Complex Pulley system"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pulley problems",
+            "subConcept": "Mechanical advantage"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Spring constant"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Combination of Spring(parallel and series)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Spring pulley system"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Equivalent Spring constant"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Cutting of spring and string."
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pseudo force",
+            "subConcept": "Problems involving pseudo force"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Types of Friction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Direction of static and kinetic friction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Coefficient of friction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Limiting value of friction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Angle of friction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Transition of friction from static to kinetic"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Contact Force"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Angle of repose"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Two block problem"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Three or more block problem"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Angle of repose",
+            "subConcept": "Motion on incline with angle more than angle of repose"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Angle of repose",
+            "subConcept": "Motion on incline with less than the angle of repose"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Angle of repose",
+            "subConcept": "Motion on vertical surface"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Multiple block system",
+            "subConcept": "Concept of driving force"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Multiple block system",
+            "subConcept": "Method to find which surface slips"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Multiple block system",
+            "subConcept": "Method to find acceleration of blocks"
+          }
+        }
+      ]
+    },
+    {
+      "bulkRequestType": "concept",
+      "studentid": null,
+      "shorturl": "cb-ce81c1ca-d937-4c67-82d1-c639fb75b2a5",
+      "longurl": "/dosts/share-concept-basket/view/cb-ce81c1ca-d937-4c67-82d1-c639fb75b2a5",
+      "title": "Oscillations (SHM) + Newton's law of motion Concept Basket",
+      "meta": {
+        "chapter": "Oscillations (SHM) + Newton's law of motion",
+        "discription": "Concept Basket",
+        "conceptBasketData": [
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Periodic and Oscillatory Motion",
+            "subConcept": "Introduction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Introduction and General equation of SHM"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Velocity and acceleration in SHM"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Graphs in SHM"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Energy of a particle in SHM"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "SHM as the projection of uniform circular motion"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Application of phasor in SHM"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Superposition of SHM"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Force method"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Energy method"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Combination of springs in SHM"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Reduced mass method"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Oscillations of springs pulley block systems"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Oscillations of Fluid Column"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Problem based on Amplitude",
+            "subConcept": "Problem based on Amplitude"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Angular SHM",
+            "subConcept": "Torque method and Simple pendulum"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Angular SHM",
+            "subConcept": "Oscillations of a Rolling Body on Horizontal and curved surface"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Angular SHM",
+            "subConcept": "Compound pendulum"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Angular SHM",
+            "subConcept": "Torsional pendulum"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Free, damped and forced oscillation",
+            "subConcept": "Damped Oscillation"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Free, damped and forced oscillation",
+            "subConcept": "Forced oscillations."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Introduction to forces",
+            "subConcept": "Fundamental forces"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Introduction to forces",
+            "subConcept": "Normal, Tension and friction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "First law (Law of inertia)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "Momentum and its significance"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "Second law"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "Third law"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Equilibrium of forces",
+            "subConcept": "Concurrent and Coplanar Forces"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Equilibrium of forces",
+            "subConcept": "Equilibrium of forces"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Frame of reference",
+            "subConcept": "Inertial and non-inertial F.O.R."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Frame of reference",
+            "subConcept": "Pseudo Forces"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Fundamentals of drawing F.B.D."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Train problems(Tension)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Lift Problems(Normal)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Wedge problems(Resolving Forces)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Constraint motion",
+            "subConcept": "String and pulley constraint(Tension)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Constraint motion",
+            "subConcept": "Wedge constraint(Normal)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Constraint motion",
+            "subConcept": "Rigid Body Constraint(Introduction)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pulley problems",
+            "subConcept": "Simple pulley system"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pulley problems",
+            "subConcept": "Complex Pulley system"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pulley problems",
+            "subConcept": "Mechanical advantage"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Spring constant"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Combination of Spring(parallel and series)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Spring pulley system"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Equivalent Spring constant"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Cutting of spring and string."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pseudo force",
+            "subConcept": "Problems involving pseudo force"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Types of Friction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Direction of static and kinetic friction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Coefficient of friction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Limiting value of friction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Angle of friction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Transition of friction from static to kinetic"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Contact Force"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Angle of repose"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Two block problem"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Three or more block problem"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Angle of repose",
+            "subConcept": "Motion on incline with angle more than angle of repose"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Angle of repose",
+            "subConcept": "Motion on incline with less than the angle of repose"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Angle of repose",
+            "subConcept": "Motion on vertical surface"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Multiple block system",
+            "subConcept": "Concept of driving force"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Multiple block system",
+            "subConcept": "Method to find which surface slips"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Multiple block system",
+            "subConcept": "Method to find acceleration of blocks"
+          }
+        ]
+      }
+    }
+  ]
+}
+
+===== LOG ENTRY =====
+{
+  "timestamp": "2025-05-10 19:55:46",
+  "step": "Chunks Sent to GPT",
+  "query": "Give me one assignment from Simple Harmonic Motion (SHM) and one from Newton's Laws of Motion (NLM), and one combined concept DOST for both of them. The student wants an assignment for SHM, an assignment for NLM, and a concept basket for the combined concepts of SHM and NLM.",
+  "chunk_count": 33,
+  "chunk_sample": [
+    "Physics > Oscillations (SHM) > Simple harmonic motion > Superposition of SHM",
+    "Physics > Oscillations (SHM) > Simple harmonic motion > SHM as the projection of uniform circular motion",
+    "Physics > Oscillations (SHM) > Simple harmonic motion > Introduction and General equation of SHM",
+    "Physics > Oscillations (SHM) > Simple harmonic motion > Velocity and acceleration in SHM",
+    "Physics > Oscillations (SHM) > Periodic and Oscillatory Motion > Introduction"
+  ]
+}
+
+===== LOG ENTRY =====
+{
+  "timestamp": "2025-05-10 19:55:46",
+  "step": "GPT Response (requestList)",
+  "query": "Give me one assignment from Simple Harmonic Motion (SHM) and one from Newton's Laws of Motion (NLM), and one combined concept DOST for both of them. The student wants an assignment for SHM, an assignment for NLM, and a concept basket for the combined concepts of SHM and NLM.",
+  "requestList": [
+    {
+      "dost_type": "practiceAssignment",
+      "subject": "Physics",
+      "chapter_groups": [
+        {
+          "subject": "Physics",
+          "chapter": "Oscillations (SHM)"
+        }
+      ],
+      "difficulty": "easy",
+      "isNCERT": false,
+      "type_split": {
+        "scq": 20,
+        "mcq": 10,
+        "integerQuestion": 5,
+        "passageQuestion": 0,
+        "matchQuestion": 0
+      }
+    },
+    {
+      "dost_type": "practiceAssignment",
+      "subject": "Physics",
+      "chapter_groups": [
+        {
+          "subject": "Physics",
+          "chapter": "Newton's law of motion"
+        }
+      ],
+      "difficulty": "easy",
+      "isNCERT": false,
+      "type_split": {
+        "scq": 20,
+        "mcq": 10,
+        "integerQuestion": 5,
+        "passageQuestion": 0,
+        "matchQuestion": 0
+      }
+    },
+    {
+      "dost_type": "concept",
+      "subject": "Physics",
+      "chapter_groups": [
+        {
+          "subject": "Physics",
+          "chapter": "Oscillations (SHM)"
+        },
+        {
+          "subject": "Physics",
+          "chapter": "Newton's law of motion"
+        }
+      ]
+    }
+  ]
+}
+
+===== LOG ENTRY =====
+{
+  "timestamp": "2025-05-10 19:55:46",
+  "step": "Enriched Portion for practiceAssignment",
+  "portion": [
+    {
+      "subject": "Physics",
+      "chapter": "Oscillations (SHM)",
+      "concepts": [
+        "Periodic and Oscillatory Motion",
+        "Simple harmonic motion",
+        "Time period in SHM",
+        "Problem based on Amplitude",
+        "Angular SHM",
+        "Free, damped and forced oscillation"
+      ],
+      "subconcepts": {
+        "Periodic and Oscillatory Motion": [
+          "Introduction"
+        ],
+        "Simple harmonic motion": [
+          "Introduction and General equation of SHM",
+          "Velocity and acceleration in SHM",
+          "Graphs in SHM",
+          "Energy of a particle in SHM",
+          "SHM as the projection of uniform circular motion",
+          "Application of phasor in SHM",
+          "Superposition of SHM"
+        ],
+        "Time period in SHM": [
+          "Force method",
+          "Energy method",
+          "Combination of springs in SHM",
+          "Reduced mass method",
+          "Oscillations of springs pulley block systems",
+          "Oscillations of Fluid Column"
+        ],
+        "Problem based on Amplitude": [
+          "Problem based on Amplitude"
+        ],
+        "Angular SHM": [
+          "Torque method and Simple pendulum",
+          "Oscillations of a Rolling Body on Horizontal and curved surface",
+          "Compound pendulum",
+          "Torsional pendulum"
+        ],
+        "Free, damped and forced oscillation": [
+          "Damped Oscillation",
+          "Forced oscillations."
+        ]
+      }
+    }
+  ]
+}
+
+===== LOG ENTRY =====
+{
+  "timestamp": "2025-05-10 19:55:46",
+  "step": "Enriched Portion for practiceAssignment",
+  "portion": [
+    {
+      "subject": "Physics",
+      "chapter": "Newton's law of motion",
+      "concepts": [
+        "Introduction to forces",
+        "Newton's law of motion",
+        "Equilibrium of forces",
+        "Frame of reference",
+        "Free body diagram",
+        "Constraint motion",
+        "Pulley problems",
+        "Spring",
+        "Pseudo force",
+        "Friction",
+        "Angle of repose",
+        "Multiple block system"
+      ],
+      "subconcepts": {
+        "Introduction to forces": [
+          "Fundamental forces",
+          "Normal, Tension and friction"
+        ],
+        "Newton's law of motion": [
+          "First law (Law of inertia)",
+          "Momentum and its significance",
+          "Second law",
+          "Third law"
+        ],
+        "Equilibrium of forces": [
+          "Concurrent and Coplanar Forces",
+          "Equilibrium of forces"
+        ],
+        "Frame of reference": [
+          "Inertial and non-inertial F.O.R.",
+          "Pseudo Forces"
+        ],
+        "Free body diagram": [
+          "Fundamentals of drawing F.B.D.",
+          "Train problems(Tension)",
+          "Lift Problems(Normal)",
+          "Wedge problems(Resolving Forces)"
+        ],
+        "Constraint motion": [
+          "String and pulley constraint(Tension)",
+          "Wedge constraint(Normal)",
+          "Rigid Body Constraint(Introduction)"
+        ],
+        "Pulley problems": [
+          "Simple pulley system",
+          "Complex Pulley system",
+          "Mechanical advantage"
+        ],
+        "Spring": [
+          "Spring constant",
+          "Combination of Spring(parallel and series)",
+          "Spring pulley system",
+          "Equivalent Spring constant",
+          "Cutting of spring and string."
+        ],
+        "Pseudo force": [
+          "Problems involving pseudo force"
+        ],
+        "Friction": [
+          "Types of Friction",
+          "Direction of static and kinetic friction",
+          "Coefficient of friction",
+          "Limiting value of friction",
+          "Angle of friction",
+          "Transition of friction from static to kinetic",
+          "Contact Force",
+          "Angle of repose",
+          "Two block problem",
+          "Three or more block problem"
+        ],
+        "Angle of repose": [
+          "Motion on incline with angle more than angle of repose",
+          "Motion on incline with less than the angle of repose",
+          "Motion on vertical surface"
+        ],
+        "Multiple block system": [
+          "Concept of driving force",
+          "Method to find which surface slips",
+          "Method to find acceleration of blocks"
+        ]
+      }
+    }
+  ]
+}
+
+===== LOG ENTRY =====
+{
+  "timestamp": "2025-05-10 19:55:46",
+  "step": "Enriched Portion for concept",
+  "portion": [
+    {
+      "subject": "Physics",
+      "chapter": "Oscillations (SHM)",
+      "concepts": [
+        "Periodic and Oscillatory Motion",
+        "Simple harmonic motion",
+        "Time period in SHM",
+        "Problem based on Amplitude",
+        "Angular SHM",
+        "Free, damped and forced oscillation"
+      ],
+      "subconcepts": {
+        "Periodic and Oscillatory Motion": [
+          "Introduction"
+        ],
+        "Simple harmonic motion": [
+          "Introduction and General equation of SHM",
+          "Velocity and acceleration in SHM",
+          "Graphs in SHM",
+          "Energy of a particle in SHM",
+          "SHM as the projection of uniform circular motion",
+          "Application of phasor in SHM",
+          "Superposition of SHM"
+        ],
+        "Time period in SHM": [
+          "Force method",
+          "Energy method",
+          "Combination of springs in SHM",
+          "Reduced mass method",
+          "Oscillations of springs pulley block systems",
+          "Oscillations of Fluid Column"
+        ],
+        "Problem based on Amplitude": [
+          "Problem based on Amplitude"
+        ],
+        "Angular SHM": [
+          "Torque method and Simple pendulum",
+          "Oscillations of a Rolling Body on Horizontal and curved surface",
+          "Compound pendulum",
+          "Torsional pendulum"
+        ],
+        "Free, damped and forced oscillation": [
+          "Damped Oscillation",
+          "Forced oscillations."
+        ]
+      }
+    },
+    {
+      "subject": "Physics",
+      "chapter": "Newton's law of motion",
+      "concepts": [
+        "Introduction to forces",
+        "Newton's law of motion",
+        "Equilibrium of forces",
+        "Frame of reference",
+        "Free body diagram",
+        "Constraint motion",
+        "Pulley problems",
+        "Spring",
+        "Pseudo force",
+        "Friction",
+        "Angle of repose",
+        "Multiple block system"
+      ],
+      "subconcepts": {
+        "Introduction to forces": [
+          "Fundamental forces",
+          "Normal, Tension and friction"
+        ],
+        "Newton's law of motion": [
+          "First law (Law of inertia)",
+          "Momentum and its significance",
+          "Second law",
+          "Third law"
+        ],
+        "Equilibrium of forces": [
+          "Concurrent and Coplanar Forces",
+          "Equilibrium of forces"
+        ],
+        "Frame of reference": [
+          "Inertial and non-inertial F.O.R.",
+          "Pseudo Forces"
+        ],
+        "Free body diagram": [
+          "Fundamentals of drawing F.B.D.",
+          "Train problems(Tension)",
+          "Lift Problems(Normal)",
+          "Wedge problems(Resolving Forces)"
+        ],
+        "Constraint motion": [
+          "String and pulley constraint(Tension)",
+          "Wedge constraint(Normal)",
+          "Rigid Body Constraint(Introduction)"
+        ],
+        "Pulley problems": [
+          "Simple pulley system",
+          "Complex Pulley system",
+          "Mechanical advantage"
+        ],
+        "Spring": [
+          "Spring constant",
+          "Combination of Spring(parallel and series)",
+          "Spring pulley system",
+          "Equivalent Spring constant",
+          "Cutting of spring and string."
+        ],
+        "Pseudo force": [
+          "Problems involving pseudo force"
+        ],
+        "Friction": [
+          "Types of Friction",
+          "Direction of static and kinetic friction",
+          "Coefficient of friction",
+          "Limiting value of friction",
+          "Angle of friction",
+          "Transition of friction from static to kinetic",
+          "Contact Force",
+          "Angle of repose",
+          "Two block problem",
+          "Three or more block problem"
+        ],
+        "Angle of repose": [
+          "Motion on incline with angle more than angle of repose",
+          "Motion on incline with less than the angle of repose",
+          "Motion on vertical surface"
+        ],
+        "Multiple block system": [
+          "Concept of driving force",
+          "Method to find which surface slips",
+          "Method to find acceleration of blocks"
+        ]
+      }
+    }
+  ]
+}
+
+===== LOG ENTRY =====
+{
+  "timestamp": "2025-05-10 19:55:46",
+  "step": "Builder Called: practiceAssignment | Subject: Physics",
+  "portion": {
+    "dost_type": "practiceAssignment",
+    "subject": "Physics",
+    "chapter_groups": [
+      {
+        "subject": "Physics",
+        "chapter": "Oscillations (SHM)",
+        "concepts": [
+          "Periodic and Oscillatory Motion",
+          "Simple harmonic motion",
+          "Time period in SHM",
+          "Problem based on Amplitude",
+          "Angular SHM",
+          "Free, damped and forced oscillation"
+        ],
+        "subconcepts": {
+          "Periodic and Oscillatory Motion": [
+            "Introduction"
+          ],
+          "Simple harmonic motion": [
+            "Introduction and General equation of SHM",
+            "Velocity and acceleration in SHM",
+            "Graphs in SHM",
+            "Energy of a particle in SHM",
+            "SHM as the projection of uniform circular motion",
+            "Application of phasor in SHM",
+            "Superposition of SHM"
+          ],
+          "Time period in SHM": [
+            "Force method",
+            "Energy method",
+            "Combination of springs in SHM",
+            "Reduced mass method",
+            "Oscillations of springs pulley block systems",
+            "Oscillations of Fluid Column"
+          ],
+          "Problem based on Amplitude": [
+            "Problem based on Amplitude"
+          ],
+          "Angular SHM": [
+            "Torque method and Simple pendulum",
+            "Oscillations of a Rolling Body on Horizontal and curved surface",
+            "Compound pendulum",
+            "Torsional pendulum"
+          ],
+          "Free, damped and forced oscillation": [
+            "Damped Oscillation",
+            "Forced oscillations."
+          ]
+        }
+      }
+    ],
+    "difficulty": "easy",
+    "isNCERT": false,
+    "type_split": {
+      "scq": 20,
+      "mcq": 10,
+      "integerQuestion": 5,
+      "passageQuestion": 0,
+      "matchQuestion": 0
+    }
+  }
+}
+
+===== LOG ENTRY =====
+{
+  "timestamp": "2025-05-10 19:55:46",
+  "step": "Builder Called: practiceAssignment | Subject: Physics",
+  "portion": {
+    "dost_type": "practiceAssignment",
+    "subject": "Physics",
+    "chapter_groups": [
+      {
+        "subject": "Physics",
+        "chapter": "Newton's law of motion",
+        "concepts": [
+          "Introduction to forces",
+          "Newton's law of motion",
+          "Equilibrium of forces",
+          "Frame of reference",
+          "Free body diagram",
+          "Constraint motion",
+          "Pulley problems",
+          "Spring",
+          "Pseudo force",
+          "Friction",
+          "Angle of repose",
+          "Multiple block system"
+        ],
+        "subconcepts": {
+          "Introduction to forces": [
+            "Fundamental forces",
+            "Normal, Tension and friction"
+          ],
+          "Newton's law of motion": [
+            "First law (Law of inertia)",
+            "Momentum and its significance",
+            "Second law",
+            "Third law"
+          ],
+          "Equilibrium of forces": [
+            "Concurrent and Coplanar Forces",
+            "Equilibrium of forces"
+          ],
+          "Frame of reference": [
+            "Inertial and non-inertial F.O.R.",
+            "Pseudo Forces"
+          ],
+          "Free body diagram": [
+            "Fundamentals of drawing F.B.D.",
+            "Train problems(Tension)",
+            "Lift Problems(Normal)",
+            "Wedge problems(Resolving Forces)"
+          ],
+          "Constraint motion": [
+            "String and pulley constraint(Tension)",
+            "Wedge constraint(Normal)",
+            "Rigid Body Constraint(Introduction)"
+          ],
+          "Pulley problems": [
+            "Simple pulley system",
+            "Complex Pulley system",
+            "Mechanical advantage"
+          ],
+          "Spring": [
+            "Spring constant",
+            "Combination of Spring(parallel and series)",
+            "Spring pulley system",
+            "Equivalent Spring constant",
+            "Cutting of spring and string."
+          ],
+          "Pseudo force": [
+            "Problems involving pseudo force"
+          ],
+          "Friction": [
+            "Types of Friction",
+            "Direction of static and kinetic friction",
+            "Coefficient of friction",
+            "Limiting value of friction",
+            "Angle of friction",
+            "Transition of friction from static to kinetic",
+            "Contact Force",
+            "Angle of repose",
+            "Two block problem",
+            "Three or more block problem"
+          ],
+          "Angle of repose": [
+            "Motion on incline with angle more than angle of repose",
+            "Motion on incline with less than the angle of repose",
+            "Motion on vertical surface"
+          ],
+          "Multiple block system": [
+            "Concept of driving force",
+            "Method to find which surface slips",
+            "Method to find acceleration of blocks"
+          ]
+        }
+      }
+    ],
+    "difficulty": "easy",
+    "isNCERT": false,
+    "type_split": {
+      "scq": 20,
+      "mcq": 10,
+      "integerQuestion": 5,
+      "passageQuestion": 0,
+      "matchQuestion": 0
+    }
+  }
+}
+
+===== LOG ENTRY =====
+{
+  "timestamp": "2025-05-10 19:55:46",
+  "step": "Builder Called: concept | Subject: Physics",
+  "portion": {
+    "dost_type": "concept",
+    "subject": "Physics",
+    "chapter_groups": [
+      {
+        "subject": "Physics",
+        "chapter": "Oscillations (SHM)",
+        "concepts": [
+          "Periodic and Oscillatory Motion",
+          "Simple harmonic motion",
+          "Time period in SHM",
+          "Problem based on Amplitude",
+          "Angular SHM",
+          "Free, damped and forced oscillation"
+        ],
+        "subconcepts": {
+          "Periodic and Oscillatory Motion": [
+            "Introduction"
+          ],
+          "Simple harmonic motion": [
+            "Introduction and General equation of SHM",
+            "Velocity and acceleration in SHM",
+            "Graphs in SHM",
+            "Energy of a particle in SHM",
+            "SHM as the projection of uniform circular motion",
+            "Application of phasor in SHM",
+            "Superposition of SHM"
+          ],
+          "Time period in SHM": [
+            "Force method",
+            "Energy method",
+            "Combination of springs in SHM",
+            "Reduced mass method",
+            "Oscillations of springs pulley block systems",
+            "Oscillations of Fluid Column"
+          ],
+          "Problem based on Amplitude": [
+            "Problem based on Amplitude"
+          ],
+          "Angular SHM": [
+            "Torque method and Simple pendulum",
+            "Oscillations of a Rolling Body on Horizontal and curved surface",
+            "Compound pendulum",
+            "Torsional pendulum"
+          ],
+          "Free, damped and forced oscillation": [
+            "Damped Oscillation",
+            "Forced oscillations."
+          ]
+        }
+      },
+      {
+        "subject": "Physics",
+        "chapter": "Newton's law of motion",
+        "concepts": [
+          "Introduction to forces",
+          "Newton's law of motion",
+          "Equilibrium of forces",
+          "Frame of reference",
+          "Free body diagram",
+          "Constraint motion",
+          "Pulley problems",
+          "Spring",
+          "Pseudo force",
+          "Friction",
+          "Angle of repose",
+          "Multiple block system"
+        ],
+        "subconcepts": {
+          "Introduction to forces": [
+            "Fundamental forces",
+            "Normal, Tension and friction"
+          ],
+          "Newton's law of motion": [
+            "First law (Law of inertia)",
+            "Momentum and its significance",
+            "Second law",
+            "Third law"
+          ],
+          "Equilibrium of forces": [
+            "Concurrent and Coplanar Forces",
+            "Equilibrium of forces"
+          ],
+          "Frame of reference": [
+            "Inertial and non-inertial F.O.R.",
+            "Pseudo Forces"
+          ],
+          "Free body diagram": [
+            "Fundamentals of drawing F.B.D.",
+            "Train problems(Tension)",
+            "Lift Problems(Normal)",
+            "Wedge problems(Resolving Forces)"
+          ],
+          "Constraint motion": [
+            "String and pulley constraint(Tension)",
+            "Wedge constraint(Normal)",
+            "Rigid Body Constraint(Introduction)"
+          ],
+          "Pulley problems": [
+            "Simple pulley system",
+            "Complex Pulley system",
+            "Mechanical advantage"
+          ],
+          "Spring": [
+            "Spring constant",
+            "Combination of Spring(parallel and series)",
+            "Spring pulley system",
+            "Equivalent Spring constant",
+            "Cutting of spring and string."
+          ],
+          "Pseudo force": [
+            "Problems involving pseudo force"
+          ],
+          "Friction": [
+            "Types of Friction",
+            "Direction of static and kinetic friction",
+            "Coefficient of friction",
+            "Limiting value of friction",
+            "Angle of friction",
+            "Transition of friction from static to kinetic",
+            "Contact Force",
+            "Angle of repose",
+            "Two block problem",
+            "Three or more block problem"
+          ],
+          "Angle of repose": [
+            "Motion on incline with angle more than angle of repose",
+            "Motion on incline with less than the angle of repose",
+            "Motion on vertical surface"
+          ],
+          "Multiple block system": [
+            "Concept of driving force",
+            "Method to find which surface slips",
+            "Method to find acceleration of blocks"
+          ]
+        }
+      }
+    ]
+  }
+}
+
+===== LOG ENTRY =====
+{
+  "timestamp": "2025-05-10 19:55:46",
+  "step": "Final API Payload",
+  "query": "Give me one assignment from Simple Harmonic Motion (SHM) and one from Newton's Laws of Motion (NLM), and one combined concept DOST for both of them. The student wants an assignment for SHM, an assignment for NLM, and a concept basket for the combined concepts of SHM and NLM.",
+  "requestList": [
+    {
+      "bulkRequestType": "practiceAssignment",
+      "userId": null,
+      "practiceType": "assignment",
+      "title": "Oscillations (SHM) Assignment",
+      "isNCERT": false,
+      "level": "EASY",
+      "assignmentQuesCount": {
+        "scq": 20,
+        "mcq": 10,
+        "integerQuestion": 5,
+        "passageQuestion": 0,
+        "matchQuestion": 0
+      },
+      "practicePortion": [
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Periodic and Oscillatory Motion",
+            "subConcept": "Introduction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Introduction and General equation of SHM"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Velocity and acceleration in SHM"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Graphs in SHM"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Energy of a particle in SHM"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "SHM as the projection of uniform circular motion"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Application of phasor in SHM"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Superposition of SHM"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Force method"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Energy method"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Combination of springs in SHM"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Reduced mass method"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Oscillations of springs pulley block systems"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Oscillations of Fluid Column"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Problem based on Amplitude",
+            "subConcept": "Problem based on Amplitude"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Angular SHM",
+            "subConcept": "Torque method and Simple pendulum"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Angular SHM",
+            "subConcept": "Oscillations of a Rolling Body on Horizontal and curved surface"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Angular SHM",
+            "subConcept": "Compound pendulum"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Angular SHM",
+            "subConcept": "Torsional pendulum"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Free, damped and forced oscillation",
+            "subConcept": "Damped Oscillation"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Free, damped and forced oscillation",
+            "subConcept": "Forced oscillations."
+          }
+        }
+      ]
+    },
+    {
+      "bulkRequestType": "practiceAssignment",
+      "userId": null,
+      "practiceType": "assignment",
+      "title": "Newton's law of motion Assignment",
+      "isNCERT": false,
+      "level": "EASY",
+      "assignmentQuesCount": {
+        "scq": 20,
+        "mcq": 10,
+        "integerQuestion": 5,
+        "passageQuestion": 0,
+        "matchQuestion": 0
+      },
+      "practicePortion": [
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Introduction to forces",
+            "subConcept": "Fundamental forces"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Introduction to forces",
+            "subConcept": "Normal, Tension and friction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "First law (Law of inertia)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "Momentum and its significance"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "Second law"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "Third law"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Equilibrium of forces",
+            "subConcept": "Concurrent and Coplanar Forces"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Equilibrium of forces",
+            "subConcept": "Equilibrium of forces"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Frame of reference",
+            "subConcept": "Inertial and non-inertial F.O.R."
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Frame of reference",
+            "subConcept": "Pseudo Forces"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Fundamentals of drawing F.B.D."
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Train problems(Tension)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Lift Problems(Normal)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Wedge problems(Resolving Forces)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Constraint motion",
+            "subConcept": "String and pulley constraint(Tension)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Constraint motion",
+            "subConcept": "Wedge constraint(Normal)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Constraint motion",
+            "subConcept": "Rigid Body Constraint(Introduction)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pulley problems",
+            "subConcept": "Simple pulley system"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pulley problems",
+            "subConcept": "Complex Pulley system"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pulley problems",
+            "subConcept": "Mechanical advantage"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Spring constant"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Combination of Spring(parallel and series)"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Spring pulley system"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Equivalent Spring constant"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Cutting of spring and string."
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pseudo force",
+            "subConcept": "Problems involving pseudo force"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Types of Friction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Direction of static and kinetic friction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Coefficient of friction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Limiting value of friction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Angle of friction"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Transition of friction from static to kinetic"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Contact Force"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Angle of repose"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Two block problem"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Three or more block problem"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Angle of repose",
+            "subConcept": "Motion on incline with angle more than angle of repose"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Angle of repose",
+            "subConcept": "Motion on incline with less than the angle of repose"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Angle of repose",
+            "subConcept": "Motion on vertical surface"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Multiple block system",
+            "subConcept": "Concept of driving force"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Multiple block system",
+            "subConcept": "Method to find which surface slips"
+          }
+        },
+        {
+          "id": "",
+          "content": {
+            "subject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Multiple block system",
+            "subConcept": "Method to find acceleration of blocks"
+          }
+        }
+      ]
+    },
+    {
+      "bulkRequestType": "concept",
+      "studentid": null,
+      "shorturl": "cb-b3da431a-9f1a-42c1-b286-00482f62ae4a",
+      "longurl": "/dosts/share-concept-basket/view/cb-b3da431a-9f1a-42c1-b286-00482f62ae4a",
+      "title": "Oscillations (SHM) + Newton's law of motion Concept Basket",
+      "meta": {
+        "chapter": "Oscillations (SHM) + Newton's law of motion",
+        "discription": "Concept Basket",
+        "conceptBasketData": [
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Periodic and Oscillatory Motion",
+            "subConcept": "Introduction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Introduction and General equation of SHM"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Velocity and acceleration in SHM"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Graphs in SHM"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Energy of a particle in SHM"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "SHM as the projection of uniform circular motion"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Application of phasor in SHM"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Simple harmonic motion",
+            "subConcept": "Superposition of SHM"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Force method"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Energy method"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Combination of springs in SHM"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Reduced mass method"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Oscillations of springs pulley block systems"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Time period in SHM",
+            "subConcept": "Oscillations of Fluid Column"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Problem based on Amplitude",
+            "subConcept": "Problem based on Amplitude"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Angular SHM",
+            "subConcept": "Torque method and Simple pendulum"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Angular SHM",
+            "subConcept": "Oscillations of a Rolling Body on Horizontal and curved surface"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Angular SHM",
+            "subConcept": "Compound pendulum"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Angular SHM",
+            "subConcept": "Torsional pendulum"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Free, damped and forced oscillation",
+            "subConcept": "Damped Oscillation"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Oscillations (SHM)",
+            "concept": "Free, damped and forced oscillation",
+            "subConcept": "Forced oscillations."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Introduction to forces",
+            "subConcept": "Fundamental forces"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Introduction to forces",
+            "subConcept": "Normal, Tension and friction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "First law (Law of inertia)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "Momentum and its significance"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "Second law"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Newton's law of motion",
+            "subConcept": "Third law"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Equilibrium of forces",
+            "subConcept": "Concurrent and Coplanar Forces"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Equilibrium of forces",
+            "subConcept": "Equilibrium of forces"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Frame of reference",
+            "subConcept": "Inertial and non-inertial F.O.R."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Frame of reference",
+            "subConcept": "Pseudo Forces"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Fundamentals of drawing F.B.D."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Train problems(Tension)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Lift Problems(Normal)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Free body diagram",
+            "subConcept": "Wedge problems(Resolving Forces)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Constraint motion",
+            "subConcept": "String and pulley constraint(Tension)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Constraint motion",
+            "subConcept": "Wedge constraint(Normal)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Constraint motion",
+            "subConcept": "Rigid Body Constraint(Introduction)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pulley problems",
+            "subConcept": "Simple pulley system"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pulley problems",
+            "subConcept": "Complex Pulley system"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pulley problems",
+            "subConcept": "Mechanical advantage"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Spring constant"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Combination of Spring(parallel and series)"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Spring pulley system"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Equivalent Spring constant"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Spring",
+            "subConcept": "Cutting of spring and string."
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Pseudo force",
+            "subConcept": "Problems involving pseudo force"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Types of Friction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Direction of static and kinetic friction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Coefficient of friction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Limiting value of friction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Angle of friction"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Transition of friction from static to kinetic"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Contact Force"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Angle of repose"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Two block problem"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Friction",
+            "subConcept": "Three or more block problem"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Angle of repose",
+            "subConcept": "Motion on incline with angle more than angle of repose"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Angle of repose",
+            "subConcept": "Motion on incline with less than the angle of repose"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Angle of repose",
+            "subConcept": "Motion on vertical surface"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Multiple block system",
+            "subConcept": "Concept of driving force"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Multiple block system",
+            "subConcept": "Method to find which surface slips"
+          },
+          {
+            "subject": "Physics",
+            "subSubject": "Physics",
+            "chapter": "Newton's law of motion",
+            "concept": "Multiple block system",
+            "subConcept": "Method to find acceleration of blocks"
+          }
+        ]
+      }
+    }
+  ]
+}

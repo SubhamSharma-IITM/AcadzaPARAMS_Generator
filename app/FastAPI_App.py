@@ -108,8 +108,12 @@ def process_dost_payload(query_text: str, student_id: str, auth_token: str):
     request_list = result.get("requestList", [])
 
     final_data = {}
+    # Group scripts so we preserve all steps per type in order
     dost_steps = result.get("dost_steps", [])
-    dost_step_map = {step.get("dost_type"): step.get("script", "") for step in dost_steps}
+    scripts_by_type: dict[str, list[str]] = {}
+    for step in dost_steps:
+        t = step.get("dost_type")
+        scripts_by_type.setdefault(t, []).append(step.get("script", ""))
 
     for req in request_list:
         dost_type = req.get("bulkRequestType")
@@ -124,7 +128,9 @@ def process_dost_payload(query_text: str, student_id: str, auth_token: str):
                 final_data.setdefault("concept", []).append({
                     "conceptLink": full_url,
                     "conceptTitle": title,
-                    "script": dost_step_map.get("concept", ""),
+                    # take the next script for this type
+                    "script": scripts_by_type.get("concept", []).pop(0) 
+                             if scripts_by_type.get("concept") else "",
                 })
             else:
                 resp = requests.post(
@@ -136,46 +142,54 @@ def process_dost_payload(query_text: str, student_id: str, auth_token: str):
                 if section:
                     # Map each DOST type to its link/title keys
                     if dost_type == "practiceTest":
+                        # for each assignment, pop the next script in order
                         final_data.setdefault(dost_type, []).append({
                             "practiceTestLink": section.get("testLink"),
                             "practiceTestTitle": section.get("testTitle", title),
-                            "script": dost_step_map.get("practiceTest", ""),
+                            "script": scripts_by_type.get("practiceTest", []).pop(0) 
+                              if scripts_by_type.get("practiceTest") else "",
                         })
                     elif dost_type == "practiceAssignment":
                         final_data.setdefault(dost_type, []).append({
                             "practiceAssignmentLink": section.get("assignmentLink"),
                             "practiceAssignmentTitle": section.get("assignmentTitle", title),
-                            "script": dost_step_map.get("practiceAssignment", ""),
+                            "script": scripts_by_type.get("practiceAssignment", []).pop(0)
+                                      if scripts_by_type.get("practiceAssignment") else "",
                         })
                     elif dost_type == "formula":
                         final_data.setdefault(dost_type, []).append({
                             "formulaLink": section.get("formulaLink"),
                             "formulaTitle": section.get("formulaTitle", title),
-                            "script": dost_step_map.get("formula", ""),
+                            "script": scripts_by_type.get("formula", []).pop(0)
+                                      if scripts_by_type.get("formula") else "",
                         })
                     elif dost_type == "revision":
                         final_data.setdefault(dost_type, []).append({
                             "revisionLink": section.get("revisionLink"),
                             "revisionTitle": section.get("revisionTitle", title),
-                            "script": dost_step_map.get("revision", ""),
+                            "script": scripts_by_type.get("revision", []).pop(0)
+                                      if scripts_by_type.get("revision") else "",
                         })
                     elif dost_type == "clickingPower":
                         final_data.setdefault(dost_type, []).append({
                             "clickingPowerLink": section.get("clickingLink"),
                             "clickingPowerTitle": section.get("clickingTitle", title),
-                            "script": dost_step_map.get("clickingPower", ""),
+                            "script": scripts_by_type.get("clickingPower", []).pop(0)
+                                      if scripts_by_type.get("clickingPower") else "",
                         })
                     elif dost_type == "pickingPower":
                         final_data.setdefault(dost_type, []).append({
                             "pickingPowerLink": section.get("pickingLink"),
                             "pickingPowerTitle": section.get("pickingTitle", title),
-                            "script": dost_step_map.get("pickingPower", ""),
+                            "script": scripts_by_type.get("pickingPower", []).pop(0)
+                                      if scripts_by_type.get("pickingPower") else "",
                         })
                     elif dost_type == "speedRace":
                         final_data.setdefault(dost_type, []).append({
                             "speedRaceLink": section.get("speedRaceLink"),
                             "speedRaceTitle": section.get("speedRaceTitle", title),
-                            "script": dost_step_map.get("speedRace", ""),
+                            "script": scripts_by_type.get("speedRace", []).pop(0)
+                                      if scripts_by_type.get("speedRace") else "",
                         })
         except Exception as e:
             print(f"❌ API call failed for {dost_type}: {e}")
