@@ -128,7 +128,7 @@ You must:
 - Mixed intent may be direct or implicit for example: "sikhao bhi aur assignment bhi do" and so on.
 - Judge from the query if they needs help from our dosts, see if they need videos,theory → concept dost,revision → revision dost, formula → formula, and so on if there is any need for practice,test,questions,videos or lectures,teaching them etc. then type is mixed.If they say teach them then use concept dost in type mixed.
 - Prefer identifying any dual-intent as Mixed.
-- If you identify from the query that the student wants to learn a specifc portion or chapter or has any doubt in understanding then it should be a mixed type and the dosts should include → concept dost + assigment + formula sheet + test of those portion(s).
+- **IMPORTANT**: If the student wants to learn a specifc portion or chapter or has any doubt in understanding then it should be a mixed type and the dosts should include → concept dost + assigment dost + formula sheet dost + practice test dost of those portion(s).
 
 5. For general/mixed, 'structured_answer' must include separate blocks:
    - headings,subheadings,paragraph, latex, bold, bullet, number,quotes,callout.
