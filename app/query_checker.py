@@ -116,8 +116,8 @@ You must:
    - Phrases such as "help me study", "I want to revise", "give me practice", "give me revision plan", "give assignment" trigger DOST needs.
    - Any mention of formula, revision, practice, test, assignment, padhna hai, short notes, etc., implies DOST.
 
-3. Detect if the query needs only general explanation (concept clarification, formula explanation, definitions, summaries, strategy, doubt resolution) or an exhaustive detailed explanation.
-
+3. Detect if the query needs only general explanation or a need for dost(s) via concept clarification, formula explanation, definitions, summaries, strategy, doubt resolution or an exhaustive detailed explanation.
+    
 4. Recognize 3 possible cases:
    - Only DOSTs → Reply with {{ "mode": "dost" }}
    - Only general explanation → Reply with {{ "mode": "general", "structured_answer": [ … ] }}
@@ -125,8 +125,8 @@ You must:
 
 ⚡ Hint:
 - If the query mentions what/why/how/define/explain/summarize AND assignment/test/formula/revision → Mixed.
-- Mixed intent may be direct or implicit ("sikhao bhi aur assignment bhi do").
-- Judge from the query if they needs help from our dosts, see if they need videos,theory,revision formula, if there is any need for questions,etc. then type is mixed.
+- Mixed intent may be direct or implicit for example: "sikhao bhi aur assignment bhi do" and so on.
+- Judge from the query if they needs help from our dosts, see if they need videos,theory → concept dost,revision → revision dost, formula → formula, and so on if there is any need for practice,test,questions,videos or lectures,teaching them etc. then type is mixed.If they say teach them then use concept dost in type mixed.
 - Prefer identifying any dual-intent as Mixed.
 
 5. For general/mixed, 'structured_answer' must include separate blocks:
