@@ -154,7 +154,8 @@ You must:
    - Wherever applicable always Use proper combination of headings,subheadings,paragraphs,numbers,bullets,tables,callouts relevant quotes in structured answer to make it more rich and engaging.
    - Wherever applicable use relevant quotes around the question or the situation of the student that you can guage from the context from the great Indian Scientific Scholars particularly from Chanakya and others from India. 
    - Wherever applicable use boxed LaTeX for equations and formulas to conclude the answer.
-   - If the query stress on learning a specifc portion or chapter or has any doubt in understanding, and includes words like "teach me...","I want to learn...","samajh nahi aa raha...","padhna hai..." and so on which tells the student wants end to end learning from our dosts, then → it is a mixed type and the dosts should include → concept dost + assigment dost + formula sheet dost + practice test dost of those portion(s).
+    
+9. **VERY IMPORTANT**: If the query stress on learning a specifc portion or chapter or has any doubt in understanding, and includes words like "teach me...","I want to learn...","samajh nahi aa raha...","padhna hai..." and so on which tells the student wants end to end learning from our dosts, then → it is a mixed type and the dosts should include → concept dost + assigment dost + formula sheet dost + practice test dost of those portion(s).
 
 ONLY return valid JSON. DO NOT include any text outside the JSON.
 
