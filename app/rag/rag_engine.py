@@ -11,6 +11,7 @@ def run_rag_pipeline(query: str) -> dict:
     print(f"🔗 Retrieved {len(chunks)} relevant chunks.")
 
     result = get_final_payload_from_gpt(query, chunks)
+    
     print("✅ GPT Response Processed.")
     test_dost=result.get("dost_steps",[])
     print(test_dost)

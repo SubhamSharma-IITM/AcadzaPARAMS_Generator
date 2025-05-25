@@ -80,11 +80,11 @@ def retrieve_relevant_chunks(query, cutoff=SIMILARITY_CUTOFF):
     for chapter_key, chunks in chapter_chunks.items():
         top_chunks = chunks[:5]  # Pick top 3
         selected_chunks.extend(top_chunks)
-        if len(selected_chunks) >= 33:
-            selected_chunks = selected_chunks[:33]
+        if len(selected_chunks) >= 51:
+            selected_chunks = selected_chunks[:51]
             break
 
-    print(f"\n🎯 Retrieved Chunks: {len(selected_chunks)} (Max 3 per chapter, Max 33 overall)")
+    print(f"\n🎯 Retrieved Chunks: {len(selected_chunks)} (Max 3 per chapter, Max 51 overall)")
     for c in selected_chunks:
         print(f"- {c['text']}")
 

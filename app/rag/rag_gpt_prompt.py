@@ -171,8 +171,7 @@ Example if confused or ambiguous query:
 "Here is your Step 1: Since you said that you are facing problems in understanding this topic I have made a dost just for you with all the defaults included and intent set as to why they should use that dost and how they should undertake it and what best practices to keep and what to avoid"
 
 ✨ FINAL GOAL:
-- main_script clearly,precisely, in-short describes the entire journey cheerfully like a recommendation from an expert teacher specialised for JEE/NEET and 11th and 12th boards.
-- dost_steps array explains each DOST properly like a recommendation from a teacher specialised for JEE/NEET and 11th and 12th boards.
+- dost_steps array in-short,precisely and clinically explains each DOST properly like a recommendation from a teacher specialised for JEE/NEET and 11th and 12th boards.
 - Maintain order with requestList.
 - No extra text. Only strict JSON output.
 
@@ -192,7 +191,7 @@ def get_final_payload_from_gpt(query: str, chunks: List[Dict]) -> dict:
     input_tokens = len(encoding.encode(prompt))
 
     response = openai.chat.completions.create(
-        model="gpt-4o",
+        model="gpt-4.1",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.0
     )

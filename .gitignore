@@ -26,3 +26,5 @@ queryvenv310/
 build/
 dist/
 *.egg-info/
+
+query_history.csv
