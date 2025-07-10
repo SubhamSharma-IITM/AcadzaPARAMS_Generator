@@ -297,6 +297,12 @@ async def process_query(
         print("📷 [FastAPI] extract_from_image returned:")
         print(raw)
         # -------------------------------------------------------------
+        if isinstance(raw, dict):
+            latex_code = raw.get("latex")
+            if latex_code and not (
+                latex_code.startswith(r"\[") or latex_code.startswith(r"\(")
+            ):
+                raw["latex"] = f"\\[{latex_code}\\]"   # block-math style
 
         # Abort early if Vision flagged harmful content
         try:
