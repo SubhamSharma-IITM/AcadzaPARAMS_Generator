@@ -15,6 +15,7 @@ import logging
 import time
 import sys
 from datetime import datetime
+from app.cache import cached_query_checker        # add at top of file
 
 from app.main import run_orchestrator
 from app.history_saver import save_query_history
@@ -259,12 +260,15 @@ def process_dost_payload(query_text: str, student_id: str, auth_token: str):
 @app.post("/process-query")
 async def process_query(
     request: Request,
-    file: UploadFile    = File(None),
-    image: UploadFile   = File(None),
-    context: str        = Form(None),
-    query: str          = Form(None),
+    file:   UploadFile = File(None),     # voice
+    image:  UploadFile = File(None),     # screenshot / photo
+    context: str  = Form(None),          # optional caption for image
+    query:   str  = Form(None),          # plain-text query
     session_uuid: Optional[str] = Header(None, alias="Session-UUID"),
 ):
+    # ─────────────────────────────────────────────────────────
+    # 0️⃣  Basic header / auth checks – unchanged
+    # ─────────────────────────────────────────────────────────
     student_id = "65fc118510a22c2009134989"
     auth_token = request.headers.get("authorization")
     if not student_id or not auth_token:
@@ -272,37 +276,68 @@ async def process_query(
     if not session_uuid:
         return JSONResponse(status_code=400, content={"error": "Missing Session-UUID header."})
 
-    # 1️⃣ Extract raw text
+    # 1️⃣  Extract raw text  (voice ➔ context ➔ image ➔ query)
     start_time = time.time()
     raw_text = ""
+
+    # voice (WAV)
     if file:
         audio_text = transcribe_audio(file)
         raw_text = audio_text
+
+    # caption from <InputZone>
     if context:
         raw_text = f"{context}\n{raw_text}" if raw_text else context
+
+    # screenshot / photo
     if image:
         raw = await extract_from_image(image)
-        # ─── LOG IMAGE EXTRACTOR OUTPUT ────────────────────────────────────────
+
+        # --- DEBUG: see what the vision model produced --------------
         print("📷 [FastAPI] extract_from_image returned:")
         print(raw)
-        # ─── END LOG ───────────────────────────────────────────────────────────
-        # Check for harmful content error
+        # -------------------------------------------------------------
+
+        # Abort early if Vision flagged harmful content
         try:
             err = json.loads(raw)
             if isinstance(err, dict) and err.get("error"):
                 return JSONResponse(status_code=400, content=err)
         except Exception:
             pass
-        image_text = raw.get("text", "") if isinstance(raw, dict) else raw
+
+        # ✅ **UPDATED fallback logic**
+        if isinstance(raw, dict):
+            image_text = (
+                raw.get("text")      # preferred key
+                or raw.get("latex")  # maths screenshots
+                or raw.get("label")  # any other key your extractor might send
+                or ""
+            )
+        else:
+            image_text = str(raw)    # extractor already gave a plain string
+
         raw_text = f"{raw_text}\n{image_text}" if raw_text else image_text
+
+    # nothing supplied?
     if not raw_text and not query:
-        end_time = time.time()
         return JSONResponse(status_code=400, content={"error": "No query, file, or image provided."})
+
+    # plain-text field overrides everything
     if query:
         raw_text = query
-    input_type = "image" if image else "text"
 
+    input_type    = "image" if image else "text"
     original_text = raw_text
+
+    # --- DEBUG: Verify what we are about to send to `query_checker`
+    print("[DEBUG] final raw_text sent to query_checker ↓↓↓")
+    print(raw_text[:500], "\n" + ("─" * 60))
+
+    # (rest of the function: CSV handling, query_checker call,
+    #  DOST / mixed / general pipelines …  **unchanged**)
+    # ─────────────────────────────────────────────────────────
+
     DOST_KEYWORDS = {
         "assignment", "test", "practice", "formula", "revision",
         "clicking", "picking", "speed", "race", "concept", "practiceTest"
@@ -323,11 +358,7 @@ async def process_query(
     if context:
         merged += "\n\n[User context:]\n" + context
 
-    checker_result = query_checker(
-        text=merged,
-        translate_if_dost_or_mixed=True,
-        input_type=input_type
-    )
+    checker_result = cached_query_checker(merged, input_type)
     
     translated_text = checker_result.get("translated")
 
