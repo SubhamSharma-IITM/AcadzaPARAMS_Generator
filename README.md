@@ -1,9 +1,13 @@
 How to install and run the Chanakya Dost Backend:
 
 Step 1: Create a Virtual Environment(Sandbox). 
+
 Step 2: Install all the dependencies mentioned in the requirements.txt file in that environment.
+
 Step 3: Run the fastAPI Server present under app using: FastAPI_App:app, host="0.0.0.0", port=int(os.getenv("PORT", 10000)), reload=True . Can also be directly run using the command under the parent directory: python FastAPI_App:app host="0.0.0.0", port=int(os.getenv("PORT", 10000)), reload=True
+
 Step 4: The main.py is the main orchaestrator that performs the operations of calling the other modules stepwise.
+
 Step 5: The FastAPI has an end-point of /process-query , under which the queries are processed accordingly:
         1. If Voice+Image input, then it calls the OCR function for the image within the fastAPI module and the whisper function for transcription.
         2. If Voice only, then it only calls the whisper function and then performs the OCR and then receives the text for the transcribed audio.
